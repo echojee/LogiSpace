@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ArrowRight, BookMarked, Layers3, WandSparkles } from "lucide-react";
+export default function Library(){return <main className="libraryPage"><section className="pageIntro"><p className="eyebrow">PERSONAL LIBRARY</p><h1>个人悬疑知识库</h1><p>作品保持独立，诡计与杀人手法作为跨作品索引。</p></section><div className="libraryEntries"><Link href="/library/works"><BookMarked/><div><small>COLLECTION 01</small><h2>作品集</h2><p>从具体作品进入人物关系与多轨时间线。</p></div><ArrowRight/></Link><Link href="/library/tricks"><WandSparkles/><div><small>COLLECTION 02</small><h2>诡计集</h2><p>浏览跨作品的误导机制与叙事结构。</p></div><ArrowRight/></Link><Link href="/library/methods"><Layers3/><div><small>COLLECTION 03</small><h2>杀人手法</h2><p>浏览犯罪在物理层面的实施方式。</p></div><ArrowRight/></Link></div></main>}

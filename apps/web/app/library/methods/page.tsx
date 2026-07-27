@@ -1,0 +1,4 @@
+"use client";
+import Link from"next/link";import{useEffect,useState}from"react";import{Layers3}from"lucide-react";
+const API=process.env.NEXT_PUBLIC_API_URL??"http://127.0.0.1:8000";type Card={work_id:string;work_title:string;entity_id:string;name:string;summary:string;attributes:Record<string,string>};
+export default function Methods(){const[items,setItems]=useState<Card[]>([]);useEffect(()=>{fetch(`${API}/library/methods`).then(r=>r.json()).then(setItems)},[]);return <main className="libraryPage"><section className="pageIntro compact"><p className="eyebrow">METHOD COLLECTION</p><h1>杀人手法</h1><p>杀人手法描述犯罪在物理层面的实施方式，与诡计分开管理。</p></section><div className="cardGrid">{items.map(item=><article className="knowledgeCard dark" key={item.entity_id}><Layers3/><small>METHOD · {item.attributes.method_type}</small><h2>{item.name}</h2><p>{item.summary}</p><Link href={`/library/works/${item.work_id}`}>《{item.work_title}》 →</Link></article>)}</div></main>}

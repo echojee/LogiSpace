@@ -1,0 +1,4 @@
+"use client";
+import Link from"next/link";import{useEffect,useState}from"react";import{WandSparkles}from"lucide-react";
+const API=process.env.NEXT_PUBLIC_API_URL??"http://127.0.0.1:8000";type Card={work_id:string;work_title:string;entity_id:string;name:string;summary:string;attributes:Record<string,string>};
+export default function Tricks(){const[items,setItems]=useState<Card[]>([]);useEffect(()=>{fetch(`${API}/library/tricks`).then(r=>r.json()).then(setItems)},[]);return <main className="libraryPage"><section className="pageIntro compact"><p className="eyebrow">TRICK COLLECTION</p><h1>诡计集</h1><p>诡计解释案件如何误导调查者、人物或读者。</p></section><div className="cardGrid">{items.map(item=><article className="knowledgeCard accent" key={item.entity_id}><WandSparkles/><small>TRICK · {item.attributes.trick_type}</small><h2>{item.name}</h2><p>{item.summary}</p><Link href={`/library/works/${item.work_id}`}>《{item.work_title}》 →</Link></article>)}</div></main>}

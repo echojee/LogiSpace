@@ -1,0 +1,19 @@
+[project]
+name = "logispace"
+version = "0.1.0"
+description = "Spoiler-aware mystery research workspace scaffold"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.111",
+  "pydantic>=2.7",
+  "uvicorn>=0.30",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "apps/api",
+  "packages/domain",
+  "packages/research",
+  "packages/evaluation",
+]
+testpaths = ["tests", "packages/evaluation/tests"]

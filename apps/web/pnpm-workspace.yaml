@@ -1,0 +1,13 @@
+packages:
+  - .
+
+supportedArchitectures:
+  os:
+    - win32
+  cpu:
+    - x64
+  libc:
+    - none
+
+onlyBuiltDependencies:
+  - sharp

@@ -1,0 +1,17 @@
+{
+  "catalog_version": "0.1.0",
+  "works": [
+    {
+      "work_id": "devotion-of-suspect-x",
+      "manifest": "works/devotion-of-suspect-x/manifest.json"
+    },
+    {
+      "work_id": "murder-of-roger-ackroyd",
+      "manifest": "works/murder-of-roger-ackroyd/manifest.json"
+    },
+    {
+      "work_id": "murder-on-orient-express",
+      "manifest": "works/murder-on-orient-express/manifest.json"
+    }
+  ]
+}
