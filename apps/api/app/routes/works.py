@@ -1,18 +1,16 @@
 from fastapi import APIRouter
 
-from logispace_domain.models import MediaType, Work, WorkResolveRequest, WorkResolveResponse
+from app.services.work_resolution import confirm, resolve
+from logispace_domain.models import WorkConfirmRequest, WorkResolveRequest, WorkResolveResponse
 
 router = APIRouter()
 
 
 @router.post("/resolve", response_model=WorkResolveResponse)
 def resolve_work(request: WorkResolveRequest) -> WorkResolveResponse:
-    candidate = Work(
-        work_id="work_mock_001",
-        canonical_title=request.query.strip(),
-        aliases=[request.query.strip()],
-        media_type=request.media_type or MediaType.UNKNOWN,
-        release_year=None,
-        creators=[],
-    )
-    return WorkResolveResponse(query=request.query, candidates=[candidate], needs_confirmation=True)
+    return resolve(request)
+
+
+@router.post("/resolve/{resolution_id}/confirm", response_model=WorkResolveResponse)
+def confirm_work(resolution_id: str, request: WorkConfirmRequest) -> WorkResolveResponse:
+    return confirm(resolution_id, request)

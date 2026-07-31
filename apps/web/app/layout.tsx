@@ -1,11 +1,5 @@
 import Link from "next/link";
 import "./globals.css";
-
-export const metadata = {
-  title: "LogiSpace｜个人悬疑知识库",
-  description: "检索推理作品中的人物关系、时间线、诡计与杀人手法",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="zh-CN"><body><header className="siteHeader"><Link href="/" className="logo"><span>LS</span>LogiSpace</Link><nav><Link href="/chat">对话</Link><Link href="/library">个人悬疑知识库</Link></nav></header>{children}<footer className="siteFooter"><span>LogiSpace · WorkDossier v0</span><span>三个独立作品数据库</span></footer></body></html>;
-}
+import "./v02.css";
+export const metadata={title:"LogiSpace｜悬疑作品知识空间",description:"快速问答与作品级深度研究，让 WorkDossier 持续成长。"};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="zh-CN"><body><header className="siteHeader"><Link href="/" className="logo"><span>LS</span>LogiSpace</Link><nav><Link href="/chat">快速对话</Link><Link href="/research">深度研究</Link><Link href="/library">知识库</Link></nav></header>{children}<footer className="siteFooter"><span>LogiSpace · WorkDossier 0.3</span><span>对话消费知识 · 研究生产知识</span></footer></body></html>}

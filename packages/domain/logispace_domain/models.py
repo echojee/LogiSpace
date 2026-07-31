@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import datetime
 from enum import Enum
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field, HttpUrl
 
@@ -58,9 +58,15 @@ class WorkResolveRequest(BaseModel):
 
 
 class WorkResolveResponse(BaseModel):
+    resolution_id: str
     query: str
     candidates: list[Work]
     needs_confirmation: bool
+    resolved_work: Work | None = None
+
+
+class WorkConfirmRequest(BaseModel):
+    work_id: str
 
 
 class SourceDocument(BaseModel):
@@ -184,6 +190,127 @@ class WorkDossier(BaseModel):
     revision_findings: list[str] = Field(default_factory=list)
 
 
+class Citation(BaseModel):
+    citation_id: str
+    label: str
+    url: str | None = None
+    source_type: str = "work_dossier"
+    work_id: str | None = None
+    entity_ids: list[str] = Field(default_factory=list)
+    excerpt: str | None = None
+
+
+class ConversationMemory(BaseModel):
+    active_work_ids: list[str] = Field(default_factory=list)
+    active_entities: list[str] = Field(default_factory=list)
+    current_topic: str | None = None
+    summary: str = ""
+    spoiler_level: SpoilerLevel = SpoilerLevel.NONE
+
+
+class ConversationMessage(BaseModel):
+    message_id: str
+    role: Literal["user", "assistant"]
+    content: str
+    citations: list[Citation] = Field(default_factory=list)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class Conversation(BaseModel):
+    conversation_id: str
+    title: str = "New conversation"
+    memory: ConversationMemory = Field(default_factory=ConversationMemory)
+    messages: list[ConversationMessage] = Field(default_factory=list)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class ConversationCreate(BaseModel):
+    spoiler_level: SpoilerLevel = SpoilerLevel.NONE
+    active_work_ids: list[str] = Field(default_factory=list)
+
+
+class ConversationTurn(BaseModel):
+    content: str = Field(min_length=1)
+    allow_web_search: bool = True
+    spoiler_level: SpoilerLevel | None = None
+
+
+class ConversationAnswer(BaseModel):
+    conversation_id: str
+    message: ConversationMessage
+    answer_status: Literal["supported", "partial", "inferred", "conflicted", "insufficient"]
+    used_work_ids: list[str] = Field(default_factory=list)
+    used_web_search: bool = False
+    suggest_deep_research: bool = False
+    memory: ConversationMemory
+
+
+class ResearchBudget(BaseModel):
+    max_search_rounds: int = Field(default=8, ge=1, le=30)
+    max_sources: int = Field(default=30, ge=1, le=100)
+    max_model_tokens: int = Field(default=200_000, ge=1_000)
+
+
+class ResearchCoverage(BaseModel):
+    section: str
+    status: Literal["not_started", "in_progress", "sufficient", "partial", "not_applicable", "conflicted"]
+    knowledge_gaps: list[str] = Field(default_factory=list)
+    entity_ids: list[str] = Field(default_factory=list)
+
+
+class ResearchJobV2Create(BaseModel):
+    work_id: str
+    media_scope: str = "novel"
+    research_scope: Literal["incremental_full", "fill_gaps", "resolve_conflicts", "full_rebuild"] = "incremental_full"
+    spoiler_level: SpoilerLevel = SpoilerLevel.FULL
+    budget: ResearchBudget = Field(default_factory=ResearchBudget)
+
+
+class KnowledgeProposal(BaseModel):
+    proposal_id: str
+    operation: Literal["retain", "strengthen", "add_entity", "add_relation", "add_claim", "flag_conflict"]
+    target_section: str
+    summary: str
+    payload: dict[str, Any] = Field(default_factory=dict)
+    evidence_ids: list[str] = Field(default_factory=list)
+    confidence: float = Field(default=0.5, ge=0, le=1)
+    review_status: Literal["pending", "approved", "rejected"] = "pending"
+
+
+class ResearchUsage(BaseModel):
+    search_rounds: int = 0
+    sources: int = 0
+    input_tokens: int = 0
+    output_tokens: int = 0
+
+
+class ResearchJobV2(BaseModel):
+    job_id: str
+    work_id: str
+    media_scope: str
+    research_scope: str
+    base_version: str
+    target_version: str
+    status: Literal["created", "inventorying", "planning", "collecting", "extracting", "verifying", "drafting", "quality_check", "needs_review", "published", "failed"] = "created"
+    budget: ResearchBudget
+    usage: ResearchUsage = Field(default_factory=ResearchUsage)
+    coverage: list[ResearchCoverage] = Field(default_factory=list)
+    sources: list[SourceDocument] = Field(default_factory=list)
+    evidence: list[EvidenceItem] = Field(default_factory=list)
+    proposals: list[KnowledgeProposal] = Field(default_factory=list)
+    draft: WorkDossier | None = None
+    errors: list[str] = Field(default_factory=list)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+
+class ProposalReview(BaseModel):
+    approved_proposal_ids: list[str] = Field(default_factory=list)
+    rejected_proposal_ids: list[str] = Field(default_factory=list)
+
+
+
 class ProductView(BaseModel):
     view_type: str
     work_id: str
@@ -202,6 +329,3 @@ class QAResponse(BaseModel):
     answer: str
     evidence_entity_ids: list[str]
     passed: bool
-
-
-

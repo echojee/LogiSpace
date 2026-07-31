@@ -1,6 +1,3 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, MessageCircle } from "lucide-react";
-
-export default function Home() {
-  return <main className="home"><section className="homeHero"><p className="eyebrow">PERSONAL MYSTERY KNOWLEDGE BASE</p><h1>从一次提问，进入作品的推理结构。</h1><p>检索《嫌疑人X的献身》《罗杰疑案》《东方快车谋杀案》中的人物关系、时间线、诡计与杀人手法。</p></section><section className="entryGrid"><Link href="/chat" className="entryCard orange"><MessageCircle/><small>01 / ASK</small><h2>对话检索</h2><p>用自然语言提问，答案来自结构化 WorkDossier，并附带证据实体与知识页面链接。</p><span>开始提问 <ArrowRight size={16}/></span></Link><Link href="/library" className="entryCard green"><BookOpen/><small>02 / EXPLORE</small><h2>个人悬疑知识库</h2><p>从作品集或诡计集进入，浏览人物关系、时间线、诡计和杀人手法。</p><span>进入知识库 <ArrowRight size={16}/></span></Link></section></main>;
-}
+import {ArrowRight,BookOpen,MessageCircle,Microscope} from "lucide-react";
+export default function Home(){return <main className="home"><section className="homeHero"><p className="eyebrow">AGENT-POWERED MYSTERY RESEARCH</p><h1>先回答问题，<br/>再把作品研究透。</h1><p>快速对话优先使用个人知识库，必要时联网查证；深度研究以作品为单位，将搜索、证据与推理结构沉淀为可版本化的 WorkDossier。</p></section><section className="entryGrid three"><Link href="/chat" className="entryCard orange"><MessageCircle/><small>01 / ASK</small><h2>快速对话</h2><p>本地知识优先、必要时联网，支持多轮 Memory。回答服务当前问题，不修改正式知识库。</p><span>开始提问 <ArrowRight size={16}/></span></Link><Link href="/research" className="entryCard green"><Microscope/><small>02 / RESEARCH</small><h2>深度研究</h2><p>选择一部作品，盘点已有知识、补齐缺口、生成草稿，审核后发布新版 WorkDossier。</p><span>启动研究 <ArrowRight size={16}/></span></Link><Link href="/library" className="entryCard darkEntry"><BookOpen/><small>03 / EXPLORE</small><h2>知识库</h2><p>浏览已发布的人物关系、时间线、诡计和杀人手法。</p><span>进入知识库 <ArrowRight size={16}/></span></Link></section></main>}

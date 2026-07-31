@@ -1,12 +1,14 @@
 [project]
 name = "logispace"
-version = "0.1.0"
+version = "0.3.0"
 description = "Spoiler-aware mystery research workspace scaffold"
 requires-python = ">=3.11"
 dependencies = [
   "fastapi>=0.111",
   "pydantic>=2.7",
   "uvicorn>=0.30",
+  "pypdf>=5.0",
+  "psycopg[binary]>=3.2",
 ]
 
 [tool.pytest.ini_options]
