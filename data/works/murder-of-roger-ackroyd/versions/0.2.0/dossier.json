@@ -1,0 +1,298 @@
+{
+  "work": {
+    "work_id": "murder-of-roger-ackroyd",
+    "canonical_title": "罗杰疑案",
+    "aliases": [
+      "The Murder of Roger Ackroyd",
+      "罗杰·艾克罗伊德谋杀案"
+    ],
+    "media_type": "novel",
+    "release_year": 1926,
+    "creators": [
+      "阿加莎·克里斯蒂"
+    ]
+  },
+  "schema_version": "0.2",
+  "dossier_version": "0.2.0",
+  "ontology_version": "0.2.0",
+  "dataset_role": "primary",
+  "entities": [
+    {
+      "entity_id": "ra-sheppard",
+      "entity_type": "Character",
+      "name": "詹姆斯·谢泼德",
+      "summary": "医生兼第一人称记录者。",
+      "attributes": {
+        "roles": [
+          "narrator",
+          "culprit"
+        ]
+      }
+    },
+    {
+      "entity_id": "ra-poirot",
+      "entity_type": "Character",
+      "name": "赫尔克里·波洛",
+      "summary": "退休侦探，通过证词、物证与叙述缺口重建真相。",
+      "attributes": {
+        "role": "investigator"
+      }
+    },
+    {
+      "entity_id": "ra-ackroyd",
+      "entity_type": "Character",
+      "name": "罗杰·艾克罗伊德",
+      "summary": "案件被害者，死亡时间成为推理核心。",
+      "attributes": {
+        "role": "victim"
+      }
+    },
+    {
+      "entity_id": "ra-narration",
+      "entity_type": "Trick",
+      "name": "可靠叙述外观下的信息省略",
+      "summary": "精确措辞省略关键行动，让读者形成错误事件模型。",
+      "attributes": {
+        "trick_type": "narrative_omission"
+      }
+    },
+    {
+      "entity_id": "ra-method",
+      "entity_type": "MurderMethod",
+      "name": "短刃刺杀与时间伪装",
+      "summary": "刺杀行为与录音装置制造的错误死亡时间共同构成实施结构。",
+      "attributes": {
+        "method_type": "stabbing",
+        "spoiler_level": "full"
+      }
+    },
+    {
+      "entity_id": "ra-gap",
+      "entity_type": "NarrativeUnit",
+      "name": "关键叙述缺口",
+      "summary": "关键时段被压缩，动作被省略。",
+      "attributes": {
+        "track": "discourse",
+        "order": 1,
+        "omission": true
+      }
+    },
+    {
+      "entity_id": "ra-reveal",
+      "entity_type": "Reveal",
+      "name": "波洛重建叙述缺口",
+      "summary": "从叙述文本和物证中恢复被省略的行动。",
+      "attributes": {
+        "track": "investigation",
+        "order": 2
+      }
+    },
+    {
+      "entity_id": "claim_c009b48fa8",
+      "entity_type": "Claim",
+      "name": "《罗杰疑案》的原名为 The Murder of Roger Ackroyd，作者是阿嘉莎·克莉丝蒂。",
+      "summary": "《罗杰疑案》的原名为 The Murder of Roger Ackroyd，作者是阿嘉莎·克莉丝蒂。",
+      "attributes": {
+        "claim_id": "claim_c009b48fa8",
+        "section": "identity",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_e5b5912cc7"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_44899a0360",
+      "entity_type": "Claim",
+      "name": "该作是一部英文推理小说，属于赫丘勒·白罗系列。",
+      "summary": "该作是一部英文推理小说，属于赫丘勒·白罗系列。",
+      "attributes": {
+        "claim_id": "claim_44899a0360",
+        "section": "identity",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_0faf20e8e9",
+          "ev_5740e7c8d5"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_ea030d8a1b",
+      "entity_type": "Claim",
+      "name": "小说于1926年6月由柯林斯出版公司在英国出版。",
+      "summary": "小说于1926年6月由柯林斯出版公司在英国出版。",
+      "attributes": {
+        "claim_id": "claim_ea030d8a1b",
+        "section": "identity",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_99ce5f45c3"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_1b8623ccec",
+      "entity_type": "Claim",
+      "name": "故事以英国金艾博特村发生的命案为开端：富商罗杰·艾克洛在弗利恩庄的书房内遇害。",
+      "summary": "故事以英国金艾博特村发生的命案为开端：富商罗杰·艾克洛在弗利恩庄的书房内遇害。",
+      "attributes": {
+        "claim_id": "claim_1b8623ccec",
+        "section": "timeline_narrative",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_a8b0ec462e"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_fc1cdf6965",
+      "entity_type": "Claim",
+      "name": "随后，住在同村的退休比利时侦探赫丘勒·白罗受死者侄女弗洛拉委托调查案件。",
+      "summary": "随后，住在同村的退休比利时侦探赫丘勒·白罗受死者侄女弗洛拉委托调查案件。",
+      "attributes": {
+        "claim_id": "claim_fc1cdf6965",
+        "section": "timeline_narrative",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_20dee106d7",
+          "ev_90fffc8998"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_74b20c20c0",
+      "entity_type": "Claim",
+      "name": "命案发生前不久曾见过被害人的詹姆斯·夏波医生协助白罗调查，同时担任小说的第一人称叙述者。",
+      "summary": "命案发生前不久曾见过被害人的詹姆斯·夏波医生协助白罗调查，同时担任小说的第一人称叙述者。",
+      "attributes": {
+        "claim_id": "claim_74b20c20c0",
+        "section": "timeline_narrative",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_cac754701c",
+          "ev_6681d5869d"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_52c92bdb1f",
+      "entity_type": "Claim",
+      "name": "小说采用詹姆斯·夏波医生作为第一人称叙述者。",
+      "summary": "小说采用詹姆斯·夏波医生作为第一人称叙述者。",
+      "attributes": {
+        "claim_id": "claim_52c92bdb1f",
+        "section": "trick_misdirection",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_06ab547f13"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_1568f38040",
+      "entity_type": "Claim",
+      "name": "其核心叙事诡计受到“像华生这样的凶手”和“叙述者是凶手”两项构想的影响。",
+      "summary": "其核心叙事诡计受到“像华生这样的凶手”和“叙述者是凶手”两项构想的影响。",
+      "attributes": {
+        "claim_id": "claim_1568f38040",
+        "section": "trick_misdirection",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_2eccb701df",
+          "ev_7e5eee168a"
+        ],
+        "support_status": "supported"
+      }
+    },
+    {
+      "entity_id": "claim_53b796843c",
+      "entity_type": "Claim",
+      "name": "该小说被归类为采用不可靠叙述者的作品。",
+      "summary": "该小说被归类为采用不可靠叙述者的作品。",
+      "attributes": {
+        "claim_id": "claim_53b796843c",
+        "section": "trick_misdirection",
+        "claim_type": "fact",
+        "media_version": "novel",
+        "evidence_ids": [
+          "ev_aa81c4733a"
+        ],
+        "support_status": "supported"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "ra-poirot",
+      "relation": "INVESTIGATES",
+      "target_id": "ra-sheppard",
+      "note": "波洛通过叙述缺口锁定谢泼德"
+    },
+    {
+      "source_id": "ra-sheppard",
+      "relation": "MURDERS",
+      "target_id": "ra-ackroyd",
+      "note": "案件事实关系"
+    },
+    {
+      "source_id": "ra-sheppard",
+      "relation": "USES",
+      "target_id": "ra-narration",
+      "note": "利用叙述省略误导读者"
+    },
+    {
+      "source_id": "ra-sheppard",
+      "relation": "USES",
+      "target_id": "ra-method",
+      "note": "使用刺杀与时间伪装"
+    },
+    {
+      "source_id": "ra-narration",
+      "relation": "DISCLOSED_IN",
+      "target_id": "ra-gap",
+      "note": "诡计体现在叙述缺口"
+    },
+    {
+      "source_id": "ra-reveal",
+      "relation": "EXPOSES",
+      "target_id": "ra-narration",
+      "note": "波洛揭示叙述诡计"
+    }
+  ],
+  "golden_questions": [
+    {
+      "question_id": "ra-q-narrator",
+      "question": "叙述者如何在不直接说谎的情况下误导读者？",
+      "expected_answer": "谢泼德利用时间压缩、措辞选择和关键动作省略，让真实行动没有进入读者模型。",
+      "answer_entity_ids": [
+        "ra-narration",
+        "ra-gap"
+      ],
+      "required_relation": "DISCLOSED_IN",
+      "difficulty": "medium",
+      "tags": [
+        "narration",
+        "omission"
+      ]
+    }
+  ],
+  "revision_findings": [
+    "用 NarrativeUnit 表达措辞、聚焦与省略。",
+    "加入读者时间线和话语时间线。"
+  ]
+}

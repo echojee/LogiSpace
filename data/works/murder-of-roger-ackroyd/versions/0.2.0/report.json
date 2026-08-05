@@ -1,0 +1,61 @@
+{
+  "report_id": "report_5dc4ec42f1",
+  "work_id": "murder-of-roger-ackroyd",
+  "version": "0.2.0",
+  "title": "《罗杰疑案》深度研究报告",
+  "summary": "本报告根据 9 条已验证 Claim 整理，包含 3 个研究章节。",
+  "sections": [
+    {
+      "section_id": "identity",
+      "title": "作品概览",
+      "body": "《罗杰疑案》的原名为 The Murder of Roger Ackroyd，作者是阿嘉莎·克莉丝蒂。 [ev_e5b5912cc7]\n\n该作是一部英文推理小说，属于赫丘勒·白罗系列。 [ev_0faf20e8e9, ev_5740e7c8d5]\n\n小说于1926年6月由柯林斯出版公司在英国出版。 [ev_99ce5f45c3]",
+      "claim_ids": [
+        "claim_c009b48fa8",
+        "claim_44899a0360",
+        "claim_ea030d8a1b"
+      ],
+      "evidence_ids": [
+        "ev_e5b5912cc7",
+        "ev_0faf20e8e9",
+        "ev_5740e7c8d5",
+        "ev_99ce5f45c3"
+      ],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "timeline_narrative",
+      "title": "叙事时间线",
+      "body": "故事以英国金艾博特村发生的命案为开端：富商罗杰·艾克洛在弗利恩庄的书房内遇害。 [ev_a8b0ec462e]\n\n随后，住在同村的退休比利时侦探赫丘勒·白罗受死者侄女弗洛拉委托调查案件。 [ev_20dee106d7, ev_90fffc8998]\n\n命案发生前不久曾见过被害人的詹姆斯·夏波医生协助白罗调查，同时担任小说的第一人称叙述者。 [ev_cac754701c, ev_6681d5869d]",
+      "claim_ids": [
+        "claim_1b8623ccec",
+        "claim_fc1cdf6965",
+        "claim_74b20c20c0"
+      ],
+      "evidence_ids": [
+        "ev_a8b0ec462e",
+        "ev_20dee106d7",
+        "ev_90fffc8998",
+        "ev_cac754701c",
+        "ev_6681d5869d"
+      ],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "trick_misdirection",
+      "title": "核心诡计与误导",
+      "body": "小说采用詹姆斯·夏波医生作为第一人称叙述者。 [ev_06ab547f13]\n\n其核心叙事诡计受到“像华生这样的凶手”和“叙述者是凶手”两项构想的影响。 [ev_2eccb701df, ev_7e5eee168a]\n\n该小说被归类为采用不可靠叙述者的作品。 [ev_aa81c4733a]",
+      "claim_ids": [
+        "claim_52c92bdb1f",
+        "claim_1568f38040",
+        "claim_53b796843c"
+      ],
+      "evidence_ids": [
+        "ev_06ab547f13",
+        "ev_2eccb701df",
+        "ev_7e5eee168a",
+        "ev_aa81c4733a"
+      ],
+      "spoiler_level": "full"
+    }
+  ]
+}
