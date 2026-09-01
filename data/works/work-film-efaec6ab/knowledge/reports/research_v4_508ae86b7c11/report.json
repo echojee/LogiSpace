@@ -1,0 +1,51 @@
+{
+  "schema_version": "knowledge-report-v1",
+  "work_id": "work-film-efaec6ab",
+  "work_title": "控方证人",
+  "media_version": "original_film",
+  "source_job_id": "research_v4_508ae86b7c11",
+  "title": "《控方证人》深度研究报告",
+  "model": "gpt-5.6-sol",
+  "provider_response_id": "resp_03e019726f853259006a9441f5840887d0b8d6ed2a24fee061",
+  "citations": [
+    {
+      "title": "The Hallmark Hall of Fame Movie List | Hallmark Hall of Fame",
+      "url": "https://www.hallmarkchannel.com/hallmark-hall-of-fame/movies?utm_source=openai",
+      "start_index": 779,
+      "end_index": 882
+    },
+    {
+      "title": "Witness for the Prosecution (TV Movie 1982) - Technical specifications - IMDb",
+      "url": "https://www.imdb.com/title/tt0084911/technical/?utm_source=openai",
+      "start_index": 1218,
+      "end_index": 1297
+    },
+    {
+      "title": "The Witness for the Prosecution by Agatha Christie - Agatha Christie (UK)",
+      "url": "https://www.agathachristie.com/en/stories/witness-for-the-prosecution?utm_source=openai",
+      "start_index": 1619,
+      "end_index": 1730
+    },
+    {
+      "title": "Subtitle Cat - All Language Subtitles - 1982 - Witness for the Prosecution",
+      "url": "https://www.subtitlecat.com/subs/546/1982%20-%20Witness%20for%20the%20Prosecution.html",
+      "start_index": 3485,
+      "end_index": 3592
+    },
+    {
+      "title": "AFI|Catalog",
+      "url": "https://catalog.afi.com/Film/52448-WITNESS-FOR-THE-PROSECUTION?utm_source=openai",
+      "start_index": 5662,
+      "end_index": 5763
+    },
+    {
+      "title": "Malcolm Young, from a story by Peter F. Brooke, Gene Warren. “V”",
+      "url": "https://www.worldradiohistory.com/Archive-International-Television-Almanac/1984/International-Television-Almanac-1984.pdf?utm_source=openai",
+      "start_index": 21983,
+      "end_index": 22149
+    }
+  ],
+  "generated_at": "2026-08-30T14:49:34.302321+00:00",
+  "deposited_at": "2026-08-30T15:15:58.633862+00:00",
+  "markdown_file": "report.md"
+}

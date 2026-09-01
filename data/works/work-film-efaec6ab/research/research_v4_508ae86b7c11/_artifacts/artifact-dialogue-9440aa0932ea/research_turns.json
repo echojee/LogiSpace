@@ -1,0 +1,68 @@
+[
+  {
+    "turn_id": "turn-001-fbe71340",
+    "perspective_id": "perspective-02-53fedf92",
+    "question": "作品如何安排视角、伏笔与信息披露来控制读者判断？",
+    "research_intent": "为1982年版本建立场景级的信息流分析：区分观众、律师、陪审团与角色各自掌握的信息，标记误导性证词、延迟揭示、视角限制和结尾反转对前文证据的重构作用。",
+    "suggested_queries": [
+      "\"Witness for the Prosecution\" 1982 transcript scenes Alan Gibson",
+      "\"Witness for the Prosecution\" 1982 subtitles full movie",
+      "\"Witness for the Prosecution\" 1982 compared with 1957 film narrative structure"
+    ],
+    "provisional_answer": "待验证假设：规划性结论：现有侦察资料仅能确认1982年版本是Alan Gibson执导的电视电影，并提示其叙事集中于审判、证词与夫妻关系。尚不足以断言具体镜头顺序、伏笔位置或结尾如何重新解释证据；下一步应以完整片源、字幕或剧本转录建立场景级时间线，再与原著及1957年版分离比对。([rottentomatoes.com](https://www.rottentomatoes.com/m/witness_for_the_prosecution_1982/cast-and-crew?utm_source=openai))",
+    "unresolved_questions": [
+      "尚未取得可逐场核对的完整片源、字幕或剧本。",
+      "尚未确认1982年版本的完整播出时长、剪辑差异及不同发行版本。",
+      "尚未核实叙事反转具体发生在何一场景，以及它是否改变观众对前文证词的因果解释。",
+      "尚未完成与原著短篇及舞台剧的信息重排对照。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-luna",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-002-cd2978d6",
+    "perspective_id": "perspective-02-53fedf92",
+    "question": "1982年版如何通过相较原著与1957年版的信息重排，控制观众对证词、夫妻关系和结局反转的判断？",
+    "research_intent": "建立1982年版的场景级信息流：标注观众、Sir Wilfred、Leonard、Christine及法庭各方在每个节点掌握的信息，区分事实揭示、伪证、延迟信息和事后重构，并核对版本差异。",
+    "suggested_queries": [
+      "\"Witness for the Prosecution\" 1982 full transcript or screenplay",
+      "\"Witness for the Prosecution\" 1982 subtitles scene list",
+      "\"Witness for the Prosecution\" 1982 Christine Vole scarred woman original story comparison"
+    ],
+    "provisional_answer": "待验证假设：规划性结论：侦察结果显示，1982年版保留核心法庭结构，并较1957年版更接近原著的若干叙事安排；但现有资料不足以确认具体场景顺序、伏笔位置及每次信息揭示的观众认知效果。下一轮应以完整片源、字幕或剧本建立场景级信息时间线，再逐项对照原著与1957年版。",
+    "unresolved_questions": [
+      "尚未取得可逐场核对的完整片源、字幕或剧本。",
+      "尚未确认不同发行版本的时长和剪辑差异。",
+      "尚未确定结尾反转在1982年版中的确切场景位置及其对前文证据的重构方式。",
+      "尚未完成与原著短篇及舞台剧的系统信息重排对照。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-luna",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-003-9dbeb60c",
+    "perspective_id": "perspective-02-53fedf92",
+    "question": "1982年版能否依据完整字幕与片源，建立关键证词及结尾反转的场景级信息时间线？",
+    "research_intent": "建立1982年版的场景级信息流，记录案件建立、律师会见、Christine证词、疤痕女子与信件段落、审判高潮及结尾中观众和主要角色分别掌握的信息；进一步判断信息延迟与反转是否改变观众对夫妻关系及证据链的解释。",
+    "suggested_queries": [
+      "\"Witness for the Prosecution\" 1982 subtitle transcript scene timestamps",
+      "\"Witness for the Prosecution\" 1982 full movie ending Christine Vole",
+      "\"Witness for the Prosecution\" 1982 screenplay compared with Christie short story"
+    ],
+    "provisional_answer": "待验证假设：规划性结论：侦察已找到1982年版约96分钟的片源索引与可检索字幕页面；字幕片段确认审判中“Christine作为控方突袭证人”的信息节点。现阶段仍不能据此断定完整叙事顺序、观众与角色的认知差异，或结尾如何重构前文证据。下一轮应以完整字幕/片源逐场标注，并严格排除1957年版与原著材料的混入。",
+    "unresolved_questions": [
+      "字幕来源的完整性、准确性及发行版本尚未核实。",
+      "尚未取得可逐镜头分析的稳定片源或正式剧本。",
+      "尚未确认反转的确切时间码及其是否提前向观众泄露。",
+      "尚未完成1982年版与原著、1957年版的信息重排对照。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-luna",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

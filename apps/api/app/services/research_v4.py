@@ -71,7 +71,7 @@ def _mandatory_unit(domain: str, budget: ResearchBudgetV4) -> ResearchUnitV4:
 def _signature_units(dossier: WorkDossier, budget: ResearchBudgetV4) -> list[ResearchUnitV4]:
     work = dossier.work
     haystack = " ".join([work.canonical_title, *work.aliases] + [f"{e.name} {e.summary} {e.attributes}" for e in dossier.entities]).lower()
-    if work.work_id == "murder-of-roger-ackroyd" or "narrative_omission" in haystack or "叙述" in haystack:
+    if "narrative_omission" in haystack or "叙述" in haystack:
         return [ResearchUnitV4(
             unit_id="ru_signature_unreliable_narration", track="signature", domain="timeline_narrative",
             question="叙述在哪些位置压缩或省略了关键行动？",

@@ -1,0 +1,65 @@
+[
+  {
+    "turn_id": "turn-001-7d58910c",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "如何固定《无人生还》的研究底本，并防止标题、童谣措辞及舞台剧结局污染小说证据链？",
+    "research_intent": "确立唯一文本边界，区分不影响诡计结构的措辞替换与可能影响线索定位、死亡对应关系或结局解释的实质异文。",
+    "suggested_queries": [
+      "1939 Collins Crime Club And Then There Were None textual variants rhyme epilogue",
+      "《无人生还》中译本 版本 童谣 结尾 附记 对照",
+      "Agatha Christie novel versus 1943 stage play ending And Then There Were None"
+    ],
+    "provisional_answer": "待验证假设：仅作研究规划：核心对象应暂定为阿加莎·克里斯蒂1939年出版的英文小说及其小说结局。书名、岛名和童谣用词存在版本更替，需建立异文对照表；1943年舞台剧及影视改编的幸存者结局、行为调整一律排除。待确认用户中译本后，再判断译文是否删改童谣、种族性旧称或说明文书，进而选定可复核底本。",
+    "unresolved_questions": [
+      "用户持有的中译本、出版社、译者及出版年份尚未提供。",
+      "不同英文版除敏感称谓替换外，是否存在影响诡计分析的句段级修改，尚未核验。",
+      "是否将最初连载文本纳入异文比较尚待决定。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-002-6a955ab9",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "在用户中译本尚未确认时，是否应把1939年连载版纳入研究底本，当前可先建立什么最低限度的版本核验协议？",
+    "research_intent": "确定连载文本的研究层级，并设计无需依赖页码、可适用于未知中译本的完整性检查清单。",
+    "suggested_queries": [
+      "Daily Express 1939 And Then There Were None serialization omissions ending manuscript",
+      "Saturday Evening Post 1939 And Then There Were None serialized text differences",
+      "《无人生还》中译本 二十章 警方调查 瓶中手稿 版本"
+    ],
+    "provisional_answer": "待验证假设：仅作研究规划：暂以1939年英国单行本的小说结构为基准，以现代《And Then There Were None》版本作为可操作对照；英美连载版只列为潜在异文材料，不应直接混入主证据链。现阶段先核验各版本是否完整保留20章正文、警方事后调查与瓶中手稿，并记录标题、岛名、童谣及摆件称谓。搜索结果只能确认出版与连载谱系，尚不足以判定连载版是否存在影响诡计的删改。",
+    "unresolved_questions": [
+      "尚未接触1939年英美连载原页，无法确认其删节范围。",
+      "尚未取得1939年英国初版与现代英文版的逐句对照。",
+      "用户中译本的译者、出版社、年份以及附录完整性仍未知。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-003-9a462e47",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "现有数字档案能否直接核验1939年英美连载版与英国初版之间的结构性异文？",
+    "research_intent": "判断连载原页是否已经具备可操作的比对条件，并决定是否继续占用基础版本研究预算。",
+    "suggested_queries": [
+      "Saturday Evening Post May 20 July 1 1939 And Then There Were None full issue archive",
+      "Daily Express June 6 July 1 1939 Ten Little Niggers British Newspaper Archive",
+      "1939 Collins first edition Ten Little Niggers table of contents epilogue"
+    ],
+    "provisional_answer": "待验证假设：仅作研究规划：目前只能可靠确认英国《Daily Express》23期连载、美国《Saturday Evening Post》7期连载及1939年Collins英国初版的出版谱系。美国期刊官网列出了七期日期并提供整期档案入口，英国报纸档案亦已数字化，但本轮未取得足以逐段比对的完整正文。因此不能断言连载版删改了结局、警方调查或瓶中手稿。主证据链仍应固定为完整小说单行本，连载版降为后续专项异文材料。",
+    "unresolved_questions": [
+      "尚未逐页取得两套连载正文。",
+      "无法确认连载分期边界是否改变悬念与线索呈现。",
+      "用户中译本的书目信息和附加文书完整性仍未知。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "complete",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

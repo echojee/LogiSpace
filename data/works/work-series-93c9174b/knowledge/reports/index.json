@@ -1,0 +1,12 @@
+{
+  "reports": [
+    {
+      "source_job_id": "research_v4_00ccca884ccc",
+      "media_version": "original_series",
+      "title": "《有罪之身》深度研究报告",
+      "model": "gpt-5.6-sol",
+      "generated_at": "2026-08-30T06:07:12.594718+00:00",
+      "deposited_at": "2026-08-30T06:10:23.097674+00:00"
+    }
+  ]
+}

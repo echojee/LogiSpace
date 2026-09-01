@@ -77,3 +77,13 @@ pnpm start --hostname 127.0.0.1 --port 3000
 ```
 
 Open `http://127.0.0.1:3000`, choose one or more primary databases, switch the active work, and run its golden QA. A successful run displays the answer, evidence entity IDs, exact source scope, and `VERIFIED`.
+
+## Memory MVP
+
+The v0.4 runtime persists three reusable memory layers without replacing the existing orchestrator:
+
+- **Work Memory** keeps runtime snapshots, unit state, search caches, and an append-only execution journal. Resume with `POST /research/v4/jobs/{job_id}/resume` and inspect `GET /research/v4/jobs/{job_id}/checkpoints`.
+- **Knowledge Memory** treats a reviewed, published `verified-knowledge.json` plus `case-file.json` as an immutable work/media/version-scoped knowledge asset. Browse it under `/knowledge/works` or in the web Knowledge Library.
+- **User Memory** stores explicit preferences for the local `local_default` profile through `GET/PATCH/DELETE /memory/user` and supplies defaults to Deep Research and compact context to Quick QA.
+
+After Knowledge Memory exists, `POST /knowledge/works/{work_id}/visualizations` deterministically projects supported relationship or timeline objects into Mermaid. Visualization generation is optional and never mutates Verified Knowledge.

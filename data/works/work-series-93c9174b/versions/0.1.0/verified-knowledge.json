@@ -1,0 +1,453 @@
+{
+  "snapshot_id": "vk_report_8ba67c4d9921",
+  "work_id": "work-series-93c9174b",
+  "media_version": "original_series",
+  "claims": [
+    {
+      "claim_id": "report_claim_570250795739",
+      "text": "夏雪是马科死亡案中造成致命伤的人；林华和陆鸣参与了斗殴或尸体处理，但不是唯一致命伤实施者。",
+      "claim_type": "responsibility",
+      "domain": "relationships",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_177376569408",
+      "text": "侯军是夏雪的丈夫，并借继父身份接近和控制珊珊。",
+      "claim_type": "family_relationship",
+      "domain": "relationships",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_86e282a7cde8",
+      "text": "侯军与刘志军存在共同参与船厂爆炸及掩盖行动的关系。",
+      "claim_type": "criminal_collaboration",
+      "domain": "relationships",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_d7c64004b94daa91"
+      ]
+    },
+    {
+      "claim_id": "report_claim_249e53440dac",
+      "text": "珊珊是马科的女儿，也是马德荣的孙女。",
+      "claim_type": "kinship",
+      "domain": "relationships",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_dffc70b6c8744883"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f5bf97174fe5",
+      "text": "1999年，马科在情人峰遭遇夏雪、陆鸣和林华参与的冲突并死亡。",
+      "claim_type": "event",
+      "domain": "multiple_timelines",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_d64a39296447",
+      "text": "2010年珊珊被绑架、王炳坤死亡，使马德荣、陆鸣和相关旧案重新进入警方视野。",
+      "claim_type": "event",
+      "domain": "multiple_timelines",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6d156ea43278",
+      "text": "警方先通过李东得知马科并非死于船厂爆炸，而是在情人峰死亡。",
+      "claim_type": "investigation_revelation",
+      "domain": "multiple_timelines",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_3809d3fd972f",
+      "text": "终局阶段，侯军刺死陆鸣后被警方控制；随后夏雪自首，尸检验证其供述。",
+      "claim_type": "resolution",
+      "domain": "multiple_timelines",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_3c784412b6b5",
+      "text": "剧集通过让马科在情人峰死亡、同时被列入船厂爆炸遇难名单，将两宗死亡伪装成同一场死亡。",
+      "claim_type": "identity_misattribution",
+      "domain": "tricks",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8d4abac21ec2",
+      "text": "林华以自己用石头杀死马科并将尸体抛入海中的口供顶罪，但警方未在其所称海域找到尸体。",
+      "claim_type": "protective_false_confession",
+      "domain": "tricks",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_826055e8dd00",
+      "text": "刘志军的亲笔认罪书被用来制造其独自策划爆炸并自杀的假结案。",
+      "claim_type": "coerced_confession",
+      "domain": "tricks",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_70e15b5dbe65",
+      "text": "夏雪关于侯军纽扣的说法主要发挥心理诱导作用，报告认为不能将其视为已鉴定的独立物证。",
+      "claim_type": "interrogation_deception",
+      "domain": "tricks",
+      "media_version": "original_series",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_9d6bc2a2c6584c4a"
+      ]
+    },
+    {
+      "claim_id": "report_claim_fb1f3ff03149",
+      "text": "夏雪用刀刺中马科，形成致命伤；斗殴过程加剧了失血。",
+      "claim_type": "stabbing",
+      "domain": "murder_methods",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9f20de9663fa",
+      "text": "林华转移马科尸体，并以死狗替换原埋藏物，将尸体藏到灯塔附近。",
+      "claim_type": "body_concealment",
+      "domain": "murder_methods",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_c9ac44756234",
+      "text": "侯军以刘志军海外儿子的安全相威胁，逼其写下认罪书，再勒杀并吊起尸体伪造自缢。",
+      "claim_type": "strangulation_staged_suicide",
+      "domain": "murder_methods",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "claim_id": "report_claim_2afbe619cc7f",
+      "text": "侯军在废弃飞机处持刀刺伤陆鸣，陆鸣经抢救无效死亡。",
+      "claim_type": "stabbing",
+      "domain": "murder_methods",
+      "media_version": "original_series",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_c8492cfe608f",
+      "text": "船厂爆炸被调查为有组织实施的爆炸；公开资料未明确爆炸装置类型、引爆方式和准确安装位置。",
+      "claim_type": "organized_explosion",
+      "domain": "murder_methods",
+      "media_version": "original_series",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_b530e86c929130a6"
+      ]
+    }
+  ],
+  "domain_objects": [
+    {
+      "object_id": "report_object_23f1fb213bc3",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "person-xiaxue",
+        "source_name": "夏雪",
+        "target_character_id": "person-make",
+        "target_name": "马科",
+        "relation_type": "造成致命伤",
+        "summary": "夏雪的刺击构成马科死亡的致命伤。"
+      },
+      "claim_ids": [
+        "report_claim_570250795739"
+      ]
+    },
+    {
+      "object_id": "report_object_bf49a66b434c",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "person-houjun",
+        "source_name": "侯军",
+        "target_character_id": "person-xiaxue",
+        "target_name": "夏雪",
+        "relation_type": "夫妻",
+        "summary": "侯军是夏雪的丈夫。"
+      },
+      "claim_ids": [
+        "report_claim_177376569408"
+      ]
+    },
+    {
+      "object_id": "report_object_5809b889621d",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "person-houjun",
+        "source_name": "侯军",
+        "target_character_id": "person-liuzhijun",
+        "target_name": "刘志军",
+        "relation_type": "共同犯罪与掩盖",
+        "summary": "两人共同参与爆炸及其掩盖链条。"
+      },
+      "claim_ids": [
+        "report_claim_86e282a7cde8"
+      ]
+    },
+    {
+      "object_id": "report_object_ed3ad8f78629",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "person-shanshan",
+        "source_name": "珊珊",
+        "target_character_id": "person-make",
+        "target_name": "马科",
+        "relation_type": "父女",
+        "summary": "珊珊是马科的女儿。"
+      },
+      "claim_ids": [
+        "report_claim_249e53440dac"
+      ]
+    },
+    {
+      "object_id": "report_object_d03948906136",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "1999年情人峰死亡事件",
+        "summary": "马科在情人峰冲突中死亡。",
+        "order": 1,
+        "track": "真实发生顺序"
+      },
+      "claim_ids": [
+        "report_claim_f5bf97174fe5"
+      ]
+    },
+    {
+      "object_id": "report_object_ccf80061d666",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "2010年珊珊绑架案",
+        "summary": "绑架案重新牵出旧案。",
+        "order": 2,
+        "track": "真实发生顺序"
+      },
+      "claim_ids": [
+        "report_claim_d64a39296447"
+      ]
+    },
+    {
+      "object_id": "report_object_71ceeb2190cd",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "李东供出真实死亡地点",
+        "summary": "调查将马科死亡从爆炸案中拆出。",
+        "order": 3,
+        "track": "调查发现顺序"
+      },
+      "claim_ids": [
+        "report_claim_6d156ea43278"
+      ]
+    },
+    {
+      "object_id": "report_object_477f9a8b8a29",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "终局抓捕与尸检",
+        "summary": "侯军被控制，夏雪供述得到尸检验证。",
+        "order": 4,
+        "track": "调查发现顺序"
+      },
+      "claim_ids": [
+        "report_claim_3809d3fd972f"
+      ]
+    },
+    {
+      "object_id": "report_object_bc4bc215ec4d",
+      "object_type": "trick",
+      "payload": {
+        "title": "死亡身份错配",
+        "summary": "马科被错误归入船厂爆炸死者名单。"
+      },
+      "claim_ids": [
+        "report_claim_3c784412b6b5"
+      ]
+    },
+    {
+      "object_id": "report_object_8326951e30fa",
+      "object_type": "trick",
+      "payload": {
+        "title": "林华保护性顶罪",
+        "summary": "林华提供包含真实碎片但改变致命责任和抛尸地点的口供。"
+      },
+      "claim_ids": [
+        "report_claim_8d4abac21ec2"
+      ]
+    },
+    {
+      "object_id": "report_object_ae03d68619fe",
+      "object_type": "trick",
+      "payload": {
+        "title": "刘志军假自杀",
+        "summary": "亲笔认罪书被用于伪造独自犯罪和自杀结论。"
+      },
+      "claim_ids": [
+        "report_claim_826055e8dd00"
+      ]
+    },
+    {
+      "object_id": "report_object_057fbe4900c4",
+      "object_type": "trick",
+      "payload": {
+        "title": "纽扣心理诈术",
+        "summary": "纽扣说法用于诱使侯军暴露，而非作为确定物证。"
+      },
+      "claim_ids": [
+        "report_claim_70e15b5dbe65"
+      ]
+    },
+    {
+      "object_id": "report_object_b8d121f82538",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "刀刺致命伤",
+        "summary": "夏雪刺中马科致命部位。"
+      },
+      "claim_ids": [
+        "report_claim_fb1f3ff03149"
+      ]
+    },
+    {
+      "object_id": "report_object_7ad33e1a7d11",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "死狗替换与二次藏尸",
+        "summary": "林华转移尸体并伪造原埋藏点。"
+      },
+      "claim_ids": [
+        "report_claim_9f20de9663fa"
+      ]
+    },
+    {
+      "object_id": "report_object_570b9573903e",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "勒杀并伪造自缢",
+        "summary": "侯军胁迫刘志军后将其勒杀并伪造自杀现场。"
+      },
+      "claim_ids": [
+        "report_claim_c9ac44756234"
+      ]
+    },
+    {
+      "object_id": "report_object_95040f5ba659",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "废弃飞机处持刀刺杀",
+        "summary": "侯军在对峙中刺伤陆鸣。"
+      },
+      "claim_ids": [
+        "report_claim_2afbe619cc7f"
+      ]
+    },
+    {
+      "object_id": "report_object_8a552c69335d",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "有组织船厂爆炸",
+        "summary": "报告确认爆炸属于有组织犯罪，但具体装置和引爆方式未知。"
+      },
+      "claim_ids": [
+        "report_claim_c8492cfe608f"
+      ]
+    }
+  ],
+  "claim_graph": [],
+  "conflicts": [
+    "纽扣是否为案发现场真实物证存在相互冲突的剧情摘要。",
+    "公开资料对李凤霞、马德荣和王炳坤的精确死亡手法及直接责任人不足。",
+    "刘志军认罪书证明的自愿性和侯军终局供述的独立证明力未能由公开资料完整确认。"
+  ],
+  "unknowns": [
+    "DV是否清楚记录夏雪刺击、伤口或完整死亡过程未知。",
+    "船厂爆炸装置类型、引爆方式和准确安装位置未知。",
+    "完整尸检报告及每道伤势对死亡结果的具体贡献未知。"
+  ],
+  "gaps": [
+    {
+      "research_unit_id": "report-relationships",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-multiple_timelines",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-tricks",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-murder_methods",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    }
+  ],
+  "evidence_ids": [
+    "report_ev_27a40d62fb126ad7",
+    "report_ev_4d0fe9926fb33573",
+    "report_ev_9d6bc2a2c6584c4a",
+    "report_ev_b530e86c929130a6",
+    "report_ev_d7c64004b94daa91",
+    "report_ev_dffc70b6c8744883"
+  ],
+  "frozen_at": "2026-08-30T06:10:42.636355Z"
+}

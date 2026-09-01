@@ -4,7 +4,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.main_v4 import app
-from app.services import orchestrator_v4, research_repository_v4, research_v4
+from app.services import deep_research_mvp, orchestrator_v4, research_repository_v4, research_v4
 from logispace_domain.models_v4_memo import ReconnaissanceBriefV4
 
 client = TestClient(app)
@@ -31,6 +31,7 @@ def planning_agents(monkeypatch, tmp_path):
         )
 
     monkeypatch.setattr(orchestrator_v4, "generate_plan", generate)
+    monkeypatch.setattr(deep_research_mvp, "schedule_run", lambda background_tasks, job_id: True)
 
 
 def create_planned(payload: dict) -> tuple[dict, dict]:
@@ -69,7 +70,7 @@ def test_v04_plan_approval_is_a_hard_gate():
     )
     assert approved.status_code == 200
     body = approved.json()
-    assert body["status"] == "searching"
+    assert body["status"] == "researching"
     assert body["plan"]["approved"] is True
     assert all(item["status"] == "approved" for item in body["plan"]["units"])
     assert client.post(

@@ -1,0 +1,86 @@
+{
+  "case_file_id": "case_10ff3cad01d1",
+  "work_id": "work-novel-962a77c6",
+  "media_version": "original_novel",
+  "title": "《无人生还》深度研究报告",
+  "research_mainline": "报告认为，《无人生还》的核心诡计由沃格雷夫伪死、匿名化内心描写、误导性的死亡记录和瓶中手稿共同构成。",
+  "reliability_note": "主要情节和作案机制由小说文本及警方尾声支持；匿名思想的部分人物归属、莫里斯与马斯顿的绝对死亡先后、机关的现实可行性仍存在不确定性。",
+  "blocks": [
+    {
+      "block_id": "block_5c2d959c4741",
+      "layer": "one_minute",
+      "block_type": "summary",
+      "title": "研究摘要",
+      "text": "报告认为，《无人生还》的核心诡计由沃格雷夫伪死、匿名化内心描写、误导性的死亡记录和瓶中手稿共同构成。",
+      "claim_ids": [
+        "report_claim_e380a0977cc0",
+        "report_claim_99c6a731f19b",
+        "report_claim_b3ba1ce21eb4",
+        "report_claim_a7d0e0b92231",
+        "report_claim_db97c2261761",
+        "report_claim_ec48f199634c"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3",
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "block_id": "block_3531986c97cb",
+      "layer": "core",
+      "block_type": "timeline",
+      "title": "时间线",
+      "text": "- 警方尾声无法解释薇拉死后椅子被扶正、隆巴德死后手枪回到屋内以及阿姆斯特朗尸体被移动等矛盾。",
+      "claim_ids": [
+        "report_claim_db97c2261761"
+      ],
+      "evidence_ids": [
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "block_id": "block_230bb2a41dfe",
+      "layer": "core",
+      "block_type": "trick",
+      "title": "诡计结构",
+      "text": "- 沃格雷夫是真凶，并在瓶中手稿中解释了岛上连环死亡、自己的伪死及最终自杀机关。\n- 沃格雷夫借阿姆斯特朗的医生身份伪造自己的死亡，使其他人把他从活人嫌疑名单中排除。\n- 伪死现场使用红帘、灰毛线和额头上的红泥制造法袍、假发与枪伤效果，现场并未真正开枪。\n- 第11章和第13章包含未署名的多人内心片段，其中部分内容可与沃格雷夫或阿姆斯特朗的计划对应，但并非所有片段都能唯一归属。",
+      "claim_ids": [
+        "report_claim_e380a0977cc0",
+        "report_claim_99c6a731f19b",
+        "report_claim_b3ba1ce21eb4",
+        "report_claim_a7d0e0b92231"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "block_id": "block_18b628f22340",
+      "layer": "core",
+      "block_type": "murder_method",
+      "title": "作案手法",
+      "text": "- 马斯顿在录音播放后喝下被投入氰化钾的酒而死亡。\n- 沃格雷夫在海边从背后击杀麦克阿瑟将军。\n- 沃格雷夫诱使阿姆斯特朗到悬崖边并将其推入海中。\n- 布洛尔被沃格雷夫从楼上投下的大理石熊形钟砸死。\n- 隆巴德被薇拉夺枪后射杀。\n- 薇拉在沃格雷夫布置并强化童谣意象后上吊死亡。\n- 沃格雷夫利用绳索、眼镜弹性带、手枪和门把手制造延迟移枪装置，最后射杀自己。",
+      "claim_ids": [
+        "report_claim_ec48f199634c",
+        "report_claim_9be9fe53f465",
+        "report_claim_21638ead0e02",
+        "report_claim_caa472975b58",
+        "report_claim_8fe426e27542",
+        "report_claim_ed26b41603e0",
+        "report_claim_6d6beac04937"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "block_id": "block_a0c0bfb14df3",
+      "layer": "appendix",
+      "block_type": "sources",
+      "title": "来源与可靠性说明",
+      "text": "主要情节和作案机制由小说文本及警方尾声支持；匿名思想的部分人物归属、莫里斯与马斯顿的绝对死亡先后、机关的现实可行性仍存在不确定性。",
+      "claim_ids": [],
+      "evidence_ids": []
+    }
+  ]
+}

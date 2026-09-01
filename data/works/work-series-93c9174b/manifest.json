@@ -1,0 +1,19 @@
+{
+  "work_id": "work-series-93c9174b",
+  "dossier_versions": [],
+  "knowledge_versions": {
+    "0.1.0": {
+      "media_version": "original_series",
+      "source_job_id": "research_v4_00ccca884ccc",
+      "snapshot_id": "vk_report_8ba67c4d9921",
+      "work_title": "有罪之身",
+      "media_type": "series",
+      "release_year": 2026,
+      "creators": [],
+      "timeline_tracks": ["truth", "investigation"],
+      "timeline_scale": "year",
+      "created_at": "2026-08-30T06:10:42.636355+00:00"
+    }
+  },
+  "current_knowledge_version": "0.1.0"
+}

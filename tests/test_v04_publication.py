@@ -82,3 +82,9 @@ def test_review_and_transactional_publish_write_versioned_outputs(publish_job):
     assert (version / "verified-knowledge.json").exists()
     assert (version / "research-delta.json").exists()
     assert delta.added_entities
+    manifest = json.loads((work_root / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["current_knowledge_version"] == delta.target_version
+    assert manifest["knowledge_versions"][delta.target_version]["source_job_id"] == job.job_id
+    repeated, repeated_delta = publication_v4.publish(job.job_id)
+    assert repeated.status == "published"
+    assert repeated_delta == delta

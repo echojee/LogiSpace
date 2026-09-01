@@ -1,0 +1,2010 @@
+{
+  "job_id": "research_v4_5bed6fcca7c7",
+  "work": {
+    "work_id": "work-novel-6c698fdf",
+    "canonical_title": "无人生还",
+    "aliases": [
+      "无人生还"
+    ],
+    "media_type": "novel",
+    "release_year": null,
+    "creators": []
+  },
+  "brief": {
+    "work_id": "work-novel-6c698fdf",
+    "media_version": "original_novel",
+    "user_goal": "全面研究作品的诡计结构、多重时间线与不可靠叙述",
+    "audience": "已读完原著的推理爱好者",
+    "spoiler_level": "full",
+    "output_mode": "case_file_and_knowledge",
+    "budget_profile": "standard",
+    "allowed_source_scope": "bilingual_mystery_default"
+  },
+  "status": "awaiting_plan_approval",
+  "plan": {
+    "revision": 1,
+    "coverage": [
+      {
+        "domain": "relationships",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "multiple_timelines",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "tricks",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "murder_methods",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      }
+    ],
+    "units": [
+      {
+        "unit_id": "mandatory-relationships-01",
+        "track": "mandatory",
+        "domain": "relationships",
+        "question": "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？",
+        "why_it_matters": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "character_index",
+          "relationship_records",
+          "relationship_changes",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 2,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 5,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "主要人物均已纳入关系梳理",
+          "关键关系有可靠证据",
+          "关系变化和不确定项已明确记录"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-multiple_timelines-01",
+        "track": "mandatory",
+        "domain": "multiple_timelines",
+        "question": "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？",
+        "why_it_matters": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "event_timeline",
+          "testimony_timeline",
+          "investigation_timeline",
+          "reveal_timeline",
+          "conflicts"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 6,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键事件具有时间或顺序定位",
+          "不同时间线已对齐",
+          "冲突与未知项已明确记录"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-tricks-01",
+        "track": "mandatory",
+        "domain": "tricks",
+        "question": "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？",
+        "why_it_matters": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "trick_mechanism",
+          "required_conditions",
+          "clues",
+          "misdirection",
+          "reveal_path"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 6,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "核心诡计的执行链条完整",
+          "线索与误导均有证据",
+          "替代解释或争议已检查"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-murder_methods-01",
+        "track": "mandatory",
+        "domain": "murder_methods",
+        "question": "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？",
+        "why_it_matters": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "case_index",
+          "method",
+          "time_window",
+          "tools_and_preparation",
+          "concealment",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 5,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "每起关键案件均有独立记录",
+          "手法与时间窗口有可靠证据",
+          "推定内容和争议已明确标注"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "signature-01-7a8023b1",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+        "why_it_matters": "以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+        "required_outputs": [
+          "title: 版本边界与证据底本校勘",
+          "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+          "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+          "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+          "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+          "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+          "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+          "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+          "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+          "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+          "unresolved_point: 用户所持中译本及其英文底本未知。",
+          "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+          "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "signature-02-700407a0",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+        "why_it_matters": "贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+        "required_outputs": [
+          "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+          "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+          "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+          "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+          "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+          "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+          "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+          "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+          "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+          "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+          "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+          "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+          "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+          "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+          "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+          "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      }
+    ],
+    "budget": {
+      "mandatory_reserve": {
+        "relationships": 2,
+        "multiple_timelines": 3,
+        "tricks": 3,
+        "murder_methods": 2
+      },
+      "signature_flexible_queries": 8,
+      "verification_reserve_ratio": 0.2
+    },
+    "rationale": "先由 dossier 动态发现视角，经有限连续追问与检索后，从研究笔记事后归并特色大纲。 [model=gpt-5.6-sol; prompt=signature-storm-plan-v0.7.0]",
+    "approved": false,
+    "selected_unit_ids": [],
+    "strategy": "build_and_verify",
+    "created_at": "2026-08-13T15:38:28.170159Z"
+  },
+  "units": {
+    "mandatory-relationships-01": {
+      "research_unit_id": "mandatory-relationships-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-multiple_timelines-01": {
+      "research_unit_id": "mandatory-multiple_timelines-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-tricks-01": {
+      "research_unit_id": "mandatory-tricks-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-murder_methods-01": {
+      "research_unit_id": "mandatory-murder_methods-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "signature-01-7a8023b1": {
+      "research_unit_id": "signature-01-7a8023b1",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "signature-02-700407a0": {
+      "research_unit_id": "signature-02-700407a0",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    }
+  },
+  "strategy": "build_and_verify",
+  "planning_budget": {
+    "mandatory_reserve": {
+      "relationships": 2,
+      "multiple_timelines": 3,
+      "tricks": 3,
+      "murder_methods": 2
+    },
+    "signature_flexible_queries": 8,
+    "verification_reserve_ratio": 0.2
+  },
+  "planning_attempt": 1,
+  "planning_failure": null,
+  "verified_knowledge": null,
+  "case_file": null,
+  "research_report": null,
+  "provider_response_id": null,
+  "report_memory_status": "not_ready",
+  "reconnaissance": {
+    "summary": "研究重点应放在封闭孤岛如何把连续死亡转化为可预测却难以阻止的倒计时，并细读限知视角、内心独白与事后文书之间的信息权限差。",
+    "edition_scope": "阿加莎·克里斯蒂1939年英文原著小说《And Then There Were None》（《无人生还》）；排除影视、戏剧、游戏及其改写结局。",
+    "structure_signals": [
+      "童谣提供公开的死亡序列与倒计时框架。",
+      "主线按岛上数日顺序推进，人物往事以回忆、指控和自白嵌入。",
+      "第三人称焦点在群像间快速轮换，使思想可见性被误认成清白证明。",
+      "正文后的调查与说明性文书重新排列证据，构成二次解谜。"
+    ],
+    "candidate_features": [
+      "检验“公开预告”如何把线索同时伪装成仪式、威胁和宿命。",
+      "逐场标记叙述者陈述、人物感知、推断与事实，寻找有意省略而非直接说谎。",
+      "重建每次分组、失联、搜查和守夜的人员位置，核查不可能犯罪窗口。",
+      "比较罪责排序、死亡方式与人物心理崩溃速度，分析审判、正义和自我惩罚主题。"
+    ],
+    "primary_text_options": [
+      "以用户持有的完整原著为主文本，按章及章内场景建立事件表。",
+      "官方作品页的原著节选仅用于核对开篇措辞与基本设定。"
+    ],
+    "location_strategy": "统一采用“章号＋场景起始短语＋岛上相对日/时段”定位；不依赖不同中英文版本的页码。",
+    "contamination_risks": [
+      "舞台剧及影视版本常改动结局、人物行为和死亡呈现，不能反向补入小说证据链。",
+      "不同年代文本替换了岛名与童谣措辞；研究结构时应固定同一版本，避免逐句错配。"
+    ],
+    "open_questions": [
+      "用户使用哪一种中译本，以便建立可复核的章内定位？",
+      "“多重时间线”是否包含十名人物案前往事、岛上主线和事后调查三层？",
+      "最终成果是否需要分钟级行动表，还是以早晨、午后、夜间等场景粒度为准？"
+    ],
+    "sources": [
+      {
+        "title": "And Then There Were None",
+        "url": "https://www.agathachristie.com/en/stories/and-then-there-were-none",
+        "role": "官方作品页；确认小说边界、封闭岛屿设定及原著节选入口。"
+      },
+      {
+        "title": "A Study of Agatha Christie’s Spatial Narrative in And Then There Were None",
+        "url": "https://www.atlantis-press.com/proceedings/seaa-22/125976967",
+        "role": "空间叙事研究；支持地形、时空与文本空间三层分析。"
+      },
+      {
+        "title": "No murder without a clue: An intersemiotic translation of murders in And Then There Were None",
+        "url": "https://dergipark.org.tr/en/pub/rumelide/article/1405828",
+        "role": "线索机制研究；仅采用其原著中的预示与提示分析，排除改编比较。"
+      },
+      {
+        "title": "Detection or Endless Deferral/Absence in Detective Fiction: Agatha Christie's And Then There Were None",
+        "url": "https://doaj.org/article/1de225d658da47568d7a54664fe3b715",
+        "role": "类型结构与真相延宕研究。"
+      },
+      {
+        "title": "A Study on the Narrative Perspective in Agatha Christie’s And Then There Were None",
+        "url": "https://www.researchgate.net/publication/407385085_A_Study_on_the_Narrative_Perspective_in_Agatha_Christie%27s_and_Then_There_Were_None",
+        "role": "叙事时间、焦点转换与不可靠信息研究线索。"
+      }
+    ],
+    "model": "gpt-5.6-sol",
+    "prompt_version": "reconnaissance-v0.5.0",
+    "created_at": "2026-08-05T14:45:48.087514Z"
+  },
+  "perspective_set": {
+    "perspectives": [
+      {
+        "perspective_id": "perspective-01-e22652cb",
+        "title": "基础事实与版本边界",
+        "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+        "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+        "focus_questions": [
+          "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+        ],
+        "source_inspiration": [
+          "作品身份与指定媒介版本"
+        ],
+        "is_basic": true,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "perspective_id": "perspective-02-98196802",
+        "title": "沃格雷夫“死亡”前后的叙事权限审计",
+        "description": "它把核心假死诡计与第三人称轮换焦点、事后自白的证据地位直接连接，检验作品并非靠叙述者说谎，而是靠不对称的意识开放和关键行动省略制造清白幻觉。",
+        "starting_question": "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？",
+        "focus_questions": [
+          "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？"
+        ],
+        "source_inspiration": [
+          "逐场区分叙述事实、人物感知、推断和有意省略。",
+          "核查假死现场、阿姆斯特朗协助及其失踪前后的人员位置与视角归属。",
+          "比较其他人物的内心独白与沃格雷夫受限的思想呈现。",
+          "分析正文、警方调查文书和瓶中手稿三层信息权限及时间重排。"
+        ],
+        "is_basic": false,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "status": "generated",
+    "generated_at": "2026-08-13T15:38:28.170159Z"
+  },
+  "plan_memo": {
+    "title": "《无人生还》特色研究备忘录",
+    "objective": "全面研究作品的诡计结构、多重时间线与不可靠叙述",
+    "scope": "original_novel · bilingual_mystery_default",
+    "reconnaissance_summary": "研究重点应放在封闭孤岛如何把连续死亡转化为可预测却难以阻止的倒计时，并细读限知视角、内心独白与事后文书之间的信息权限差。",
+    "mandatory_units": [
+      {
+        "unit_id": "mandatory-relationships-01",
+        "track": "mandatory",
+        "domain": "relationships",
+        "question": "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？",
+        "why_it_matters": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "character_index",
+          "relationship_records",
+          "relationship_changes",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 2,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 5,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "主要人物均已纳入关系梳理",
+          "关键关系有可靠证据",
+          "关系变化和不确定项已明确记录"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-multiple_timelines-01",
+        "track": "mandatory",
+        "domain": "multiple_timelines",
+        "question": "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？",
+        "why_it_matters": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "event_timeline",
+          "testimony_timeline",
+          "investigation_timeline",
+          "reveal_timeline",
+          "conflicts"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 6,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键事件具有时间或顺序定位",
+          "不同时间线已对齐",
+          "冲突与未知项已明确记录"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-tricks-01",
+        "track": "mandatory",
+        "domain": "tricks",
+        "question": "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？",
+        "why_it_matters": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "trick_mechanism",
+          "required_conditions",
+          "clues",
+          "misdirection",
+          "reveal_path"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 6,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "核心诡计的执行链条完整",
+          "线索与误导均有证据",
+          "替代解释或争议已检查"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-murder_methods-01",
+        "track": "mandatory",
+        "domain": "murder_methods",
+        "question": "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？",
+        "why_it_matters": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "case_index",
+          "method",
+          "time_window",
+          "tools_and_preparation",
+          "concealment",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 5,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "每起关键案件均有独立记录",
+          "手法与时间窗口有可靠证据",
+          "推定内容和争议已明确标注"
+        ],
+        "priority": 5,
+        "status": "planned"
+      }
+    ],
+    "signature_units": [
+      {
+        "unit_id": "signature-01-7a8023b1",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+        "why_it_matters": "以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+        "required_outputs": [
+          "title: 版本边界与证据底本校勘",
+          "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+          "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+          "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+          "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+          "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+          "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+          "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+          "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+          "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+          "unresolved_point: 用户所持中译本及其英文底本未知。",
+          "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+          "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "signature-02-700407a0",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+        "why_it_matters": "贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+        "required_outputs": [
+          "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+          "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+          "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+          "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+          "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+          "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+          "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+          "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+          "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+          "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+          "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+          "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+          "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+          "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+          "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+          "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      }
+    ],
+    "perspectives": [
+      {
+        "perspective_id": "perspective-01-e22652cb",
+        "title": "基础事实与版本边界",
+        "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+        "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+        "focus_questions": [
+          "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+        ],
+        "source_inspiration": [
+          "作品身份与指定媒介版本"
+        ],
+        "is_basic": true,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "perspective_id": "perspective-02-98196802",
+        "title": "沃格雷夫“死亡”前后的叙事权限审计",
+        "description": "它把核心假死诡计与第三人称轮换焦点、事后自白的证据地位直接连接，检验作品并非靠叙述者说谎，而是靠不对称的意识开放和关键行动省略制造清白幻觉。",
+        "starting_question": "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？",
+        "focus_questions": [
+          "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？"
+        ],
+        "source_inspiration": [
+          "逐场区分叙述事实、人物感知、推断和有意省略。",
+          "核查假死现场、阿姆斯特朗协助及其失踪前后的人员位置与视角归属。",
+          "比较其他人物的内心独白与沃格雷夫受限的思想呈现。",
+          "分析正文、警方调查文书和瓶中手稿三层信息权限及时间重排。"
+        ],
+        "is_basic": false,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "research_turns": [
+      {
+        "turn_id": "turn-001-7d58910c",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "面对书名、岛名与童谣措辞的版本变迁，应如何确定后续诡计与时间线研究的权威底本？",
+        "research_intent": "确认作品身份、首版与通行版关系，并制定能够避免改编污染和译本错配的文本边界。",
+        "suggested_queries": [
+          "And Then There Were None 1939 first edition textual variants rhyme island name",
+          "《无人生还》中译本 版本 版权页 童谣 岛名",
+          "Agatha Christie And Then There Were None novel versus 1943 play ending"
+        ],
+        "provisional_answer": "待验证假设：暂将研究对象限定为阿加莎·克里斯蒂1939年出版的英文小说原作及其小说结局；《无人生还》作为统一称名。版本差异主要涉及书名、岛名和童谣措辞，不应与情节结构差异混为一谈。1943年戏剧版及影视、游戏改编须单独隔离，尤其不能用其改写结局解释小说证据。下一步应核对用户中译本的版权页和童谣文本，再建立“固定底本＋异文对照表”。",
+        "unresolved_questions": [
+          "尚不清楚用户持有的具体中译本。",
+          "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+          "中文版本可能沿用不同英文底本，需据版权页核验。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-002-c6acd0ef",
+        "perspective_id": "perspective-02-98196802",
+        "question": "应如何编码沃格雷夫假死前后的关键段落，才能区分叙述事实、人物感知、自由间接思想、群体推断与叙述省略，并判断正文是否真正说谎？",
+        "research_intent": "用统一标注法审计核心假死诡计的叙事公平性，并比较正文、警方重建和瓶中手稿三个证据层级。",
+        "suggested_queries": [
+          "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+          "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+          "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒"
+        ],
+        "provisional_answer": "待验证假设：下一步应建立逐场“信息权限表”，重点覆盖沃格雷夫与阿姆斯特朗密谈、假死检查、尸体搬运、阿姆斯特朗失踪及瓶中手稿。现有研究线索支持“多重内部聚焦＋关键行动留白”的解释，但不能代替原文核验。尤其要检验：正文是否仅呈现他人对死亡的判断；沃格雷夫的所谓内心描写究竟是直接思想还是可兼容伪装身份的模糊心理；手稿是在补全空白，还是推翻正文明确事实。",
+        "unresolved_questions": [
+          "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+          "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+          "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-003-6a955ab9",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "哪些版本差异可能实质影响诡计分析，哪些仅属于书名、岛名和童谣称谓的替换？",
+        "research_intent": "把版本史问题收缩为可校勘的正文异文清单，判断哪些差异会影响童谣映射、证据链和时间线。",
+        "suggested_queries": [
+          "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+          "And Then There Were None UK US edition textual variants rhyme figurines island",
+          "《无人生还》中译本 英文底本 译者 版权页 童谣 对照"
+        ],
+        "provisional_answer": "待验证假设：仅供研究规划：现有资料足以区分1939年英国小说、1940年美国小说与1943年舞台改编，但不足以证明英美小说正文是否存在影响行动顺序、线索或结局的实质异文。下一步应直接校勘两种小说底本的童谣、岛名、摆件、尾声调查和凶手文书；舞台版因明确采用替代结局，应继续隔离。",
+        "unresolved_questions": [
+          "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+          "连载版与单行本之间是否存在结构性修订仍待核查。",
+          "用户中译本及其英文底本未知。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-004-5bf282a6",
+        "perspective_id": "perspective-02-98196802",
+        "question": "哪些关键思想段落最可能暴露沃格雷夫—阿姆斯特朗计划，它们的指代模糊性如何使真实计划在首次阅读时被错误归属？",
+        "research_intent": "筛选最具判别力的思想与验尸段落，检验误导究竟来自匿名焦点、语义双关、权威转述，还是叙述者对既成事实的错误陈述。",
+        "suggested_queries": [
+          "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+          "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+          "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代"
+        ],
+        "provisional_answer": "待验证假设：仅供规划：下一轮应锁定密谈后至假死前的匿名或弱归属思想段落，逐句记录焦点候选、代词指向、读者首次阅读解释及结局后解释。检索材料提示，“计划”“上钩”等模糊思想可能同时兼容阿姆斯特朗的诱捕认知和沃格雷夫的假死设计；但二手研究对正文采用“全知”还是“多重内部聚焦”存在概念分歧，不能据此判定叙述是否公平。核心验证必须回到固定版本原文，确认这些思想是否真正属于沃格雷夫、是否隐去宾语，以及假死场景是否只报告阿姆斯特朗的医学判断和群体反应。",
+        "unresolved_questions": [
+          "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+          "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+          "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-005-9a462e47",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "连载版与1939—1940年英美单行本的出版先后及结构差异，是否足以影响后续诡计分析？",
+        "research_intent": "查明连载文本与首版小说之间是否存在影响凶手身份、死亡顺序、叙事焦点或最终解释文书的实质差异。",
+        "suggested_queries": [
+          "British Library Daily Express And Then There Were None serialization June 1939",
+          "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+          "Collins Crime Club 1939 And Then There Were None serial text comparison"
+        ],
+        "provisional_answer": "待验证假设：仅供研究规划：网络资料对英美连载的刊物、日期和分期数量存在明显冲突，现阶段不能据此认定连载版曾结构性改写。可确定的核查重点是章节划分、警方尾声、瓶中手稿以及关键死亡场景是否完整保留。后续诡计研究应暂以1939年英国小说单行本为基准，不引用连载版补充或删节作为证据。",
+        "unresolved_questions": [
+          "现有网页关于英国连载日期及分期数量相互矛盾。",
+          "尚未取得连载全文，无法判断是否删改关键线索。",
+          "用户中译本的英文底本仍未知。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-006-ac215a95",
+        "perspective_id": "perspective-02-98196802",
+        "question": "瓶中手稿的哪些陈述能被正文线索或警方现场独立印证，哪些只能依赖沃格雷夫的自述，从而应如何划分其证据可信等级？",
+        "research_intent": "评估瓶中手稿是可交叉验证的证据、具有自利性的凶手证词，还是作者层面的终局解释，并据此重排正文各信息层的可信等级。",
+        "suggested_queries": [
+          "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+          "\"And Then There Were None\" Wargrave confession reliability narratology",
+          "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+        ],
+        "provisional_answer": "待验证假设：仅供规划：应建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵，分别核查假死、阿姆斯特朗受骗、后续杀人及遥控自杀装置。检索材料普遍把手稿视为解谜钥匙，却多直接复述其内容，不能证明每项陈述均获独立印证。尤其需要区分：手稿补全正文省略、解释既有异常，以及提出无法复核的动机和行动细节。最终判断必须依据固定版本原文，而非导读摘要。",
+        "unresolved_questions": [
+          "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+          "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+          "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "direct_outline": {
+      "outline_id": "direct-outline-8de2a3066da7",
+      "kind": "direct",
+      "title": "《无人生还》初始研究大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《无人生还》初始研究大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "research_outline": {
+      "outline_id": "research-outline-8fba1477b628",
+      "kind": "research",
+      "title": "《无人生还》研究增强大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-01-7a8023b1",
+          "title": "作品专属研究方向",
+          "purpose": "以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+          "research_questions": [
+            "1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？"
+          ],
+          "search_directions": [
+            "title: 版本边界与证据底本校勘",
+            "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+            "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+            "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+            "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+            "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+            "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+            "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+            "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+            "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+            "unresolved_point: 用户所持中译本及其英文底本未知。",
+            "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+            "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。",
+            "And Then There Were None 1939 first edition textual variants rhyme island name",
+            "《无人生还》中译本 版本 版权页 童谣 岛名",
+            "Agatha Christie And Then There Were None novel versus 1943 play ending",
+            "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+            "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+            "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒",
+            "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+            "And Then There Were None UK US edition textual variants rhyme figurines island",
+            "《无人生还》中译本 英文底本 译者 版权页 童谣 对照",
+            "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+            "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+            "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代",
+            "British Library Daily Express And Then There Were None serialization June 1939",
+            "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+            "Collins Crime Club 1939 And Then There Were None serial text comparison",
+            "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+            "\"And Then There Were None\" Wargrave confession reliability narratology",
+            "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 版本边界与证据底本校勘",
+            "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+            "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+            "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+            "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+            "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+            "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+            "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+            "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+            "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+            "unresolved_point: 用户所持中译本及其英文底本未知。",
+            "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+            "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚不清楚用户持有的具体中译本。",
+            "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+            "中文版本可能沿用不同英文底本，需据版权页核验。",
+            "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+            "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+            "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。",
+            "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+            "连载版与单行本之间是否存在结构性修订仍待核查。",
+            "用户中译本及其英文底本未知。",
+            "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+            "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+            "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。",
+            "现有网页关于英国连载日期及分期数量相互矛盾。",
+            "尚未取得连载全文，无法判断是否删改关键线索。",
+            "用户中译本的英文底本仍未知。",
+            "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+            "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+            "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+          ],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-02-700407a0",
+          "title": "作品专属研究方向",
+          "purpose": "贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+          "research_questions": [
+            "沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？"
+          ],
+          "search_directions": [
+            "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+            "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+            "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+            "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+            "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+            "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+            "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+            "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+            "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+            "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+            "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+            "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+            "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+            "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+            "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+            "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。",
+            "And Then There Were None 1939 first edition textual variants rhyme island name",
+            "《无人生还》中译本 版本 版权页 童谣 岛名",
+            "Agatha Christie And Then There Were None novel versus 1943 play ending",
+            "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+            "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+            "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒",
+            "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+            "And Then There Were None UK US edition textual variants rhyme figurines island",
+            "《无人生还》中译本 英文底本 译者 版权页 童谣 对照",
+            "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+            "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+            "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代",
+            "British Library Daily Express And Then There Were None serialization June 1939",
+            "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+            "Collins Crime Club 1939 And Then There Were None serial text comparison",
+            "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+            "\"And Then There Were None\" Wargrave confession reliability narratology",
+            "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+            "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+            "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+            "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+            "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+            "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+            "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+            "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+            "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+            "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+            "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+            "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+            "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+            "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+            "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+            "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚不清楚用户持有的具体中译本。",
+            "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+            "中文版本可能沿用不同英文底本，需据版权页核验。",
+            "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+            "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+            "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。",
+            "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+            "连载版与单行本之间是否存在结构性修订仍待核查。",
+            "用户中译本及其英文底本未知。",
+            "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+            "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+            "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。",
+            "现有网页关于英国连载日期及分期数量相互矛盾。",
+            "尚未取得连载全文，无法判断是否删改关键线索。",
+            "用户中译本的英文底本仍未知。",
+            "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+            "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+            "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+          ],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《无人生还》研究增强大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties\n\n## 5. 作品专属研究方向\n- 目的：以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。\n- [ ] 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？\n  - 搜索方向：title: 版本边界与证据底本校勘\n  - 搜索方向：scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。\n  - 搜索方向：why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。\n  - 搜索方向：research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？\n  - 搜索方向：research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？\n  - 搜索方向：research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？\n  - 搜索方向：known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。\n  - 搜索方向：known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。\n  - 搜索方向：known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。\n  - 搜索方向：known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。\n  - 搜索方向：unresolved_point: 用户所持中译本及其英文底本未知。\n  - 搜索方向：unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。\n  - 搜索方向：unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。\n  - 搜索方向：And Then There Were None 1939 first edition textual variants rhyme island name\n  - 搜索方向：《无人生还》中译本 版本 版权页 童谣 岛名\n  - 搜索方向：Agatha Christie And Then There Were None novel versus 1943 play ending\n  - 搜索方向：\"And Then There Were None\" Wargrave internal focalization manuscript omission\n  - 搜索方向：\"And Then There Were None\" narrator implied author Wargrave acquits himself\n  - 搜索方向：《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒\n  - 搜索方向：1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript\n  - 搜索方向：And Then There Were None UK US edition textual variants rhyme figurines island\n  - 搜索方向：《无人生还》中译本 英文底本 译者 版权页 童谣 对照\n  - 搜索方向：\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan\n  - 搜索方向：\"And Then There Were None\" unattributed thoughts focalization Wargrave\n  - 搜索方向：《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代\n  - 搜索方向：British Library Daily Express And Then There Were None serialization June 1939\n  - 搜索方向：Saturday Evening Post And Then There Were None seven parts 1939 contents\n  - 搜索方向：Collins Crime Club 1939 And Then There Were None serial text comparison\n  - 搜索方向：\"And Then There Were None\" manuscript confession corroborated evidence police epilogue\n  - 搜索方向：\"And Then There Were None\" Wargrave confession reliability narratology\n  - 搜索方向：《无人生还》 瓶中手稿 证据 可信度 沃格雷夫\n  - 未决：尚不清楚用户持有的具体中译本。\n  - 未决：尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。\n  - 未决：中文版本可能沿用不同英文底本，需据版权页核验。\n  - 未决：尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。\n  - 未决：现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。\n  - 未决：“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。\n  - 未决：尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。\n  - 未决：连载版与单行本之间是否存在结构性修订仍待核查。\n  - 未决：用户中译本及其英文底本未知。\n  - 未决：尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。\n  - 未决：网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。\n  - 未决：现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。\n  - 未决：现有网页关于英国连载日期及分期数量相互矛盾。\n  - 未决：尚未取得连载全文，无法判断是否删改关键线索。\n  - 未决：用户中译本的英文底本仍未知。\n  - 未决：缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。\n  - 未决：现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。\n  - 未决：尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。\n\n## 6. 作品专属研究方向\n- 目的：贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。\n- [ ] 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？\n  - 搜索方向：title: 沃格雷夫假死与终局手稿的叙事权限审计\n  - 搜索方向：scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。\n  - 搜索方向：why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。\n  - 搜索方向：research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？\n  - 搜索方向：research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？\n  - 搜索方向：research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？\n  - 搜索方向：research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？\n  - 搜索方向：known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。\n  - 搜索方向：known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。\n  - 搜索方向：known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。\n  - 搜索方向：known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。\n  - 搜索方向：known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。\n  - 搜索方向：unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。\n  - 搜索方向：unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。\n  - 搜索方向：unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。\n  - 搜索方向：unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。\n  - 搜索方向：And Then There Were None 1939 first edition textual variants rhyme island name\n  - 搜索方向：《无人生还》中译本 版本 版权页 童谣 岛名\n  - 搜索方向：Agatha Christie And Then There Were None novel versus 1943 play ending\n  - 搜索方向：\"And Then There Were None\" Wargrave internal focalization manuscript omission\n  - 搜索方向：\"And Then There Were None\" narrator implied author Wargrave acquits himself\n  - 搜索方向：《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒\n  - 搜索方向：1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript\n  - 搜索方向：And Then There Were None UK US edition textual variants rhyme figurines island\n  - 搜索方向：《无人生还》中译本 英文底本 译者 版权页 童谣 对照\n  - 搜索方向：\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan\n  - 搜索方向：\"And Then There Were None\" unattributed thoughts focalization Wargrave\n  - 搜索方向：《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代\n  - 搜索方向：British Library Daily Express And Then There Were None serialization June 1939\n  - 搜索方向：Saturday Evening Post And Then There Were None seven parts 1939 contents\n  - 搜索方向：Collins Crime Club 1939 And Then There Were None serial text comparison\n  - 搜索方向：\"And Then There Were None\" manuscript confession corroborated evidence police epilogue\n  - 搜索方向：\"And Then There Were None\" Wargrave confession reliability narratology\n  - 搜索方向：《无人生还》 瓶中手稿 证据 可信度 沃格雷夫\n  - 未决：尚不清楚用户持有的具体中译本。\n  - 未决：尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。\n  - 未决：中文版本可能沿用不同英文底本，需据版权页核验。\n  - 未决：尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。\n  - 未决：现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。\n  - 未决：“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。\n  - 未决：尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。\n  - 未决：连载版与单行本之间是否存在结构性修订仍待核查。\n  - 未决：用户中译本及其英文底本未知。\n  - 未决：尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。\n  - 未决：网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。\n  - 未决：现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。\n  - 未决：现有网页关于英国连载日期及分期数量相互矛盾。\n  - 未决：尚未取得连载全文，无法判断是否删改关键线索。\n  - 未决：用户中译本的英文底本仍未知。\n  - 未决：缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。\n  - 未决：现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。\n  - 未决：尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "risks": [
+      "舞台剧及影视版本常改动结局、人物行为和死亡呈现，不能反向补入小说证据链。",
+      "不同年代文本替换了岛名与童谣措辞；研究结构时应固定同一版本，避免逐句错配。"
+    ],
+    "strategy": "build_and_verify",
+    "revision": 1
+  },
+  "storm_planning": {
+    "perspectives": [
+      {
+        "perspective_id": "perspective-01-e22652cb",
+        "title": "基础事实与版本边界",
+        "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+        "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+        "focus_questions": [
+          "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+        ],
+        "source_inspiration": [
+          "作品身份与指定媒介版本"
+        ],
+        "is_basic": true,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "perspective_id": "perspective-02-98196802",
+        "title": "沃格雷夫“死亡”前后的叙事权限审计",
+        "description": "它把核心假死诡计与第三人称轮换焦点、事后自白的证据地位直接连接，检验作品并非靠叙述者说谎，而是靠不对称的意识开放和关键行动省略制造清白幻觉。",
+        "starting_question": "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？",
+        "focus_questions": [
+          "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？"
+        ],
+        "source_inspiration": [
+          "逐场区分叙述事实、人物感知、推断和有意省略。",
+          "核查假死现场、阿姆斯特朗协助及其失踪前后的人员位置与视角归属。",
+          "比较其他人物的内心独白与沃格雷夫受限的思想呈现。",
+          "分析正文、警方调查文书和瓶中手稿三层信息权限及时间重排。"
+        ],
+        "is_basic": false,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "research_turns": [
+      {
+        "turn_id": "turn-001-7d58910c",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "面对书名、岛名与童谣措辞的版本变迁，应如何确定后续诡计与时间线研究的权威底本？",
+        "research_intent": "确认作品身份、首版与通行版关系，并制定能够避免改编污染和译本错配的文本边界。",
+        "suggested_queries": [
+          "And Then There Were None 1939 first edition textual variants rhyme island name",
+          "《无人生还》中译本 版本 版权页 童谣 岛名",
+          "Agatha Christie And Then There Were None novel versus 1943 play ending"
+        ],
+        "provisional_answer": "待验证假设：暂将研究对象限定为阿加莎·克里斯蒂1939年出版的英文小说原作及其小说结局；《无人生还》作为统一称名。版本差异主要涉及书名、岛名和童谣措辞，不应与情节结构差异混为一谈。1943年戏剧版及影视、游戏改编须单独隔离，尤其不能用其改写结局解释小说证据。下一步应核对用户中译本的版权页和童谣文本，再建立“固定底本＋异文对照表”。",
+        "unresolved_questions": [
+          "尚不清楚用户持有的具体中译本。",
+          "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+          "中文版本可能沿用不同英文底本，需据版权页核验。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-002-c6acd0ef",
+        "perspective_id": "perspective-02-98196802",
+        "question": "应如何编码沃格雷夫假死前后的关键段落，才能区分叙述事实、人物感知、自由间接思想、群体推断与叙述省略，并判断正文是否真正说谎？",
+        "research_intent": "用统一标注法审计核心假死诡计的叙事公平性，并比较正文、警方重建和瓶中手稿三个证据层级。",
+        "suggested_queries": [
+          "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+          "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+          "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒"
+        ],
+        "provisional_answer": "待验证假设：下一步应建立逐场“信息权限表”，重点覆盖沃格雷夫与阿姆斯特朗密谈、假死检查、尸体搬运、阿姆斯特朗失踪及瓶中手稿。现有研究线索支持“多重内部聚焦＋关键行动留白”的解释，但不能代替原文核验。尤其要检验：正文是否仅呈现他人对死亡的判断；沃格雷夫的所谓内心描写究竟是直接思想还是可兼容伪装身份的模糊心理；手稿是在补全空白，还是推翻正文明确事实。",
+        "unresolved_questions": [
+          "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+          "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+          "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-003-6a955ab9",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "哪些版本差异可能实质影响诡计分析，哪些仅属于书名、岛名和童谣称谓的替换？",
+        "research_intent": "把版本史问题收缩为可校勘的正文异文清单，判断哪些差异会影响童谣映射、证据链和时间线。",
+        "suggested_queries": [
+          "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+          "And Then There Were None UK US edition textual variants rhyme figurines island",
+          "《无人生还》中译本 英文底本 译者 版权页 童谣 对照"
+        ],
+        "provisional_answer": "待验证假设：仅供研究规划：现有资料足以区分1939年英国小说、1940年美国小说与1943年舞台改编，但不足以证明英美小说正文是否存在影响行动顺序、线索或结局的实质异文。下一步应直接校勘两种小说底本的童谣、岛名、摆件、尾声调查和凶手文书；舞台版因明确采用替代结局，应继续隔离。",
+        "unresolved_questions": [
+          "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+          "连载版与单行本之间是否存在结构性修订仍待核查。",
+          "用户中译本及其英文底本未知。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-004-5bf282a6",
+        "perspective_id": "perspective-02-98196802",
+        "question": "哪些关键思想段落最可能暴露沃格雷夫—阿姆斯特朗计划，它们的指代模糊性如何使真实计划在首次阅读时被错误归属？",
+        "research_intent": "筛选最具判别力的思想与验尸段落，检验误导究竟来自匿名焦点、语义双关、权威转述，还是叙述者对既成事实的错误陈述。",
+        "suggested_queries": [
+          "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+          "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+          "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代"
+        ],
+        "provisional_answer": "待验证假设：仅供规划：下一轮应锁定密谈后至假死前的匿名或弱归属思想段落，逐句记录焦点候选、代词指向、读者首次阅读解释及结局后解释。检索材料提示，“计划”“上钩”等模糊思想可能同时兼容阿姆斯特朗的诱捕认知和沃格雷夫的假死设计；但二手研究对正文采用“全知”还是“多重内部聚焦”存在概念分歧，不能据此判定叙述是否公平。核心验证必须回到固定版本原文，确认这些思想是否真正属于沃格雷夫、是否隐去宾语，以及假死场景是否只报告阿姆斯特朗的医学判断和群体反应。",
+        "unresolved_questions": [
+          "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+          "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+          "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-005-9a462e47",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "连载版与1939—1940年英美单行本的出版先后及结构差异，是否足以影响后续诡计分析？",
+        "research_intent": "查明连载文本与首版小说之间是否存在影响凶手身份、死亡顺序、叙事焦点或最终解释文书的实质差异。",
+        "suggested_queries": [
+          "British Library Daily Express And Then There Were None serialization June 1939",
+          "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+          "Collins Crime Club 1939 And Then There Were None serial text comparison"
+        ],
+        "provisional_answer": "待验证假设：仅供研究规划：网络资料对英美连载的刊物、日期和分期数量存在明显冲突，现阶段不能据此认定连载版曾结构性改写。可确定的核查重点是章节划分、警方尾声、瓶中手稿以及关键死亡场景是否完整保留。后续诡计研究应暂以1939年英国小说单行本为基准，不引用连载版补充或删节作为证据。",
+        "unresolved_questions": [
+          "现有网页关于英国连载日期及分期数量相互矛盾。",
+          "尚未取得连载全文，无法判断是否删改关键线索。",
+          "用户中译本的英文底本仍未知。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-006-ac215a95",
+        "perspective_id": "perspective-02-98196802",
+        "question": "瓶中手稿的哪些陈述能被正文线索或警方现场独立印证，哪些只能依赖沃格雷夫的自述，从而应如何划分其证据可信等级？",
+        "research_intent": "评估瓶中手稿是可交叉验证的证据、具有自利性的凶手证词，还是作者层面的终局解释，并据此重排正文各信息层的可信等级。",
+        "suggested_queries": [
+          "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+          "\"And Then There Were None\" Wargrave confession reliability narratology",
+          "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+        ],
+        "provisional_answer": "待验证假设：仅供规划：应建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵，分别核查假死、阿姆斯特朗受骗、后续杀人及遥控自杀装置。检索材料普遍把手稿视为解谜钥匙，却多直接复述其内容，不能证明每项陈述均获独立印证。尤其需要区分：手稿补全正文省略、解释既有异常，以及提出无法复核的动机和行动细节。最终判断必须依据固定版本原文，而非导读摘要。",
+        "unresolved_questions": [
+          "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+          "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+          "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "direct_outline": {
+      "outline_id": "direct-outline-8de2a3066da7",
+      "kind": "direct",
+      "title": "《无人生还》初始研究大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《无人生还》初始研究大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "research_outline": {
+      "outline_id": "research-outline-8fba1477b628",
+      "kind": "research",
+      "title": "《无人生还》研究增强大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-01-7a8023b1",
+          "title": "作品专属研究方向",
+          "purpose": "以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+          "research_questions": [
+            "1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？"
+          ],
+          "search_directions": [
+            "title: 版本边界与证据底本校勘",
+            "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+            "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+            "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+            "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+            "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+            "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+            "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+            "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+            "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+            "unresolved_point: 用户所持中译本及其英文底本未知。",
+            "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+            "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。",
+            "And Then There Were None 1939 first edition textual variants rhyme island name",
+            "《无人生还》中译本 版本 版权页 童谣 岛名",
+            "Agatha Christie And Then There Were None novel versus 1943 play ending",
+            "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+            "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+            "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒",
+            "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+            "And Then There Were None UK US edition textual variants rhyme figurines island",
+            "《无人生还》中译本 英文底本 译者 版权页 童谣 对照",
+            "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+            "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+            "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代",
+            "British Library Daily Express And Then There Were None serialization June 1939",
+            "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+            "Collins Crime Club 1939 And Then There Were None serial text comparison",
+            "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+            "\"And Then There Were None\" Wargrave confession reliability narratology",
+            "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 版本边界与证据底本校勘",
+            "scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。",
+            "why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。",
+            "research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？",
+            "research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？",
+            "research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？",
+            "known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。",
+            "known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。",
+            "known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。",
+            "known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。",
+            "unresolved_point: 用户所持中译本及其英文底本未知。",
+            "unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。",
+            "unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚不清楚用户持有的具体中译本。",
+            "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+            "中文版本可能沿用不同英文底本，需据版权页核验。",
+            "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+            "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+            "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。",
+            "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+            "连载版与单行本之间是否存在结构性修订仍待核查。",
+            "用户中译本及其英文底本未知。",
+            "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+            "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+            "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。",
+            "现有网页关于英国连载日期及分期数量相互矛盾。",
+            "尚未取得连载全文，无法判断是否删改关键线索。",
+            "用户中译本的英文底本仍未知。",
+            "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+            "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+            "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+          ],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-02-700407a0",
+          "title": "作品专属研究方向",
+          "purpose": "贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+          "research_questions": [
+            "沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？"
+          ],
+          "search_directions": [
+            "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+            "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+            "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+            "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+            "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+            "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+            "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+            "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+            "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+            "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+            "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+            "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+            "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+            "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+            "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+            "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。",
+            "And Then There Were None 1939 first edition textual variants rhyme island name",
+            "《无人生还》中译本 版本 版权页 童谣 岛名",
+            "Agatha Christie And Then There Were None novel versus 1943 play ending",
+            "\"And Then There Were None\" Wargrave internal focalization manuscript omission",
+            "\"And Then There Were None\" narrator implied author Wargrave acquits himself",
+            "《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒",
+            "1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript",
+            "And Then There Were None UK US edition textual variants rhyme figurines island",
+            "《无人生还》中译本 英文底本 译者 版权页 童谣 对照",
+            "\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan",
+            "\"And Then There Were None\" unattributed thoughts focalization Wargrave",
+            "《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代",
+            "British Library Daily Express And Then There Were None serialization June 1939",
+            "Saturday Evening Post And Then There Were None seven parts 1939 contents",
+            "Collins Crime Club 1939 And Then There Were None serial text comparison",
+            "\"And Then There Were None\" manuscript confession corroborated evidence police epilogue",
+            "\"And Then There Were None\" Wargrave confession reliability narratology",
+            "《无人生还》 瓶中手稿 证据 可信度 沃格雷夫"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 沃格雷夫假死与终局手稿的叙事权限审计",
+            "scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。",
+            "why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。",
+            "research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？",
+            "research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？",
+            "research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？",
+            "research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？",
+            "known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。",
+            "known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。",
+            "known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。",
+            "known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。",
+            "known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。",
+            "unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。",
+            "unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。",
+            "unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。",
+            "unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚不清楚用户持有的具体中译本。",
+            "尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。",
+            "中文版本可能沿用不同英文底本，需据版权页核验。",
+            "尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。",
+            "现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。",
+            "“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。",
+            "尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。",
+            "连载版与单行本之间是否存在结构性修订仍待核查。",
+            "用户中译本及其英文底本未知。",
+            "尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。",
+            "网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。",
+            "现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。",
+            "现有网页关于英国连载日期及分期数量相互矛盾。",
+            "尚未取得连载全文，无法判断是否删改关键线索。",
+            "用户中译本的英文底本仍未知。",
+            "缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。",
+            "现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。",
+            "尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。"
+          ],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《无人生还》研究增强大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties\n\n## 5. 作品专属研究方向\n- 目的：以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。\n- [ ] 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？\n  - 搜索方向：title: 版本边界与证据底本校勘\n  - 搜索方向：scope: 以1939年英国小说单行本及其小说结局为暂定基准，校勘英美小说版本与用户中译本中可能影响童谣映射、死亡顺序、假死线索、警方尾声和瓶中手稿的异文；隔离舞台剧及影视、游戏改编。\n  - 搜索方向：why_generic_modules_are_insufficient: 四个通用模块默认文本稳定，无法判断某项线索、措辞或结局究竟属于原著、译本异文还是改编污染；底本不统一会直接破坏诡计与时间线结论的可复核性。\n  - 搜索方向：research_question: 1939年英国版与1940年美国版除书名、岛名和童谣敏感措辞外，是否存在影响证据链的实质异文？\n  - 搜索方向：research_question: 连载版是否删改章节划分、警方尾声、瓶中手稿或关键死亡场景？\n  - 搜索方向：research_question: 用户中译本依据何种英文底本，其童谣、摆件及关键叙事措辞如何处理？\n  - 搜索方向：known_lead: 记录中译本译者、出版社、出版年、ISBN及版权页所示底本。\n  - 搜索方向：known_lead: 优先校勘童谣、摆件消失、沃格雷夫假死、维拉死亡、警方尾声和瓶中手稿。\n  - 搜索方向：known_lead: 采用“章号＋场景起始短语＋岛上相对日／时段”定位，避免依赖版本不一的页码。\n  - 搜索方向：known_lead: 1943年舞台版采用替代结局，必须与小说证据链隔离。\n  - 搜索方向：unresolved_point: 用户所持中译本及其英文底本未知。\n  - 搜索方向：unresolved_point: 尚无逐句证据确认英美小说版不存在结构性差异。\n  - 搜索方向：unresolved_point: 连载资料相互冲突，关键区段是否完整保留尚待原刊核验。\n  - 搜索方向：And Then There Were None 1939 first edition textual variants rhyme island name\n  - 搜索方向：《无人生还》中译本 版本 版权页 童谣 岛名\n  - 搜索方向：Agatha Christie And Then There Were None novel versus 1943 play ending\n  - 搜索方向：\"And Then There Were None\" Wargrave internal focalization manuscript omission\n  - 搜索方向：\"And Then There Were None\" narrator implied author Wargrave acquits himself\n  - 搜索方向：《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒\n  - 搜索方向：1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript\n  - 搜索方向：And Then There Were None UK US edition textual variants rhyme figurines island\n  - 搜索方向：《无人生还》中译本 英文底本 译者 版权页 童谣 对照\n  - 搜索方向：\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan\n  - 搜索方向：\"And Then There Were None\" unattributed thoughts focalization Wargrave\n  - 搜索方向：《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代\n  - 搜索方向：British Library Daily Express And Then There Were None serialization June 1939\n  - 搜索方向：Saturday Evening Post And Then There Were None seven parts 1939 contents\n  - 搜索方向：Collins Crime Club 1939 And Then There Were None serial text comparison\n  - 搜索方向：\"And Then There Were None\" manuscript confession corroborated evidence police epilogue\n  - 搜索方向：\"And Then There Were None\" Wargrave confession reliability narratology\n  - 搜索方向：《无人生还》 瓶中手稿 证据 可信度 沃格雷夫\n  - 未决：尚不清楚用户持有的具体中译本。\n  - 未决：尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。\n  - 未决：中文版本可能沿用不同英文底本，需据版权页核验。\n  - 未决：尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。\n  - 未决：现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。\n  - 未决：“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。\n  - 未决：尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。\n  - 未决：连载版与单行本之间是否存在结构性修订仍待核查。\n  - 未决：用户中译本及其英文底本未知。\n  - 未决：尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。\n  - 未决：网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。\n  - 未决：现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。\n  - 未决：现有网页关于英国连载日期及分期数量相互矛盾。\n  - 未决：尚未取得连载全文，无法判断是否删改关键线索。\n  - 未决：用户中译本的英文底本仍未知。\n  - 未决：缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。\n  - 未决：现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。\n  - 未决：尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。\n\n## 6. 作品专属研究方向\n- 目的：贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。\n- [ ] 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？\n  - 搜索方向：title: 沃格雷夫假死与终局手稿的叙事权限审计\n  - 搜索方向：scope: 贯通密谈、假死检查、尸体处理、阿姆斯特朗失踪、后续死亡、警方重建和瓶中手稿，逐场区分客观叙述、人物感知、自由间接思想、推断与有意省略，检验小说如何制造沃格雷夫已死及因而清白的幻觉。\n  - 搜索方向：why_generic_modules_are_insufficient: 核心问题不只是诡计如何实施或时间线如何排列，而是叙事焦点、医学权威和事后自白如何共同改变同一证据的可信等级。它要求同时审计正文是否说谎、读者为何误归属思想，以及手稿是在补空白还是推翻既述事实。\n  - 搜索方向：research_question: 沃格雷夫假死场景是否只呈现阿姆斯特朗的医学判断与群体反应，而从未客观确认死亡？\n  - 搜索方向：research_question: 密谈后至假死前的“计划”“上钩”等思想片段属于谁，其省略宾语或弱归属如何容纳双重解释？\n  - 搜索方向：research_question: 小说是否系统性开放其他人物意识，却在关键时段回避沃格雷夫的行动意识？\n  - 搜索方向：research_question: 瓶中手稿的假死、诱杀阿姆斯特朗、后续杀人及遥控自杀陈述，分别能获得哪些正文伏笔、现场状态或警方物证支持？\n  - 搜索方向：known_lead: 建立“句段—信息类型—焦点人物—首次阅读解释—结局后解释”标注表。\n  - 搜索方向：known_lead: 把阿姆斯特朗的验尸结论视为角色证词，而非叙述者确认的事实。\n  - 搜索方向：known_lead: 比较沃格雷夫与维拉、隆巴德等人的意识开放程度，不能仅统计内心描写次数。\n  - 搜索方向：known_lead: 建立“手稿主张—正文留痕—警方物证—矛盾或缺口”矩阵；动机与人格自述应列为低可验证信息。\n  - 搜索方向：known_lead: 现有线索较支持“多重内部聚焦＋关键行动留白”，但必须由固定底本原文验证。\n  - 搜索方向：unresolved_point: 尚未取得固定版本全文，关键措辞、焦点归属和章内位置无法核实。\n  - 搜索方向：unresolved_point: “不可靠叙述”是否成立，取决于正文存在事实性矛盾还是仅有焦点限制与省略。\n  - 搜索方向：unresolved_point: 二手研究对全知叙述、零聚焦和多重内部聚焦的术语使用不一致。\n  - 搜索方向：unresolved_point: 手稿关于机械装置与行动窗口的说明能否完全符合现场证据，仍待复核。\n  - 搜索方向：And Then There Were None 1939 first edition textual variants rhyme island name\n  - 搜索方向：《无人生还》中译本 版本 版权页 童谣 岛名\n  - 搜索方向：Agatha Christie And Then There Were None novel versus 1943 play ending\n  - 搜索方向：\"And Then There Were None\" Wargrave internal focalization manuscript omission\n  - 搜索方向：\"And Then There Were None\" narrator implied author Wargrave acquits himself\n  - 搜索方向：《无人生还》 沃格雷夫 内心描写 假死 叙事隐瞒\n  - 搜索方向：1939 Collins 1940 Dodd Mead And Then There Were None text comparison epilogue manuscript\n  - 搜索方向：And Then There Were None UK US edition textual variants rhyme figurines island\n  - 搜索方向：《无人生还》中译本 英文底本 译者 版权页 童谣 对照\n  - 搜索方向：\"And Then There Were None\" \"fell for it\" Wargrave Armstrong plan\n  - 搜索方向：\"And Then There Were None\" unattributed thoughts focalization Wargrave\n  - 搜索方向：《无人生还》 沃格雷夫 阿姆斯特朗 计划 内心独白 指代\n  - 搜索方向：British Library Daily Express And Then There Were None serialization June 1939\n  - 搜索方向：Saturday Evening Post And Then There Were None seven parts 1939 contents\n  - 搜索方向：Collins Crime Club 1939 And Then There Were None serial text comparison\n  - 搜索方向：\"And Then There Were None\" manuscript confession corroborated evidence police epilogue\n  - 搜索方向：\"And Then There Were None\" Wargrave confession reliability narratology\n  - 搜索方向：《无人生还》 瓶中手稿 证据 可信度 沃格雷夫\n  - 未决：尚不清楚用户持有的具体中译本。\n  - 未决：尚未确认不同小说版本除敏感措辞替换外是否存在实质性段落差异。\n  - 未决：中文版本可能沿用不同英文底本，需据版权页核验。\n  - 未决：尚未获得固定版本的完整原文，无法确认关键句措辞及章内位置。\n  - 未决：现有叙事视角论文较新，质量与论证严谨性仍需阅读全文评估。\n  - 未决：“不可靠叙述”是否适用，取决于最终发现的是事实性矛盾还是单纯焦点限制。\n  - 未决：尚无逐句校勘证据证明英美小说版仅有敏感措辞替换。\n  - 未决：连载版与单行本之间是否存在结构性修订仍待核查。\n  - 未决：用户中译本及其英文底本未知。\n  - 未决：尚无固定英文版或中译本全文，无法核验关键措辞、段落归属和章内位置。\n  - 未决：网络讨论提到的“fell for it”等措辞可能受版本、记忆或改编污染。\n  - 未决：现有论文对“零聚焦”“全知叙述”和“多重内部聚焦”的术语使用并不一致。\n  - 未决：现有网页关于英国连载日期及分期数量相互矛盾。\n  - 未决：尚未取得连载全文，无法判断是否删改关键线索。\n  - 未决：用户中译本的英文底本仍未知。\n  - 未决：缺少固定版本全文，无法逐句核验手稿与正文、警方文书之间的对应关系。\n  - 未决：现有网络材料主要是摘要或二手叙事分析，容易把结局解释直接当成事实证明。\n  - 未决：尚不能确定是否存在手稿陈述与现场证据不完全吻合的细节。",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    }
+  },
+  "stage_artifacts": [
+    {
+      "artifact_id": "artifact-perspective-5b324759004c",
+      "stage": "perspective",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [],
+      "input_hash": "cdbb47239150425ceac44b76d05d6c762846bf0839e89d0326f552036f2b2abb",
+      "output_hash": "5b324759004ccfa2aee31a5740773877e101f7db474df556e1ac8525227a1b90",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-13T15:38:28.170159Z",
+      "completed_at": "2026-08-13T15:38:28.170159Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "perspectives": "perspectives/perspectives.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-dialogue-8c954c27e59f",
+      "stage": "research_dialogue",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-5b324759004c"
+      ],
+      "input_hash": "5b324759004ccfa2aee31a5740773877e101f7db474df556e1ac8525227a1b90",
+      "output_hash": "8c954c27e59f743eb83513f41716432f088d381465f0f3a4eb0354ab2f4a68da",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-13T15:38:28.170159Z",
+      "completed_at": "2026-08-13T15:38:28.170159Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "turns": "dialogues/research_turns.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-outline-6676ff22ee3b",
+      "stage": "outline",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-5b324759004c",
+        "artifact-dialogue-8c954c27e59f"
+      ],
+      "input_hash": "c2449828dda46f99ceae7c1686d63eb46f8cd90d37be5618e161c9389b8dfa47",
+      "output_hash": "6676ff22ee3b538a75888388496dce3d8835710d9e06fa7ae8cb2c6cf5c96444",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-13T15:38:28.170159Z",
+      "completed_at": "2026-08-13T15:38:28.170159Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "direct_json": "outline/direct_outline.json",
+        "direct_markdown": "outline/direct_outline.md",
+        "research_json": "outline/research_outline.json",
+        "research_markdown": "outline/research_outline.md"
+      }
+    }
+  ],
+  "search_session": {
+    "queries": [],
+    "query_units": {},
+    "sources": {},
+    "snapshots": {},
+    "snapshot_urls": {},
+    "cache_hits": 0,
+    "duplicate_queries_avoided": 0
+  },
+  "attempt_history": [],
+  "proposals": [],
+  "projection_audit": null,
+  "errors": [],
+  "published_version": null,
+  "state_version": 4,
+  "created_at": "2026-08-13T15:36:51.775378Z",
+  "updated_at": "2026-08-13T15:38:28.170159Z"
+}

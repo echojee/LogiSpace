@@ -24,7 +24,7 @@ class ClaimRelationV4(BaseModel):
 
 class VerifiedDomainObjectV4(BaseModel):
     object_id: str
-    object_type: Literal["relationship", "timeline_alignment", "trick", "murder_method"]
+    object_type: Literal["character", "relationship", "timeline_alignment", "trick", "murder_method"]
     payload: dict[str, Any]
     claim_ids: list[str]
 
@@ -47,4 +47,5 @@ class VerifiedKnowledgeSnapshotV4(BaseModel):
     unknowns: list[str]
     gaps: list[GapStateV4]
     evidence_ids: list[str]
+    visualization_profile: dict[str, Any] = Field(default_factory=dict)
     frozen_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

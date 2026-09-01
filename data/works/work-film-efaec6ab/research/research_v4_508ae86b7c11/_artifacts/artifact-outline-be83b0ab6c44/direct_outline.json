@@ -1,0 +1,141 @@
+{
+  "outline_id": "direct-outline-1af8e7e942a5",
+  "kind": "direct",
+  "title": "《控方证人》初始研究大纲",
+  "nodes": [
+    {
+      "section_id": "mandatory-relationships-01",
+      "title": "人物关系、动机与心理",
+      "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+      ],
+      "search_directions": [
+        "character_index",
+        "relationship_records",
+        "relationship_changes",
+        "uncertainties"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "character_index",
+        "relationship_records",
+        "relationship_changes",
+        "uncertainties"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-multiple_timelines-01",
+        "mandatory-tricks-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-multiple_timelines-01",
+      "title": "真实事件与叙事披露时间线",
+      "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+      ],
+      "search_directions": [
+        "event_timeline",
+        "testimony_timeline",
+        "investigation_timeline",
+        "reveal_timeline",
+        "conflicts"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "event_timeline",
+        "testimony_timeline",
+        "investigation_timeline",
+        "reveal_timeline",
+        "conflicts"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-tricks-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-tricks-01",
+      "title": "线索、误导、公平推理与诡计机制",
+      "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+      ],
+      "search_directions": [
+        "trick_mechanism",
+        "required_conditions",
+        "clues",
+        "misdirection",
+        "reveal_path"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "trick_mechanism",
+        "required_conditions",
+        "clues",
+        "misdirection",
+        "reveal_path"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-murder_methods-01",
+      "title": "杀人手法、执行条件与证据",
+      "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+      ],
+      "search_directions": [
+        "case_index",
+        "method",
+        "time_window",
+        "tools_and_preparation",
+        "concealment",
+        "uncertainties"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "case_index",
+        "method",
+        "time_window",
+        "tools_and_preparation",
+        "concealment",
+        "uncertainties"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    }
+  ],
+  "markdown": "# 《控方证人》初始研究大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties",
+  "prompt_version": "signature-storm-plan-v0.7.0"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "turn_id": "turn-001-7d58910c",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "应如何固定《无人生还》的原著版本边界，避免标题、童谣措辞和改编结局污染后续研究？",
+    "research_intent": "建立可复核的书目与文本边界清单：确认首版、现行英文版和用户中译本之间哪些变化仅属敏感词替换，哪些可能影响人物称谓、空间线索、童谣对应关系及终局文书结构。",
+    "suggested_queries": [
+      "And Then There Were None 1939 first edition chapter structure epilogue manuscript differences",
+      "《无人生还》中译本 译者 出版社 童谣 岛名 版本差异",
+      "And Then There Were None textual variants rhyme island figurines editions"
+    ],
+    "provisional_answer": "待验证假设：仅供研究规划：研究对象暂定为阿加莎·克里斯蒂1939年出版的英文小说原著，现行规范题名为 And Then There Were None。后续证据链应包括小说正文、事后调查段落及瓶中手稿，并排除舞台剧、影视和游戏改编。原作曾使用不同题名，现代版本还替换了岛名、童谣及摆件称呼；这些词汇变化原则上不等于诡计结构变化，但必须选定一个英文底本及一个中译本逐项核对。官方资料确认作品年份为1939年，并说明其后来产生大量改编；官方纪念文章给出英国首版日期为1939年11月6日。",
+    "unresolved_questions": [
+      "尚未确定用户持有的具体中译本。",
+      "尚未核实不同英文版除敏感词替换外是否存在影响推理的实质改写。",
+      "研究是否需要纳入1939年连载文本与单行本差异仍待决定。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-002-eceecbfb",
+    "perspective_id": "perspective-02-6c55cbe4",
+    "question": "沃格雷夫在伪死前究竟获得过哪些直接或间接的意识呈现？这些段落是否只展示无害判断，却系统性省略其计划、行动意图与阿姆斯特朗共谋？",
+    "research_intent": "修正“凶手没有内心视角”的粗略命题，建立沃格雷夫意识呈现清单，并按信息类型判断叙述是否撒谎、沉默或利用歧义。",
+    "suggested_queries": [
+      "\"Justice Wargrave thought to himself\" \"And Then There Were None\"",
+      "\"And Then There Were None\" Wargrave focalization inner thoughts selective omission",
+      "\"And Then There Were None\" unattributed thoughts Wargrave Armstrong"
+    ],
+    "provisional_answer": "待验证假设：仅供规划：现有研究声称小说“从不揭示沃格雷夫的内心”，但检索到的原著文本入口显示至少存在明确以“Justice Wargrave thought to himself”引出的段落，因此该说法可能过度绝对化。下一步应穷举沃格雷夫的直接思想、自由间接引语和归属不明的意识片段，检验真正的欺骗机制是否并非完全拒绝其内心，而是允许读者进入经过筛选的意识层：展示其法官式观察、病情或塞顿案态度，同时避开谋杀计划、即时目的及伪死安排。尚不能在未核对完整原著前判定哪些具体句子构成公平省略。",
+    "unresolved_questions": [
+      "完整原著中沃格雷夫共有多少处可确认的意识呈现？",
+      "无署名思想能否依据邻接段落、措辞习惯或行动位置可靠归属？",
+      "不同英文本和中译本是否改变思想段落的标点或归属感？"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-003-6a955ab9",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "在用户尚未确认中译本时，应先核验哪些文本部件，才能判断版本差异是否会影响诡计与叙述分析？",
+    "research_intent": "设计一套无需预先知道译本信息的快速版本鉴定流程，并确定哪些差异仅影响措辞与文化语境，哪些会破坏时间线、线索链或终局解释。",
+    "suggested_queries": [
+      "《无人生还》 中译本 译者 出版社 目录 瓶中手稿",
+      "And Then There Were None edition textual differences epilogue manuscript omissions",
+      "And Then There Were None serial first edition chapter differences"
+    ],
+    "provisional_answer": "待验证假设：仅供研究规划：先建立版本指纹表，核对题名、岛名、童谣主体、十个摆件、章节结构、警方调查尾声及瓶中手稿是否完整。现有侦察表明常见改动集中于题名及相关称谓替换；尚无充分依据断言不存在其他删节或改写。应以实际版权页、目录、末章和手稿起始句为准，不凭页数或封面判断。",
+    "unresolved_questions": [
+      "具体中译本仍未确定。",
+      "连载文本与单行本是否存在影响推理的结构差异尚未核实。",
+      "除敏感词及关联意象替换外，是否有句段删改仍缺少权威逐行校勘。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-004-a4c2f484",
+    "perspective_id": "perspective-02-6c55cbe4",
+    "question": "沃格雷夫的内心呈现是否集中在登岛前后，并在谋杀启动后被系统性撤回；这种由内聚焦转为外部观察的时间边界，是否正是隐藏其行动意图的关键？",
+    "research_intent": "确定沃格雷夫内聚焦的终止时间及其与犯罪计划显性启动之间的关系，区分结构性省略、焦点切换和叙述性撒谎。",
+    "suggested_queries": [
+      "\"Wargrave thought\" \"And Then There Were None\" chapter",
+      "\"Wargrave reflected\" \"And Then There Were None\"",
+      "\"And Then There Were None\" Wargrave focalization withdrawal"
+    ],
+    "provisional_answer": "待验证假设：仅供规划：初步文本检索发现，沃格雷夫在开篇旅途中及抵岛初期确有多次明确的回忆、判断和直接思想；但目前尚未检出谋杀启动后同等明确的内心独白。后段主要通过言语、表情、法庭式推理以及其他人物对他的观察呈现。下一步应按章节穷举并确定焦点权限变化的准确边界，再与第一起死亡、其接管讨论及拉拢阿姆斯特朗的节点对齐。现阶段只能提出“选择性开放后撤回内心”的工作假说，不能据此断定叙述完全公平或绝无隐蔽的自由间接引语。",
+    "unresolved_questions": [
+      "沃格雷夫最后一次可确认的直接意识呈现位于何处？",
+      "后续是否存在被检索词遗漏的自由间接引语？",
+      "不同版本的分段、标点和译法是否会改变焦点归属？",
+      "这种焦点撤回是否适用于其他临死人物，因而未必专门指向凶手？"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-005-9a462e47",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "是否有必要把1939年美国连载版纳入核心版本校勘，还是应将研究边界收束到小说单行本？",
+    "research_intent": "决定连载文本是否值得占用后续研究预算，并停止重复确认题名、岛名和童谣替换等已知边界问题。",
+    "suggested_queries": [
+      "And Then There Were None Saturday Evening Post 1939 serial facsimile textual comparison",
+      "And Then There Were None serial versus Collins first edition omissions ending"
+    ],
+    "provisional_answer": "待验证假设：仅供研究规划：检索确认作品在1939年先以七期连载形式出现，之后出版英国单行本；但目前未找到可靠的逐行校勘资料，无法判断连载版是否存在影响诡计结构的实质差异。建议将连载版降为补充书目对象，核心分析固定于完整保留正文、警方调查尾声和瓶中手稿的单行本。现阶段继续泛查版本史的信息增益较低，应待用户提供中译本信息后再做定向核验。",
+    "unresolved_questions": [
+      "连载版与英国首版是否存在影响公平性或时间线的句段差异。",
+      "用户中译本是否完整保留两层终局文书。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "complete",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-006-b584a452",
+    "perspective_id": "perspective-02-6c55cbe4",
+    "question": "第11章匿名意识蒙太奇中的“那个傻瓜把我的话全信了”能否可靠归属于沃格雷夫，并指向他已诱骗阿姆斯特朗参与伪死计划？匿名化如何既提供公平线索，又阻止读者把凶手思想与其身份绑定？",
+    "research_intent": "验证第11章匿名思想的逐项归属，并判断匿名内聚焦是否是作品兼顾公平性与误导性的核心技术。",
+    "suggested_queries": [
+      "\"The damned fool, he believed every word I said\" Wargrave Armstrong",
+      "\"And Then There Were None\" chapter 11 unattributed thoughts attribution",
+      "\"And Then There Were None\" anonymous interior monologue focalization Wargrave"
+    ],
+    "provisional_answer": "待验证假设：仅供规划：原著检索确认，第11章在六名幸存者的匿名思想序列中明确放入“那个傻瓜把我的话全信了……我必须非常小心”这一犯罪性意识。结合瓶中手稿所述沃格雷夫诱骗阿姆斯特朗的安排，该思想高度疑似属于沃格雷夫。这修正了上一轮的“谋杀启动后撤回其内心”假说：文本并未完全封闭凶手意识，而是撤销姓名标签，将关键思想藏进多人蒙太奇。其可能机制是让读者获得真线索，却无法立即完成‘思想—人物—共谋对象’三重对应。仍需以章节行动顺序排除其他五人的可能归属，不能仅依赖读者讨论或导读标签定案。",
+    "unresolved_questions": [
+      "六段思想能否全部获得唯一归属？",
+      "中文译本是否通过性别、语气或标点意外强化或削弱归属线索？",
+      "匿名思想是在公平提示共谋，还是仅在重读时才具有可验证性？",
+      "该段是否足以推翻‘伪死前后彻底外聚焦’的结构判断？"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

@@ -1,0 +1,21 @@
+.memoOutline article.disabledPlan,
+.memoFeatures article.disabledPlan {
+  opacity: 0.46;
+  background: rgba(80, 76, 68, 0.08);
+}
+
+.memoRetryNotice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #9b6b2f;
+  background: #fff3d8;
+}
+
+.memoRetryNotice p {
+  margin: 5px 0 0;
+  color: #6c4b25;
+}
+

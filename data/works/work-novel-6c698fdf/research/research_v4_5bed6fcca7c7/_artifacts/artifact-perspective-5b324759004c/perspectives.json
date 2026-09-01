@@ -1,0 +1,35 @@
+[
+  {
+    "perspective_id": "perspective-01-e22652cb",
+    "title": "基础事实与版本边界",
+    "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+    "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+    "focus_questions": [
+      "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+    ],
+    "source_inspiration": [
+      "作品身份与指定媒介版本"
+    ],
+    "is_basic": true,
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "perspective_id": "perspective-02-98196802",
+    "title": "沃格雷夫“死亡”前后的叙事权限审计",
+    "description": "它把核心假死诡计与第三人称轮换焦点、事后自白的证据地位直接连接，检验作品并非靠叙述者说谎，而是靠不对称的意识开放和关键行动省略制造清白幻觉。",
+    "starting_question": "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？",
+    "focus_questions": [
+      "小说如何借沃格雷夫假死前后的焦点切换、内心描写缺口与群体误判，使读者把“可进入人物意识”等同于清白，并最终由瓶中手稿改写正文证据的可信等级？"
+    ],
+    "source_inspiration": [
+      "逐场区分叙述事实、人物感知、推断和有意省略。",
+      "核查假死现场、阿姆斯特朗协助及其失踪前后的人员位置与视角归属。",
+      "比较其他人物的内心独白与沃格雷夫受限的思想呈现。",
+      "分析正文、警方调查文书和瓶中手稿三层信息权限及时间重排。"
+    ],
+    "is_basic": false,
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "run_id": "research_v4_508ae86b7c11",
+  "work_id": "work-film-efaec6ab",
+  "stage_order": [
+    "perspective",
+    "research_dialogue",
+    "outline",
+    "search_and_draft",
+    "polish",
+    "deposit"
+  ],
+  "current_artifacts": {
+    "perspective": "artifact-perspective-87a629367973",
+    "research_dialogue": "artifact-dialogue-9440aa0932ea",
+    "outline": "artifact-outline-be83b0ab6c44"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact-perspective-87a629367973",
+      "stage": "perspective",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [],
+      "input_hash": "66398b2dbaa27fdb69ab4f7eefda917c0ab264d2325d90f1d114ce388b202cf5",
+      "output_hash": "87a6293679733ff372bbca9ba45b0dbb74728ce5756a7c04fbfa6a46a60238ab",
+      "model": "gpt-5.6-luna",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-30T14:44:53.101100Z",
+      "completed_at": "2026-08-30T14:44:53.101100Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "perspectives": "perspectives/perspectives.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-dialogue-9440aa0932ea",
+      "stage": "research_dialogue",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-87a629367973"
+      ],
+      "input_hash": "87a6293679733ff372bbca9ba45b0dbb74728ce5756a7c04fbfa6a46a60238ab",
+      "output_hash": "9440aa0932ea04131c43d0da5f81570099d82b8c22a5432d09bf048917c30da1",
+      "model": "gpt-5.6-luna",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-30T14:44:53.101100Z",
+      "completed_at": "2026-08-30T14:44:53.101100Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "turns": "dialogues/research_turns.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-outline-be83b0ab6c44",
+      "stage": "outline",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-87a629367973",
+        "artifact-dialogue-9440aa0932ea"
+      ],
+      "input_hash": "dcd1fa47195178b7efd60b2ffd4a69f659b51cdb70678eced98964946ea551ce",
+      "output_hash": "be83b0ab6c4437e1f169f244336ea29402048ed3b903101b19ba21499be9c77e",
+      "model": "gpt-5.6-luna",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-30T14:44:53.102100Z",
+      "completed_at": "2026-08-30T14:44:53.101100Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "direct_json": "outline/direct_outline.json",
+        "direct_markdown": "outline/direct_outline.md",
+        "research_json": "outline/research_outline.json",
+        "research_markdown": "outline/research_outline.md"
+      }
+    }
+  ]
+}

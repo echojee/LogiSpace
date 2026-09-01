@@ -1,0 +1,45 @@
+{
+  "schema_version": "knowledge-report-v1",
+  "work_id": "work-novel-962a77c6",
+  "work_title": "无人生还",
+  "media_version": "original_novel",
+  "source_job_id": "research_v4_0f2ba0c7d36c",
+  "title": "《无人生还》深度研究报告",
+  "model": "gpt-5.6-sol",
+  "provider_response_id": "resp_078030cd3bcbf65d006a800450732887d091b966f990c46637",
+  "citations": [
+    {
+      "title": "And Then There Were None by Agatha Christie - Agatha Christie (UK)",
+      "url": "https://www.agathachristie.com/en/stories/and-then-there-were-none",
+      "start_index": 365,
+      "end_index": 455
+    },
+    {
+      "title": "Ken's Blogspot: And Then There Were None",
+      "url": "https://kensbookinfo.blogspot.com/p/and-then-there-were-none.html",
+      "start_index": 1548,
+      "end_index": 1644
+    },
+    {
+      "title": "And Then There Were None - Flipbook by m-6637099 | FlipHTML5",
+      "url": "https://fliphtml5.com/vvogw/tehg/And_Then_There_Were_None/",
+      "start_index": 5795,
+      "end_index": 5872
+    },
+    {
+      "title": "The Life and Crimes of Agatha Christie",
+      "url": "https://detective.gumer.info/txt/osborne.pdf",
+      "start_index": 15028,
+      "end_index": 15098
+    },
+    {
+      "title": "And then there were none :: Agatha Christie :: ISBN 9780007525300 :: HarperCollinsPublishers 2013 :: OBNB, the Open British National Bibliography",
+      "url": "https://obnb.uk/p16415865-and-then-there-were-none?utm_source=openai",
+      "start_index": 17534,
+      "end_index": 17615
+    }
+  ],
+  "generated_at": "2026-08-15T06:22:16.200742+00:00",
+  "deposited_at": "2026-08-15T06:50:36.357815+00:00",
+  "markdown_file": "report.md"
+}

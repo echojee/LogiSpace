@@ -1,0 +1,153 @@
+.knowledgeNotice,
+.knowledgeDossier,
+.visualizationActions,
+.visualizationResult {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 24px;
+}
+
+.knowledgeDossier,
+.visualizationActions,
+.visualizationResult {
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.knowledgeDossier h2,
+.visualizationActions h2,
+.visualizationResult h2 {
+  font-family: Georgia, "Noto Serif SC", serif;
+}
+
+.knowledgeDossier details article {
+  border-top: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.visualizationActions {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.visualizationActions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: var(--green);
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.visualizationActions button:disabled { opacity: .5; }
+.mermaidPreview { overflow: auto; padding: 18px; background: white; border: 1px solid var(--line); }
+.mermaidPreview > div { min-height: 180px; display: grid; place-items: center; }
+.mermaidPreview pre { white-space: pre-wrap; }
+.visualizationResult > small { display: block; color: var(--muted); margin-top: 6px; }
+
+.knowledgePosterGrid {
+  max-width: 1180px;
+  margin: 36px auto 0;
+  padding: 0 24px 72px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 28px 22px;
+}
+.knowledgePoster { display: block; min-width: 0; }
+.posterArtwork {
+  aspect-ratio: 2 / 3;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  background: #174f3d;
+  box-shadow: 0 15px 35px rgba(23,32,29,.16);
+  transition: transform .2s, box-shadow .2s;
+}
+.knowledgePoster:hover .posterArtwork { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(23,32,29,.23); }
+.posterArtwork:before { content: ""; position: absolute; inset: 16px; border: 1px solid rgba(255,255,255,.38); }
+.posterArtwork img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.posterArtwork span,.posterArtwork strong,.posterArtwork small { position: relative; z-index: 1; }
+.posterArtwork span { margin-bottom: auto; color: var(--lime); }
+.posterArtwork strong { font: 700 clamp(24px,3vw,37px)/1.08 Georgia,"Noto Serif SC",serif; letter-spacing: -.04em; }
+.posterArtwork small { margin-top: 16px; letter-spacing: .16em; opacity: .72; }
+.posterTone1 .posterArtwork { background: #a3462d; }
+.posterTone2 .posterArtwork { background: #24333e; }
+.posterTone3 .posterArtwork { background: #6b5a3c; }
+.posterTone4 .posterArtwork { background: #4d3257; }
+.posterMeta { padding: 16px 2px; }
+.posterMeta small,.posterMeta span { color: var(--orange); font-size: 11px; letter-spacing: .1em; }
+.posterMeta h2 { margin: 7px 0; font: 700 22px/1.2 Georgia,"Noto Serif SC",serif; }
+.posterMeta p { color: var(--muted); min-height: 20px; margin: 0 0 8px; }
+
+.knowledgeFourGrid { max-width: 1100px; margin: 28px auto 70px; padding: 0 24px; display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+.knowledgeFourGrid button { min-height: 245px; padding: 26px; border: 1px solid var(--line); background: var(--card); color: var(--ink); text-align: left; cursor: pointer; display: flex; flex-direction: column; transition: transform .2s,border-color .2s; }
+.knowledgeFourGrid button:hover { transform: translateY(-4px); border-color: var(--green); }
+.knowledgeFourGrid button>svg { color: var(--orange); margin-bottom: 36px; }
+.knowledgeFourGrid button small { color: var(--green); letter-spacing: .14em; font-weight: 800; }
+.knowledgeFourGrid button h2 { font: 700 30px Georgia,"Noto Serif SC",serif; margin: 8px 0; }
+.knowledgeFourGrid button p { color: var(--muted); line-height: 1.6; }
+.knowledgeFourGrid button span { margin-top: auto; color: var(--orange); font-weight: 800; }
+
+.knowledgeModalBackdrop { position: fixed; inset: 0; z-index: 80; padding: 5vh 5vw; background: rgba(11,18,16,.72); display: grid; place-items: center; backdrop-filter: blur(4px); }
+.knowledgeModal { width: min(720px,90vw); max-height: 86vh; overflow: hidden; background: var(--paper); border: 1px solid rgba(255,255,255,.35); box-shadow: 0 30px 90px rgba(0,0,0,.38); display: flex; flex-direction: column; }
+.knowledgeModal.wide { width: min(1380px,90vw); }
+.knowledgeModal>header { padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; background: var(--ink); color: white; }
+.knowledgeModal>header h2 { margin: 4px 0 0; font: 700 28px Georgia,"Noto Serif SC",serif; }
+.knowledgeModal>header button { border: 0; background: transparent; color: white; cursor: pointer; }
+.knowledgeModalBody { padding: 22px; overflow: auto; min-height: 260px; }
+.modalLoading { min-height: 240px; display: grid; place-items: center; gap: 8px; color: var(--green); }
+.interactiveViz { min-height: 520px; display: flex; flex-direction: column; }
+.cytoscapeCanvas { flex: 1; min-height: 500px; background: #fffdf7; border: 1px solid var(--line); }
+.timelineView { gap: 14px; }
+.timelineScaleNote { margin: 0; color: var(--muted); font-size: 13px; }
+.timelineLanes { display: grid; gap: 16px; }
+.timelineLane { display: grid; grid-template-columns: 130px minmax(0,1fr); border: 1px solid var(--line); background: #fffdf7; }
+.timelineLane>h3 { margin: 0; padding: 20px 14px; background: #edf0e8; color: var(--green); font-size: 14px; }
+.timelineLaneScroll { overflow-x: auto; padding: 16px 12px 20px; }
+.timelineLaneRail { position: relative; display: flex; gap: 20px; min-width: max-content; padding: 0 8px; }
+.timelineLaneRail::before { content: ""; position: absolute; left: 8px; right: 8px; top: 17px; height: 2px; background: #b9c5bf; }
+.timelineLaneRail button { position: relative; z-index: 1; width: 190px; min-height: 92px; padding: 10px 12px; border: 1px solid #a8bbb1; border-radius: 3px; background: #f8fbf7; color: var(--ink); text-align: left; cursor: pointer; box-shadow: 0 3px 10px rgba(23,79,61,.07); }
+.timelineLaneRail button::before { content: ""; position: absolute; top: -5px; left: 15px; width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px #fffdf7; }
+.timelineLaneRail button.active { border-color: var(--orange); box-shadow: 0 0 0 2px rgba(229,109,62,.18); }
+.timelineLaneRail button small { display: block; margin: 8px 0 7px; color: var(--green); font-weight: 700; }
+.timelineLaneRail button span { display: -webkit-box; overflow: hidden; font-size: 13px; line-height: 1.45; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.vizSelection { margin: 12px 0 0; padding: 10px 12px; background: var(--soft); color: var(--green); }
+.timelineDetail { margin-top: 12px; padding: 18px; border-left: 4px solid var(--orange); background: white; }
+.timelineDetail h3 { margin: 6px 0; font-family: Georgia,"Noto Serif SC",serif; }
+.timelineDetail small,.timelineDetail span { color: var(--orange); }
+.timelineOrder { display: inline-grid; place-items: center; min-width: 22px; height: 22px; margin-right: 6px; border-radius: 50%; background: var(--ink); color: var(--lime); font-size: 10px; }
+.vis-item { border-color: var(--green)!important; background: #e7eee8!important; color: var(--ink)!important; }
+.vis-item.vis-selected { border-color: var(--orange)!important; background: #f5d5c8!important; }
+.vis-label { color: var(--green)!important; font-weight: 800; }
+.readingCardGrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+.readingCardGrid article { min-height: 220px; padding: 22px; border: 1px solid var(--line); background: var(--card); }
+.readingCardGrid article.dark { background: var(--ink); color: white; }
+.readingCardGrid article>svg { color: var(--orange); }
+.readingCardGrid article small { display: block; margin-top: 24px; color: var(--orange); letter-spacing: .12em; }
+.readingCardGrid article h3 { margin: 8px 0; font: 700 24px Georgia,"Noto Serif SC",serif; }
+.readingCardGrid article p { color: var(--muted); line-height: 1.65; }
+.readingCardGrid article.dark p { color: #b7c0bc; }
+.emptyPanel { grid-column: 1/-1; padding: 50px; text-align: center; color: var(--muted); background: white; border: 1px dashed var(--line); }
+
+@media (max-width: 760px) {
+  .visualizationActions { grid-template-columns: 1fr; }
+  .knowledgeNotice { margin-left: 16px; margin-right: 16px; }
+  .knowledgePosterGrid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px 12px; padding-left: 16px; padding-right: 16px; }
+  .posterArtwork { padding: 16px; }
+  .posterArtwork strong { font-size: 24px; }
+  .knowledgeFourGrid,.readingCardGrid { grid-template-columns: 1fr; }
+  .knowledgeModalBackdrop { padding: 0; }
+  .knowledgeModal,.knowledgeModal.wide { width: 100vw; height: 100dvh; max-height: none; }
+  .knowledgeModalBody { padding: 14px; }
+  .cytoscapeCanvas { min-height: 68vh; }
+  .timelineLane { grid-template-columns: 1fr; }
+  .timelineLane>h3 { padding: 10px 14px; }
+}

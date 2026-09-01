@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-
-from pydantic import BaseModel, Field
+from typing import Literal
+from pydantic import BaseModel, Field, model_validator
 
 from logispace_domain.models_v4 import ResearchStrategyV4, ResearchUnitV4
+from logispace_domain.models_v4_storm import ResearchOutlineV4, ResearchPerspectiveV4, ResearchTurnV4
 
 
 class ReconSourceV4(BaseModel):
@@ -28,15 +29,36 @@ class ReconnaissanceBriefV4(BaseModel):
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 
+class PerspectiveSetV4(BaseModel):
+    """Compatibility view of the STORM perspective stage."""
+
+    perspectives: list[ResearchPerspectiveV4] = Field(min_length=2, max_length=2)
+    status: Literal["generated"] = "generated"
+    generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
 class PlanMemoV4(BaseModel):
     title: str
     objective: str
     scope: str
     reconnaissance_summary: str
+    mandatory_units: list[ResearchUnitV4] = Field(min_length=4, max_length=4)
     signature_units: list[ResearchUnitV4] = Field(min_length=1, max_length=3)
+    perspectives: list[ResearchPerspectiveV4] = Field(default_factory=list)
+    research_turns: list[ResearchTurnV4] = Field(default_factory=list)
+    direct_outline: ResearchOutlineV4 | None = None
+    research_outline: ResearchOutlineV4 | None = None
     risks: list[str] = Field(default_factory=list)
     strategy: ResearchStrategyV4 = "build_and_verify"
     revision: int = Field(default=1, ge=1)
+
+    @model_validator(mode="after")
+    def validate_mandatory_outline(self):
+        required = {"relationships", "multiple_timelines", "tricks", "murder_methods"}
+        domains = {unit.domain for unit in self.mandatory_units if unit.track == "mandatory"}
+        if domains != required:
+            raise ValueError("plan memo must visibly include all four mandatory research domains")
+        return self
 
 
 class PlanMemoUpdateV4(BaseModel):

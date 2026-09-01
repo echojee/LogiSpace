@@ -7,6 +7,7 @@ from fastapi import HTTPException
 
 from app.services.llm import gateway
 from app.services.runtime_store import JsonStore
+from app.services import user_memory
 from logispace_domain.dossiers import all_dossiers, get_dossier
 from logispace_domain.models import Citation, Conversation, ConversationAnswer, ConversationCreate, ConversationMemory, ConversationMessage, ConversationTurn
 
@@ -43,8 +44,8 @@ def _resolve_works(question: str, memory: ConversationMemory) -> list:
 def _context_for(dossiers: list) -> str:
     blocks = []
     for dossier in dossiers:
-        entities = "\n".join(f"- [{item.entity_type}] {item.name}: {item.summary}" for item in dossier.entities)
-        relations = "\n".join(f"- {item.source_id} --{item.relation}--> {item.target_id}: {item.note or ''}" for item in dossier.relations)
+        entities = "\n".join(f"- [{item.entity_type}] {item.name}: {item.summary[:240]}" for item in dossier.entities[:24])
+        relations = "\n".join(f"- {item.source_id} --{item.relation}--> {item.target_id}: {(item.note or '')[:160]}" for item in dossier.relations[:24])
         blocks.append(f"Work: {dossier.work.canonical_title} ({dossier.work.work_id})\nEntities:\n{entities}\nRelations:\n{relations}")
     return "\n\n".join(blocks)
 
@@ -88,10 +89,11 @@ def add_turn(conversation_id: str, request: ConversationTurn) -> ConversationAns
     citations = _dossier_citations(dossiers)
     status = "supported"
     if gateway.available:
-        history = "\n".join(f"{item.role}: {item.content}" for item in conversation.messages[-8:])
+        history = "\n".join(f"{item.role}: {item.content[:600]}" for item in conversation.messages[-6:])
+        preference_context = user_memory.build_context()
         result = gateway.respond(
             instructions="You are the LogiSpace quick-answer agent. Prefer local evidence, search only when needed, never fabricate, respect spoiler settings, and answer in the user's language.",
-            input_text=f"Spoiler level: {conversation.memory.spoiler_level.value}\nConversation:\n{history}\n\nLocal knowledge:\n{_context_for(dossiers) or 'None'}",
+            input_text=f"{preference_context}\nSession spoiler override: {conversation.memory.spoiler_level.value}\nConversation:\n{history}\n\nLocal knowledge:\n{_context_for(dossiers) or 'None'}",
             web_search=request.allow_web_search and not dossiers,
         )
         answer_text = result.text

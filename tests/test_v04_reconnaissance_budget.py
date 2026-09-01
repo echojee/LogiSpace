@@ -38,8 +38,10 @@ def test_reconnaissance_is_bounded_and_cached(tmp_path, monkeypatch):
     second = reconnaissance_v4.run_reconnaissance(brief=brief, dossier=dossier, llm=llm)
     assert first == second
     assert len(llm.calls) == 1
-    assert llm.calls[0]["max_output_tokens"] == 2500
-    assert llm.calls[0]["max_tool_calls"] == 2
+    assert llm.calls[0]["max_output_tokens"] == 1200
+    assert llm.calls[0]["max_tool_calls"] == 1
+    assert llm.calls[0]["research"] is False
+    assert llm.calls[0]["model"] == "recorded-recon"
     assert llm.calls[0]["reasoning_effort"] == "low"
     assert llm.calls[0]["web_search"] is True
     assert llm.calls[0]["response_schema"]["additionalProperties"] is False

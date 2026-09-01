@@ -76,7 +76,7 @@ def _pipeline_fingerprint(brief: ResearchBriefV4, dossier: WorkDossier, llm: LLM
         "goal": brief.user_goal,
         "prompt_hash": prompt_hash,
         "schema_hash": schema_hash,
-        "model": llm.research_model,
+        "model": getattr(llm, "plan_model", llm.research_model),
     }
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
 
@@ -113,10 +113,11 @@ def _request_output(*, brief: ResearchBriefV4, dossier: WorkDossier, llm: LLMGat
         raw, _ = llm.respond_json(
             instructions=INSTRUCTIONS,
             input_text=json.dumps(_payload(brief, dossier), ensure_ascii=False),
-            research=True,
+            research=False,
+            model=getattr(llm, "plan_model", llm.research_model),
             web_search=True,
-            max_tool_calls=2,
-            max_output_tokens=2500,
+            max_tool_calls=1,
+            max_output_tokens=1200,
             reasoning_effort="low",
             verbosity="low",
             response_schema=schema,
@@ -129,8 +130,9 @@ def _request_output(*, brief: ResearchBriefV4, dossier: WorkDossier, llm: LLMGat
                     "Preserve only information already present. Do not browse, add facts, URLs, or explanations."
                 ),
                 input_text=json.dumps({"malformed_response": first_error.raw_text}, ensure_ascii=False),
-                research=True,
-                max_output_tokens=2500,
+                research=False,
+                model=getattr(llm, "plan_model", llm.research_model),
+                max_output_tokens=1200,
                 reasoning_effort="low",
                 verbosity="low",
                 response_schema=schema,
@@ -156,7 +158,7 @@ def run_reconnaissance(
         return cached
     output = _request_output(brief=brief, dossier=dossier, llm=llm)
     result = ReconnaissanceBriefV4(
-        **output.model_dump(), model=llm.research_model, prompt_version=PROMPT_VERSION,
+        **output.model_dump(), model=getattr(llm, "plan_model", llm.research_model), prompt_version=PROMPT_VERSION,
     )
     CACHE_ROOT.mkdir(parents=True, exist_ok=True)
     temporary = cache_path.with_suffix(".tmp")

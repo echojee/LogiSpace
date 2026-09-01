@@ -1,0 +1,108 @@
+{
+  "case_file_id": "case_eca8b7fdbe67",
+  "work_id": "work-novel-962a77c6",
+  "media_version": "original_novel",
+  "title": "《无人生还》深度研究报告",
+  "research_mainline": "报告认为《无人生还》的核心结构是沃格雷夫通过伪死、匿名化叙事和伪造死亡顺序，将自己从嫌疑人改写为死者，最后以手稿重建案件解释。",
+  "reliability_note": "报告明确区分小说正文、警方尾声与沃格雷夫手稿；手稿对机械事实的解释较强，但其道德自我辩护不应视为中立事实。部分匿名意识段落的归属存在不确定性。",
+  "blocks": [
+    {
+      "block_id": "block_d0dbb32c718b",
+      "layer": "one_minute",
+      "block_type": "summary",
+      "title": "研究摘要",
+      "text": "报告认为《无人生还》的核心结构是沃格雷夫通过伪死、匿名化叙事和伪造死亡顺序，将自己从嫌疑人改写为死者，最后以手稿重建案件解释。",
+      "claim_ids": [
+        "report_claim_ae99296e5197",
+        "report_claim_eb39e2af0219",
+        "report_claim_9f362210f15a",
+        "report_claim_8393488b5e99",
+        "report_claim_53b356c16b6a",
+        "report_claim_6b7da2bafcac"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "block_id": "block_d6272df839e4",
+      "layer": "core",
+      "block_type": "relationships",
+      "title": "人物关系",
+      "text": "- 劳伦斯·沃格雷夫利用阿姆斯特朗对其司法声望的信任，使阿姆斯特朗协助伪造他的死亡并宣布其死亡。\n- 沃格雷夫把阿姆斯特朗作为程序上的共谋者，随后又以秘密会面为名将阿姆斯特朗诱至悬崖并推入海中。\n- 薇拉与隆巴德在阿姆斯特朗尸体出现后形成临时联盟，但薇拉最终夺枪射杀隆巴德。\n- 沃格雷夫通过主持会议、整理证词和定义嫌疑范围，同时扮演法官、侦探与凶手。\n- 沃格雷夫在登岛前利用莫里斯购岛、安排物资和邀请，并让莫里斯建议隆巴德携带手枪。",
+      "claim_ids": [
+        "report_claim_ae99296e5197",
+        "report_claim_eb39e2af0219",
+        "report_claim_9f362210f15a",
+        "report_claim_8393488b5e99",
+        "report_claim_53b356c16b6a"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "block_id": "block_c853ec62888b",
+      "layer": "core",
+      "block_type": "timeline",
+      "title": "时间线",
+      "text": "- 沃格雷夫在登岛前搜集九名受邀者的旧案，并在得知自己患绝症后决定实施连环杀人和自杀计划。\n- 1939年8月8日，录音播放后马斯顿死亡；同日晚莫里斯在伦敦服药过量死亡，罗杰斯太太随后在睡眠中死亡。\n- 8月10日，沃格雷夫杀死罗杰斯、毒杀布伦特，并利用红帘、灰毛线和红泥伪造自己被枪杀。\n- 伪死后，沃格雷夫诱使阿姆斯特朗前往悬崖，将其推入海中，再返回屋内继续扮演尸体。\n- 警方先依据日记、笔记和记录接受沃格雷夫为第六名死者，直到捞到瓶中手稿后才获得完整解释。",
+      "claim_ids": [
+        "report_claim_6b7da2bafcac",
+        "report_claim_6405ba997afd",
+        "report_claim_fa8ff96472e7",
+        "report_claim_d1311b5d673d",
+        "report_claim_829e603d760e"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3",
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "block_id": "block_56b7b6c0096b",
+      "layer": "core",
+      "block_type": "trick",
+      "title": "诡计结构",
+      "text": "- 沃格雷夫的伪死依靠红帘、灰毛线、红泥和阿姆斯特朗的医学认证制造枪杀假象，现场实际上没有开枪。\n- 童谣和瓷偶把死亡组织成公开倒计时，并使已对应童谣死亡的人在心理上退出嫌疑范围。\n- 第11章的匿名思想“那个傻瓜把我的话全信了”可高度归给沃格雷夫，并指向他已骗取阿姆斯特朗信任。\n- 小说通过匿名化思想内容而撤销思想者身份，使读者获得真实线索却无法稳定地将其绑定到沃格雷夫。\n- 警方尾声通过尸体位置、潮汐、手枪和椅子状态证明常规凶手解释无法成立，瓶中手稿随后重新指定行动者。",
+      "claim_ids": [
+        "report_claim_2740b65c099c",
+        "report_claim_6f9b8f0b8430",
+        "report_claim_2ae85c1515ec",
+        "report_claim_993cc79a3be0",
+        "report_claim_55bbb74b53a9"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3",
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "block_id": "block_8363477c8ded",
+      "layer": "core",
+      "block_type": "murder_method",
+      "title": "作案手法",
+      "text": "- 沃格雷夫在马斯顿的酒中投入氰化钾，使马斯顿在录音指控后死亡。\n- 沃格雷夫把水合氯醛加入罗杰斯送给妻子的白兰地，使罗杰斯太太在睡眠中死亡。\n- 沃格雷夫在海边从背后以钝器击打麦克阿瑟将军的后脑。\n- 沃格雷夫先在布伦特的咖啡中加入水合氯醛，再用注射器注入浓氰化物，并以蜜蜂意象掩饰死亡。\n- 沃格雷夫把阿姆斯特朗诱至悬崖后从背后将其推入海中。\n- 沃格雷夫利用手帕、弹性绳、眼镜和门把手制造延迟移枪装置，以手枪射击自己额头并伪装成无法自杀的现场。",
+      "claim_ids": [
+        "report_claim_73275bd97348",
+        "report_claim_f137ad961589",
+        "report_claim_9918e67685a8",
+        "report_claim_1db6044f0381",
+        "report_claim_84c21049176d",
+        "report_claim_8ee91217201e"
+      ],
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "block_id": "block_5b5dcddada6e",
+      "layer": "appendix",
+      "block_type": "sources",
+      "title": "来源与可靠性说明",
+      "text": "报告明确区分小说正文、警方尾声与沃格雷夫手稿；手稿对机械事实的解释较强，但其道德自我辩护不应视为中立事实。部分匿名意识段落的归属存在不确定性。",
+      "claim_ids": [],
+      "evidence_ids": []
+    }
+  ]
+}

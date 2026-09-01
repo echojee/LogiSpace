@@ -1,0 +1,81 @@
+{
+  "schema_version": "knowledge-report-v1",
+  "work_id": "work-series-93c9174b",
+  "work_title": "有罪之身",
+  "media_version": "original_series",
+  "source_job_id": "research_v4_00ccca884ccc",
+  "title": "《有罪之身》深度研究报告",
+  "model": "gpt-5.6-sol",
+  "provider_response_id": "resp_066bdfdfd4f47b53006a93c7d5f92c87d0ab30b7f80d4de4fb",
+  "citations": [
+    {
+      "title": "有罪之身 (2026) 全集 带字幕 –爱奇艺 iQIYI | iQ.com",
+      "url": "https://www.iq.com/play/%E6%9C%89%E7%BD%AA%E4%B9%8B%E8%BA%AB-11gjb8kj6js?lang=zh_cn&utm_source=openai",
+      "start_index": 230,
+      "end_index": 343
+    },
+    {
+      "title": "《无罪之身》更名《有罪之身》！“迷雾剧场年度重磅”剧作即将登陆爱奇艺迷雾剧场",
+      "url": "https://web.cmc.hebtv.com/cms/rmt0336_html/19/19js/yzgj/12170796.shtml?utm_source=openai",
+      "start_index": 478,
+      "end_index": 589
+    },
+    {
+      "title": "有罪之身-电视剧-全集高清正版视频在线观看-爱奇艺",
+      "url": "https://www.iqiyi.com/a_joowt9qeup.html?utm_source=openai",
+      "start_index": 666,
+      "end_index": 738
+    },
+    {
+      "title": "《有罪之身·剧情速看版》-精彩合集-免费在线观看-爱奇艺",
+      "url": "https://www.iqiyi.com/a_1kuf9fkgl81.html",
+      "start_index": 2444,
+      "end_index": 2499
+    },
+    {
+      "title": "《有罪之身》分集剧情（1-14集大结局） - ZuiAi.TV",
+      "url": "https://zuiai.tv/i/2421",
+      "start_index": 2760,
+      "end_index": 2797
+    },
+    {
+      "title": "《有罪之身·珊珊绑架案真相揭露》-精彩合集-免费在线观看-爱奇艺",
+      "url": "https://www.iqiyi.com/a_1xx9yr6w9fd.html",
+      "start_index": 3416,
+      "end_index": 3471
+    },
+    {
+      "title": "有罪之身第14集分集剧情_电视剧_电视猫",
+      "url": "https://www.tvmao.com/kanju/ZGFqIWNi/episode/4-14?utm_source=openai",
+      "start_index": 4731,
+      "end_index": 4813
+    },
+    {
+      "title": "有罪之身第12集分集剧情_电视剧_电视猫",
+      "url": "https://www.tvmao.com/kanju/ZGFqIWNi/episode/3-12?utm_source=openai",
+      "start_index": 5260,
+      "end_index": 5342
+    },
+    {
+      "title": "有罪之身·高光精华速看-原创-高清正版视频在线观看-爱奇艺",
+      "url": "https://www.iqiyi.com/a_1lxy32yvju5.html?utm_source=openai",
+      "start_index": 10981,
+      "end_index": 11054
+    },
+    {
+      "title": "《有罪之身》分集剧情（1-14集大结局） - 最爱TV",
+      "url": "https://zuiai.tv/i/2421?utm_source=openai",
+      "start_index": 14530,
+      "end_index": 14585
+    },
+    {
+      "title": "有罪之身 (2026) 全集 带字幕 –爱奇艺 iQIYI | iQ.com",
+      "url": "https://www.iq.com/play/%E6%9C%89%E7%BD%AA%E4%B9%8B%E8%BA%AB-11gjb8kj6js?lang=zh_cn",
+      "start_index": 14783,
+      "end_index": 14878
+    }
+  ],
+  "generated_at": "2026-08-30T06:07:12.594718+00:00",
+  "deposited_at": "2026-08-30T06:10:23.097674+00:00",
+  "markdown_file": "report.md"
+}

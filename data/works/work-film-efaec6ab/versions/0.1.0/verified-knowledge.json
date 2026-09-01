@@ -1,0 +1,1731 @@
+{
+  "snapshot_id": "vk_report_cf0ef102da06",
+  "work_id": "work-film-efaec6ab",
+  "media_version": "original_film",
+  "claims": [
+    {
+      "claim_id": "report_claim_3c6c0c85f95d",
+      "text": "Leonard Vole实际杀害Emily French并在无罪后选择Diana。",
+      "claim_type": "character_fact",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f9a906f1f979",
+      "text": "Christine明知Leonard有罪，却通过伪证、假情书和乔装帮助他脱罪，最终杀死Leonard。",
+      "claim_type": "character_fact",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_ed76730c5205",
+      "text": "Emily French信任Leonard并将大部分遗产留给他，后来成为其谋杀受害者。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_451992a6eb6d",
+      "text": "Sir Wilfred成功摧毁Christine的表面可信度，却误将真正凶手辩护至无罪。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_240ead6097315f4d",
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6721a31d9fc6",
+      "text": "Janet Mackenzie是Emily的管家并敌视Leonard。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_3944f5aae05a",
+      "text": "Diana是Leonard的情妇，并在其脱罪后与他计划离开。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_eacdc1ba8432",
+      "text": "Mr. Myers以遗嘱、血迹、动机和Christine证词组织对Leonard的指控。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_240ead6097315f4d",
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_7c8689efa9f1",
+      "text": "Miss Plimsoll是Sir Wilfred的护士，并以健康安排约束他。",
+      "claim_type": "character_fact",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_f55234b3b238aad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_e9ed81a15b6d",
+      "text": "Max是Christine伪造情书中的虚构情人。",
+      "claim_type": "character_fact",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_45a61428e057",
+      "text": "Leonard与Christine举行过婚礼，但婚姻因Christine已有在世丈夫而无效；Christine爱他而Leonard利用她。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_11d1e1173939",
+      "text": "Emily信任并照顾Leonard，并把遗产留给他；Leonard为遗产杀害她。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6e97645fdfe9",
+      "text": "Christine预判Sir Wilfred的职业反应，诱使他用情书摧毁她的可信度。",
+      "claim_type": "relationship",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_d09104ec54b5",
+      "text": "Sir Wilfred为Leonard制造合理怀疑并赢得无罪判决，却误判其真实身份。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_72e984891f40",
+      "text": "Diana是Leonard在旅行社线索中的伴侣，Leonard脱罪后选择与她离开。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_63a8924a7657",
+      "text": "Janet作为Emily的管家保护她，并提供不利于Leonard的联系信息。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9d7a5d595915",
+      "text": "Janet强烈敌视Leonard，并把他视为Emily遇害的相关人员。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_da66084d93de",
+      "text": "Miss Plimsoll为保护Sir Wilfred健康而约束其工作和生活。",
+      "claim_type": "relationship",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_f55234b3b238aad7"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8b37dd5bbc10",
+      "text": "Max是Christine为制造构陷动机而虚构的情人。",
+      "claim_type": "relationship",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_386be9c09471",
+      "text": "Leonard在德国认识Christine，两人举行婚礼；该婚姻因Christine已有在世丈夫而无效。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f07f2ee58fcf",
+      "text": "Leonard结识并频繁拜访Emily，获得她的信任和照顾。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_aae378403769",
+      "text": "Emily将约八万英镑遗产留给Leonard，形成财产动机。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f56213b51c67",
+      "text": "9月8日，Leonard与Diana在Regent Street旅行社询问海外航程。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_04ac6402a375",
+      "text": "Leonard以钝重物击打Emily后脑致死，并打破窗户伪装盗窃入室；日期记录存在冲突。",
+      "claim_type": "timeline_event",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_3740072de76c",
+      "text": "Leonard约在案发当晚10时10分染血回家，并向Christine承认杀害Emily。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_5ce360b4565e",
+      "text": "Christine决定保护明知有罪的Leonard，并开始构造脱罪方案。",
+      "claim_type": "timeline_event",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_cdd0c34bfe36",
+      "text": "Christine准备假情书、虚构Max，并计划用真实犯罪事实配合虚假动机摧毁自身可信度。",
+      "claim_type": "timeline_event",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f045114de2b7",
+      "text": "Christine乔装成带疤痕的伦敦女人，将伪造的Max情书交给辩方。",
+      "claim_type": "timeline_event",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_7a307f785dd9",
+      "text": "Christine以Christine Helm身份作控方证人，陈述Leonard染血回家并承认杀人。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_1d527808c387",
+      "text": "Sir Wilfred利用信纸、笔迹和情书证明Christine似乎因Max构陷Leonard。",
+      "claim_type": "timeline_event",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_389883e83db3",
+      "text": "陪审团接受Christine恶意构陷的解释并判Leonard无罪。",
+      "claim_type": "timeline_event",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9b09887c0126",
+      "text": "Christine承认Max、情书和匿名女人都是她创造的，并确认Leonard有罪。",
+      "claim_type": "timeline_event",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_2203eda79469",
+      "text": "Leonard承认受益于Christine的安排，以“两清”为由抛弃她并选择Diana。",
+      "claim_type": "timeline_event",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_10f37b6d68a8",
+      "text": "Christine在法庭建筑内近距离刺杀Leonard，并公开承担后果。",
+      "claim_type": "timeline_event",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8f7a02d2d136",
+      "text": "调查发现窗户破裂，但玻璃散落方式不符合单纯从外部强行进入。",
+      "claim_type": "investigation_finding",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_4c16f548f043",
+      "text": "珠宝等贵重物品没有被取走，使盗窃解释可疑。",
+      "claim_type": "investigation_finding",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f8f05cb7535e",
+      "text": "Leonard衣物上发现曾被清洗的人血痕迹。",
+      "claim_type": "investigation_finding",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_0abce14b14cd",
+      "text": "血迹与Emily同为O型，但Leonard也为O型，辩方据此制造合理怀疑。",
+      "claim_type": "investigation_finding",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_b83ac6443dea",
+      "text": "调查和审判确认Emily将大额遗产留给Leonard，使财产动机成立。",
+      "claim_type": "investigation_finding",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_59b3922ee906",
+      "text": "Janet把Leonard与Emily及案发住宅联系起来，并表达敌意。",
+      "claim_type": "investigation_finding",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_7dbd6729dfeb",
+      "text": "Christine的证词补足Leonard回家时间、染血衣袖和杀人自白。",
+      "claim_type": "investigation_finding",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_29fe461a30c4",
+      "text": "旅行社证据显示Leonard并非独自行动，提示其存在隐秘女性关系。",
+      "claim_type": "investigation_finding",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_57aa0bfad43d",
+      "text": "神秘疤痕女人向辩方提供看似由Christine写给Max的情书。",
+      "claim_type": "investigation_finding",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_d5fb708b17b9",
+      "text": "辩方通过信纸、笔迹和内容把Christine塑造成因私情陷害丈夫的证人。",
+      "claim_type": "investigation_finding",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_1920a01074f4",
+      "text": "无罪判决前，Sir Wilfred开始怀疑翻案证据出现得过于完美。",
+      "claim_type": "investigation_finding",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_5a3180662709",
+      "text": "观众在开场看到雷雨、破玻璃、脚步和尸体，却不知道凶手身份。",
+      "claim_type": "reader_reveal",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f441fbc2bb55",
+      "text": "前段叙事先把Leonard塑造成讨喜、恐惧和无助的无害青年。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_7583f0ba0fc4",
+      "text": "八万英镑遗产进入叙事后，观众首次看到明确谋杀动机。",
+      "claim_type": "reader_reveal",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_55be4b485d6f",
+      "text": "影片约00:52:38—00:54才揭示Christine以Helm身份成为控方证人。",
+      "claim_type": "reader_reveal",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_757ecb0adbd6",
+      "text": "Christine说出Leonard染血回家和自白，但观众被引导怀疑她在陷害丈夫。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_00096ba95728",
+      "text": "旅行社金发女子线索暗示Leonard另有关系，但身份暂未揭示。",
+      "claim_type": "reader_reveal",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_39c47337b808",
+      "text": "匿名伦敦女人提供情书，使观众转向Christine构陷丈夫的解释。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_e29375d8d577",
+      "text": "情书宣读后，Christine的控方证词被视为私情驱动的伪证。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_1564fd03cf74",
+      "text": "Leonard被判无罪，观众暂时以为案件完成逆转。",
+      "claim_type": "reader_reveal",
+      "domain": "multiple_timelines",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_22bcdc6048a6",
+      "text": "Christine说出“我们做到了”，随后承认自己就是疤痕女人。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_7332d18f3ed8",
+      "text": "Christine承认Max和情书是伪造的，并确认Leonard杀害Emily。",
+      "claim_type": "reader_reveal",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_572f21e99fe6",
+      "text": "Diana现身确认旅行社线索；Leonard抛弃Christine后被她刺杀。",
+      "claim_type": "reader_reveal",
+      "domain": "relationships",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_3471b6b0bbad",
+      "text": "Christine把真实犯罪事实包装在虚假私情动机中，使真相被判定为谎言。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_dbeaadd98675",
+      "text": "Christine利用无效婚姻取得控方作证资格。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f1d1dd2c4b5f",
+      "text": "Christine虚构Max并伪造蓝色情书，制造构陷动机。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_772dee7c1635",
+      "text": "Christine改变口音并化装成疤痕女人，把情书送入辩方手中。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_e872c2e867d7",
+      "text": "Christine诱使Sir Wilfred攻击她的可信度，从而让陪审团否定其真实证词。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_c98d1377bb7a",
+      "text": "Leonard打破窗户制造外来盗贼入室假象。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f110706a2a3d",
+      "text": "Leonard以手腕割伤解释衣物血迹，并利用同为O型血制造合理怀疑。",
+      "claim_type": "mechanism",
+      "domain": "tricks",
+      "media_version": "original_film",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6d2254c96ad8",
+      "text": "Emily死于钝而沉重器具击打后脑；具体凶器未确认。",
+      "claim_type": "method",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_626688e4658f",
+      "text": "Christine在无罪判决后于法庭建筑内近距离刺杀Leonard；具体刀具未确认。",
+      "claim_type": "method",
+      "domain": "murder_methods",
+      "media_version": "original_film",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    }
+  ],
+  "domain_objects": [
+    {
+      "object_id": "report_object_55ff5a1240f8",
+      "object_type": "character",
+      "payload": {
+        "character_id": "leonard_vole",
+        "name": "Leonard Vole",
+        "summary": "失业青年，被控谋杀Emily French；实际杀害Emily并利用Christine脱罪，随后选择Diana。",
+        "inventory_id": "leonard_vole"
+      },
+      "claim_ids": [
+        "report_claim_3c6c0c85f95d"
+      ]
+    },
+    {
+      "object_id": "report_object_d7c9bd2092c8",
+      "object_type": "character",
+      "payload": {
+        "character_id": "christine_helm",
+        "name": "Christine Helm",
+        "summary": "Leonard名义上的妻子和控方证人；明知Leonard有罪，却设计伪证、伪造情书和乔装来救他，最终杀死Leonard。",
+        "inventory_id": "christine_helm"
+      },
+      "claim_ids": [
+        "report_claim_f9a906f1f979"
+      ]
+    },
+    {
+      "object_id": "report_object_4b29423dcef6",
+      "object_type": "character",
+      "payload": {
+        "character_id": "emily_french",
+        "name": "Emily French",
+        "summary": "富有寡妇和谋杀受害者；曾信任Leonard，并在遗嘱中将大部分遗产留给他。",
+        "inventory_id": "emily_french"
+      },
+      "claim_ids": [
+        "report_claim_ed76730c5205"
+      ]
+    },
+    {
+      "object_id": "report_object_36bef7efed35",
+      "object_type": "character",
+      "payload": {
+        "character_id": "sir_wilfred_robarts",
+        "name": "Sir Wilfred Robarts",
+        "summary": "资深刑事辩护律师；成功摧毁Christine的表面可信度，却误将真正凶手辩护至无罪。",
+        "inventory_id": "sir_wilfred_robarts"
+      },
+      "claim_ids": [
+        "report_claim_451992a6eb6d"
+      ]
+    },
+    {
+      "object_id": "report_object_6609126d7b2f",
+      "object_type": "character",
+      "payload": {
+        "character_id": "janet_mackenzie",
+        "name": "Janet Mackenzie",
+        "summary": "Emily的管家；敌视Leonard，并将他与案发住宅联系起来。",
+        "inventory_id": "janet_mackenzie"
+      },
+      "claim_ids": [
+        "report_claim_6721a31d9fc6"
+      ]
+    },
+    {
+      "object_id": "report_object_9613d93444eb",
+      "object_type": "character",
+      "payload": {
+        "character_id": "diana",
+        "name": "Diana",
+        "summary": "Leonard的情妇；与他计划在脱罪后离开，闭合旅行社金发女子的线索。",
+        "inventory_id": "diana"
+      },
+      "claim_ids": [
+        "report_claim_3944f5aae05a"
+      ]
+    },
+    {
+      "object_id": "report_object_2a144aa38860",
+      "object_type": "character",
+      "payload": {
+        "character_id": "mr_myers",
+        "name": "Mr. Myers",
+        "summary": "控方律师；以遗嘱、血迹、动机和Christine证词组织对Leonard的指控。",
+        "inventory_id": "mr_myers"
+      },
+      "claim_ids": [
+        "report_claim_eacdc1ba8432"
+      ]
+    },
+    {
+      "object_id": "report_object_216eeac65451",
+      "object_type": "character",
+      "payload": {
+        "character_id": "miss_plimsoll",
+        "name": "Miss Plimsoll",
+        "summary": "Sir Wilfred的护士；以健康、饮食和工作安排约束他。",
+        "inventory_id": "miss_plimsoll"
+      },
+      "claim_ids": [
+        "report_claim_7c8689efa9f1"
+      ]
+    },
+    {
+      "object_id": "report_object_177e8282b984",
+      "object_type": "character",
+      "payload": {
+        "character_id": "max",
+        "name": "Max",
+        "summary": "Christine伪造情书中虚构的情人；并非真实人物，而是用来制造构陷动机的证据装置。",
+        "inventory_id": "max"
+      },
+      "claim_ids": [
+        "report_claim_e9ed81a15b6d"
+      ]
+    },
+    {
+      "object_id": "report_object_a078ca36ca82",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "leonard_vole",
+        "source_name": "Leonard Vole",
+        "target_character_id": "christine_helm",
+        "target_name": "Christine Helm",
+        "relation_type": "名义夫妻；不对称利用",
+        "summary": "两人举行过婚礼，但因Christine已有在世丈夫而婚姻无效；Christine真心爱Leonard并设计救他，Leonard主要利用她并在脱罪后抛弃她。",
+        "inventory_id": "rel_leonard_christine"
+      },
+      "claim_ids": [
+        "report_claim_45a61428e057"
+      ]
+    },
+    {
+      "object_id": "report_object_92b8678c1cda",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "leonard_vole",
+        "source_name": "Leonard Vole",
+        "target_character_id": "emily_french",
+        "target_name": "Emily French",
+        "relation_type": "受信任的来访者与资助对象；谋杀者与受害者",
+        "summary": "Emily信任并照顾Leonard，将遗产留给他；Leonard为取得遗产杀害她。",
+        "inventory_id": "rel_leonard_emily"
+      },
+      "claim_ids": [
+        "report_claim_11d1e1173939"
+      ]
+    },
+    {
+      "object_id": "report_object_38fb59201ed8",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "christine_helm",
+        "source_name": "Christine Helm",
+        "target_character_id": "sir_wilfred_robarts",
+        "target_name": "Sir Wilfred Robarts",
+        "relation_type": "被辩方操纵的证人对律师",
+        "summary": "Christine预判Sir Wilfred的职业反应，诱使他用情书摧毁她的可信度。",
+        "inventory_id": "rel_christine_wilfred"
+      },
+      "claim_ids": [
+        "report_claim_6e97645fdfe9"
+      ]
+    },
+    {
+      "object_id": "report_object_85daa4469d22",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "sir_wilfred_robarts",
+        "source_name": "Sir Wilfred Robarts",
+        "target_character_id": "leonard_vole",
+        "target_name": "Leonard Vole",
+        "relation_type": "辩护律师与被告",
+        "summary": "Sir Wilfred为Leonard制造合理怀疑并赢得无罪判决，却误判其真实身份。",
+        "inventory_id": "rel_wilfred_leonard"
+      },
+      "claim_ids": [
+        "report_claim_d09104ec54b5"
+      ]
+    },
+    {
+      "object_id": "report_object_2a3b0b426978",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "leonard_vole",
+        "source_name": "Leonard Vole",
+        "target_character_id": "diana",
+        "target_name": "Diana",
+        "relation_type": "情人",
+        "summary": "Diana是Leonard在旅行社线索中的伴侣；Leonard脱罪后选择与她离开。",
+        "inventory_id": "rel_leonard_diana"
+      },
+      "claim_ids": [
+        "report_claim_72e984891f40"
+      ]
+    },
+    {
+      "object_id": "report_object_1a67c60c8c28",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "janet_mackenzie",
+        "source_name": "Janet Mackenzie",
+        "target_character_id": "emily_french",
+        "target_name": "Emily French",
+        "relation_type": "管家与雇主",
+        "summary": "Janet作为Emily的管家保护她，并在案件中提供不利于Leonard的联系信息。",
+        "inventory_id": "rel_janet_emily"
+      },
+      "claim_ids": [
+        "report_claim_63a8924a7657"
+      ]
+    },
+    {
+      "object_id": "report_object_3ebc4f36e3b2",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "janet_mackenzie",
+        "source_name": "Janet Mackenzie",
+        "target_character_id": "leonard_vole",
+        "target_name": "Leonard Vole",
+        "relation_type": "敌视与指认",
+        "summary": "Janet强烈敌视Leonard，并把他视为Emily遇害的相关人员。",
+        "inventory_id": "rel_janet_leonard"
+      },
+      "claim_ids": [
+        "report_claim_9d7a5d595915"
+      ]
+    },
+    {
+      "object_id": "report_object_09e5af160e47",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "sir_wilfred_robarts",
+        "source_name": "Sir Wilfred Robarts",
+        "target_character_id": "miss_plimsoll",
+        "target_name": "Miss Plimsoll",
+        "relation_type": "律师与护士；控制与照护",
+        "summary": "Miss Plimsoll为保护Sir Wilfred健康而约束他的工作和生活，形成案件操纵关系的镜像。",
+        "inventory_id": "rel_wilfred_plimsoll"
+      },
+      "claim_ids": [
+        "report_claim_da66084d93de"
+      ]
+    },
+    {
+      "object_id": "report_object_c89124629894",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "christine_helm",
+        "source_name": "Christine Helm",
+        "target_character_id": "max",
+        "target_name": "Max",
+        "relation_type": "伪造的情人关系",
+        "summary": "Max是Christine虚构出来的情人，用于制造她构陷Leonard的假动机。",
+        "inventory_id": "rel_christine_max"
+      },
+      "claim_ids": [
+        "report_claim_8b37dd5bbc10"
+      ]
+    },
+    {
+      "object_id": "report_object_eeba9546c386",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "德国相识与无效婚礼",
+        "summary": "Leonard在德国认识Christine，两人举行婚礼；因Christine已有在世丈夫，婚姻无效。",
+        "inventory_id": "evt_truth_01",
+        "order": 1,
+        "track": "truth",
+        "time_label": "战后德国时期"
+      },
+      "claim_ids": [
+        "report_claim_386be9c09471"
+      ]
+    },
+    {
+      "object_id": "report_object_b799a08d8cf6",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Leonard接近Emily",
+        "summary": "Leonard结识并频繁拜访Emily，获得她的信任和照顾。",
+        "inventory_id": "evt_truth_02",
+        "order": 2,
+        "track": "truth",
+        "time_label": "案发前"
+      },
+      "claim_ids": [
+        "report_claim_f07f2ee58fcf"
+      ]
+    },
+    {
+      "object_id": "report_object_346e8ca4725e",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Emily立遗嘱",
+        "summary": "Emily将约八万英镑遗产留给Leonard，形成明确财产动机。",
+        "inventory_id": "evt_truth_03",
+        "order": 3,
+        "track": "truth",
+        "time_label": "案发前"
+      },
+      "claim_ids": [
+        "report_claim_aae378403769"
+      ]
+    },
+    {
+      "object_id": "report_object_7e0710a587b0",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "旅行社会见Diana",
+        "summary": "Leonard与Diana在Regent Street旅行社询问海外航程，显示其另有情人和出行计划。",
+        "inventory_id": "evt_truth_04",
+        "order": 4,
+        "track": "truth",
+        "time_label": "9月8日"
+      },
+      "claim_ids": [
+        "report_claim_f56213b51c67"
+      ]
+    },
+    {
+      "object_id": "report_object_208b3b372ee0",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Emily被杀",
+        "summary": "Leonard以钝重物击打Emily后脑致死，并打破窗户伪装入室盗窃。",
+        "inventory_id": "evt_truth_05",
+        "order": 5,
+        "track": "truth",
+        "time_label": "9月14日（日期存在冲突）"
+      },
+      "claim_ids": [
+        "report_claim_04ac6402a375"
+      ]
+    },
+    {
+      "object_id": "report_object_696bd873d9cd",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Leonard染血回家",
+        "summary": "Leonard约在10时10分回家，衣袖带血，并向Christine承认杀害Emily。",
+        "inventory_id": "evt_truth_06",
+        "order": 6,
+        "track": "truth",
+        "time_label": "案发当晚约10:10"
+      },
+      "claim_ids": [
+        "report_claim_3740072de76c"
+      ]
+    },
+    {
+      "object_id": "report_object_293371ce3174",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine决定救Leonard",
+        "summary": "Christine决定保护明知有罪的Leonard，并开始构造脱罪方案。",
+        "inventory_id": "evt_truth_07",
+        "order": 7,
+        "track": "truth",
+        "time_label": "案发后"
+      },
+      "claim_ids": [
+        "report_claim_5ce360b4565e"
+      ]
+    },
+    {
+      "object_id": "report_object_92ba24f5e341",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine设计反向证词",
+        "summary": "她准备假情书、虚构Max，并计划以真实犯罪事实配合虚假动机来摧毁自身可信度。",
+        "inventory_id": "evt_truth_08",
+        "order": 8,
+        "track": "truth",
+        "time_label": "审判前"
+      },
+      "claim_ids": [
+        "report_claim_cdd0c34bfe36"
+      ]
+    },
+    {
+      "object_id": "report_object_1630f47b40f5",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine乔装送出情书",
+        "summary": "Christine乔装成带疤痕的伦敦女人，将伪造的Max情书交给辩方。",
+        "inventory_id": "evt_truth_09",
+        "order": 9,
+        "track": "truth",
+        "time_label": "审判期间"
+      },
+      "claim_ids": [
+        "report_claim_f045114de2b7"
+      ]
+    },
+    {
+      "object_id": "report_object_e14c8c094c36",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine作控方证人",
+        "summary": "她以Christine Helm身份作证，陈述Leonard染血回家并承认杀人。",
+        "inventory_id": "evt_truth_10",
+        "order": 10,
+        "track": "truth",
+        "time_label": "审判期间"
+      },
+      "claim_ids": [
+        "report_claim_7a307f785dd9"
+      ]
+    },
+    {
+      "object_id": "report_object_1e8ff026e0f7",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "辩方摧毁Christine可信度",
+        "summary": "Sir Wilfred利用信纸、笔迹和情书证明她似乎因Max而构陷Leonard。",
+        "inventory_id": "evt_truth_11",
+        "order": 11,
+        "track": "truth",
+        "time_label": "审判期间"
+      },
+      "claim_ids": [
+        "report_claim_1d527808c387"
+      ]
+    },
+    {
+      "object_id": "report_object_c67c4ea56bbb",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Leonard获判无罪",
+        "summary": "陪审团接受Christine恶意构陷的解释，判Leonard无罪。",
+        "inventory_id": "evt_truth_12",
+        "order": 12,
+        "track": "truth",
+        "time_label": "审判结束"
+      },
+      "claim_ids": [
+        "report_claim_389883e83db3"
+      ]
+    },
+    {
+      "object_id": "report_object_2f5536fe58e5",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine揭露计划",
+        "summary": "Christine承认Max、情书和匿名女人都是她的创造，并确认Leonard确实有罪。",
+        "inventory_id": "evt_truth_13",
+        "order": 13,
+        "track": "truth",
+        "time_label": "无罪判决后"
+      },
+      "claim_ids": [
+        "report_claim_9b09887c0126"
+      ]
+    },
+    {
+      "object_id": "report_object_1863cb77de73",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Leonard选择Diana",
+        "summary": "Leonard承认受益于Christine的安排，并以“两清”为由抛弃她，选择Diana。",
+        "inventory_id": "evt_truth_14",
+        "order": 14,
+        "track": "truth",
+        "time_label": "无罪判决后"
+      },
+      "claim_ids": [
+        "report_claim_2203eda79469"
+      ]
+    },
+    {
+      "object_id": "report_object_eef92466a32d",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine刺杀Leonard",
+        "summary": "Christine在法庭建筑内近距离刺杀Leonard，并公开承担后果。",
+        "inventory_id": "evt_truth_15",
+        "order": 15,
+        "track": "truth",
+        "time_label": "无罪释放后数分钟"
+      },
+      "claim_ids": [
+        "report_claim_10f37b6d68a8"
+      ]
+    },
+    {
+      "object_id": "report_object_b1577966ca9d",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "发现伪装入室现场",
+        "summary": "调查发现窗户破裂，但玻璃散落方式不符合单纯从外部强行进入。",
+        "inventory_id": "evt_investigation_01",
+        "order": 1,
+        "track": "investigation",
+        "time_label": "案件调查初期"
+      },
+      "claim_ids": [
+        "report_claim_8f7a02d2d136"
+      ]
+    },
+    {
+      "object_id": "report_object_9c048cc1cddf",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "发现财物未被取走",
+        "summary": "珠宝等贵重物品没有被拿走，使盗窃解释变得可疑。",
+        "inventory_id": "evt_investigation_02",
+        "order": 2,
+        "track": "investigation",
+        "time_label": "案件调查初期"
+      },
+      "claim_ids": [
+        "report_claim_4c16f548f043"
+      ]
+    },
+    {
+      "object_id": "report_object_7ee41219ad74",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "发现清洗过的血迹",
+        "summary": "Leonard衣物上发现曾被清洗的人血痕迹。",
+        "inventory_id": "evt_investigation_03",
+        "order": 3,
+        "track": "investigation",
+        "time_label": "案件调查初期"
+      },
+      "claim_ids": [
+        "report_claim_f8f05cb7535e"
+      ]
+    },
+    {
+      "object_id": "report_object_5adfe0e0cab9",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "血型形成争议",
+        "summary": "血迹与Emily同为O型，但Leonard也为O型，辩方据此制造合理怀疑。",
+        "inventory_id": "evt_investigation_04",
+        "order": 4,
+        "track": "investigation",
+        "time_label": "审判取证阶段"
+      },
+      "claim_ids": [
+        "report_claim_0abce14b14cd"
+      ]
+    },
+    {
+      "object_id": "report_object_ed2d72922094",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "遗嘱暴露动机",
+        "summary": "调查和审判确认Emily将大额遗产留给Leonard，使财产动机成立。",
+        "inventory_id": "evt_investigation_05",
+        "order": 5,
+        "track": "investigation",
+        "time_label": "审判取证阶段"
+      },
+      "claim_ids": [
+        "report_claim_b83ac6443dea"
+      ]
+    },
+    {
+      "object_id": "report_object_69275ebdaf60",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Janet提供不利联系",
+        "summary": "Janet把Leonard与Emily及案发住宅联系起来，并表达对他的敌意。",
+        "inventory_id": "evt_investigation_06",
+        "order": 6,
+        "track": "investigation",
+        "time_label": "审判取证阶段"
+      },
+      "claim_ids": [
+        "report_claim_59b3922ee906"
+      ]
+    },
+    {
+      "object_id": "report_object_dbc6fb30ba46",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine补上直接叙述",
+        "summary": "Christine的证词补足Leonard回家时间、染血衣袖和杀人自白。",
+        "inventory_id": "evt_investigation_07",
+        "order": 7,
+        "track": "investigation",
+        "time_label": "审判期间"
+      },
+      "claim_ids": [
+        "report_claim_7dbd6729dfeb"
+      ]
+    },
+    {
+      "object_id": "report_object_b414c597764a",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "旅行社线索出现",
+        "summary": "旅行社证据显示Leonard并非独自行动，提示其存在隐秘女性关系。",
+        "inventory_id": "evt_investigation_08",
+        "order": 8,
+        "track": "investigation",
+        "time_label": "审判期间"
+      },
+      "claim_ids": [
+        "report_claim_29fe461a30c4"
+      ]
+    },
+    {
+      "object_id": "report_object_9ceb78901a78",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "匿名女人提供情书",
+        "summary": "神秘疤痕女人向辩方提供看似由Christine写给Max的情书。",
+        "inventory_id": "evt_investigation_09",
+        "order": 9,
+        "track": "investigation",
+        "time_label": "审判后段"
+      },
+      "claim_ids": [
+        "report_claim_57aa0bfad43d"
+      ]
+    },
+    {
+      "object_id": "report_object_55413e676a9f",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "情书证明构陷动机",
+        "summary": "辩方通过信纸、笔迹和内容把Christine塑造成因私情陷害丈夫的证人。",
+        "inventory_id": "evt_investigation_10",
+        "order": 10,
+        "track": "investigation",
+        "time_label": "审判后段"
+      },
+      "claim_ids": [
+        "report_claim_d5fb708b17b9"
+      ]
+    },
+    {
+      "object_id": "report_object_686811fe919b",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Sir Wilfred察觉证据过整齐",
+        "summary": "无罪判决前，Sir Wilfred开始怀疑翻案证据出现得过于完美。",
+        "inventory_id": "evt_investigation_11",
+        "order": 11,
+        "track": "investigation",
+        "time_label": "判决前"
+      },
+      "claim_ids": [
+        "report_claim_1920a01074f4"
+      ]
+    },
+    {
+      "object_id": "report_object_4127afbe87d4",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "开场隐去凶手身份",
+        "summary": "观众看到雷雨、破玻璃、脚步和尸体，却未获知凶手是谁。",
+        "inventory_id": "evt_reader_01",
+        "order": 1,
+        "track": "reader",
+        "time_label": "影片开场"
+      },
+      "claim_ids": [
+        "report_claim_5a3180662709"
+      ]
+    },
+    {
+      "object_id": "report_object_91c0d13e08c8",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Leonard先被塑造成无害青年",
+        "summary": "Sir Wilfred和观众先接触Leonard的讨喜、恐惧和无助形象。",
+        "inventory_id": "evt_reader_02",
+        "order": 2,
+        "track": "reader",
+        "time_label": "前段"
+      },
+      "claim_ids": [
+        "report_claim_f441fbc2bb55"
+      ]
+    },
+    {
+      "object_id": "report_object_fbef81f9f11d",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "遗嘱动摇无罪判断",
+        "summary": "八万英镑遗产进入叙事后，观众首次看到明确谋杀动机。",
+        "inventory_id": "evt_reader_03",
+        "order": 3,
+        "track": "reader",
+        "time_label": "约00:22"
+      },
+      "claim_ids": [
+        "report_claim_7583f0ba0fc4"
+      ]
+    },
+    {
+      "object_id": "report_object_8408e0e2b299",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine突然成为控方证人",
+        "summary": "影片延迟到审判中段才揭示Christine以Helm身份作控方证人。",
+        "inventory_id": "evt_reader_04",
+        "order": 4,
+        "track": "reader",
+        "time_label": "约00:52:38—00:54"
+      },
+      "claim_ids": [
+        "report_claim_55be4b485d6f"
+      ]
+    },
+    {
+      "object_id": "report_object_e946b446f79a",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "真实犯罪叙述被包装成恶意证词",
+        "summary": "Christine说出Leonard染血回家和自白，但观众被引导怀疑她是在陷害丈夫。",
+        "inventory_id": "evt_reader_05",
+        "order": 5,
+        "track": "reader",
+        "time_label": "约00:55—00:58"
+      },
+      "claim_ids": [
+        "report_claim_757ecb0adbd6"
+      ]
+    },
+    {
+      "object_id": "report_object_7f3131c8f0d3",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "旅行社金发女子留下悬念",
+        "summary": "金发女子线索暗示Leonard另有关系，但其身份暂未揭示。",
+        "inventory_id": "evt_reader_06",
+        "order": 6,
+        "track": "reader",
+        "time_label": "约01:06—01:08"
+      },
+      "claim_ids": [
+        "report_claim_00096ba95728"
+      ]
+    },
+    {
+      "object_id": "report_object_552c7627e6be",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "神秘女人引入翻案证据",
+        "summary": "匿名伦敦女人来电并提供情书，使观众转向Christine构陷丈夫的解释。",
+        "inventory_id": "evt_reader_07",
+        "order": 7,
+        "track": "reader",
+        "time_label": "约01:12:47后"
+      },
+      "claim_ids": [
+        "report_claim_39c47337b808"
+      ]
+    },
+    {
+      "object_id": "report_object_669e1668168e",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "情书反转证人可信度",
+        "summary": "法庭完整宣读情书后，Christine的控方证词被视为私情驱动的伪证。",
+        "inventory_id": "evt_reader_08",
+        "order": 8,
+        "track": "reader",
+        "time_label": "约01:22:51—01:25"
+      },
+      "claim_ids": [
+        "report_claim_e29375d8d577"
+      ]
+    },
+    {
+      "object_id": "report_object_85faea6bba36",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "无罪判决伪装成最终答案",
+        "summary": "Leonard被判无罪，观众暂时以为案件已经完成逆转。",
+        "inventory_id": "evt_reader_09",
+        "order": 9,
+        "track": "reader",
+        "time_label": "约01:29"
+      },
+      "claim_ids": [
+        "report_claim_1564fd03cf74"
+      ]
+    },
+    {
+      "object_id": "report_object_0603dfbd6274",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Christine承认操纵翻案",
+        "summary": "她说出“我们做到了”，随后承认自己就是疤痕女人。",
+        "inventory_id": "evt_reader_10",
+        "order": 10,
+        "track": "reader",
+        "time_label": "约01:32:50"
+      },
+      "claim_ids": [
+        "report_claim_22bcdc6048a6"
+      ]
+    },
+    {
+      "object_id": "report_object_ba161c4cd69d",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "第二重反转确认Leonard有罪",
+        "summary": "Christine承认Max和情书是伪造的，并确认Leonard确实杀害Emily。",
+        "inventory_id": "evt_reader_11",
+        "order": 11,
+        "track": "reader",
+        "time_label": "约01:34:44"
+      },
+      "claim_ids": [
+        "report_claim_7332d18f3ed8"
+      ]
+    },
+    {
+      "object_id": "report_object_3600206bde64",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "Diana现身并完成结局",
+        "summary": "Diana出现确认旅行社线索；Leonard抛弃Christine，随后被她刺杀。",
+        "inventory_id": "evt_reader_12",
+        "order": 12,
+        "track": "reader",
+        "time_label": "约01:37:53—01:38:24后"
+      },
+      "claim_ids": [
+        "report_claim_572f21e99fe6"
+      ]
+    },
+    {
+      "object_id": "report_object_653d9ff49a0a",
+      "object_type": "trick",
+      "payload": {
+        "title": "真相以必被判为谎言的方式出现",
+        "summary": "Christine在法庭上陈述Leonard染血回家并自白的真实事实，同时伪造自己因私情和憎恨而构陷他的动机。",
+        "inventory_id": "trick_true_testimony_false_motive"
+      },
+      "claim_ids": [
+        "report_claim_3471b6b0bbad"
+      ]
+    },
+    {
+      "object_id": "report_object_6c3dd7c42828",
+      "object_type": "trick",
+      "payload": {
+        "title": "利用无效婚姻取得作证资格",
+        "summary": "Christine以Christine Helm而非合法妻子身份出庭，使她能够成为控方证人。",
+        "inventory_id": "trick_invalid_marriage_witness"
+      },
+      "claim_ids": [
+        "report_claim_dbeaadd98675"
+      ]
+    },
+    {
+      "object_id": "report_object_d8d01f8bd0e7",
+      "object_type": "trick",
+      "payload": {
+        "title": "伪造Max与情书",
+        "summary": "Christine虚构情人Max并写下蓝色信纸情书，制造她陷害Leonard的表面动机。",
+        "inventory_id": "trick_fake_max_letters"
+      },
+      "claim_ids": [
+        "report_claim_f1d1dd2c4b5f"
+      ]
+    },
+    {
+      "object_id": "report_object_b49edd1aa5ca",
+      "object_type": "trick",
+      "payload": {
+        "title": "乔装疤痕女人",
+        "summary": "Christine改变口音并化装成匿名伦敦女人，把伪造情书送入辩方手中。",
+        "inventory_id": "trick_scarred_woman_disguise"
+      },
+      "claim_ids": [
+        "report_claim_772dee7c1635"
+      ]
+    },
+    {
+      "object_id": "report_object_7873c03f3fe2",
+      "object_type": "trick",
+      "payload": {
+        "title": "诱使辩护律师摧毁她",
+        "summary": "Christine预判Sir Wilfred会利用情书攻击她，借他的成功让陪审团否定她全部证词。",
+        "inventory_id": "trick_weaponize_defense"
+      },
+      "claim_ids": [
+        "report_claim_e872c2e867d7"
+      ]
+    },
+    {
+      "object_id": "report_object_524a69d44525",
+      "object_type": "trick",
+      "payload": {
+        "title": "伪装盗窃入室",
+        "summary": "Leonard打破Emily住宅窗户，制造外来盗贼闯入的假象；玻璃分布和未被取走的珠宝暴露疑点。",
+        "inventory_id": "trick_fake_breakin"
+      },
+      "claim_ids": [
+        "report_claim_c98d1377bb7a"
+      ]
+    },
+    {
+      "object_id": "report_object_71c8a5c5820d",
+      "object_type": "trick",
+      "payload": {
+        "title": "以割伤解释衣物血迹",
+        "summary": "Leonard把衣物上的血解释为切面包时手腕受伤所致，利用同为O型血制造合理怀疑。",
+        "inventory_id": "trick_blood_alibi"
+      },
+      "claim_ids": [
+        "report_claim_f110706a2a3d"
+      ]
+    },
+    {
+      "object_id": "report_object_a0db9a4d9e21",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "钝器击打后脑",
+        "summary": "Leonard以钝而沉重的器具击打Emily French后脑，造成死亡；具体凶器未确认。",
+        "inventory_id": "method_emily_blunt_force"
+      },
+      "claim_ids": [
+        "report_claim_6d2254c96ad8"
+      ]
+    },
+    {
+      "object_id": "report_object_5a66893c0479",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "近距离刺杀",
+        "summary": "Christine在无罪判决后于法庭建筑内近距离刺杀Leonard；具体刀具未确认。",
+        "inventory_id": "method_leonard_stabbing"
+      },
+      "claim_ids": [
+        "report_claim_626688e4658f"
+      ]
+    }
+  ],
+  "claim_graph": [],
+  "conflicts": [
+    "字幕将案件日期记为9月14日，而报告指出舞台剧文本使用10月14日；尚无官方剧本确认1982年版本日期。",
+    "片长资料在96、97、100和101分钟之间冲突，字幕时间码只适用于约100分钟版本。",
+    "Emily案件的具体钝器未确认。",
+    "Christine刺杀Leonard所用刀具未确认，不能确定是否为此前出现的厨房刀。",
+    "疤痕女人伪装的具体视听可辨识度未经认证高清片源逐帧核验。",
+    "Leonard是否事先知道Emily遗嘱、何时准备破窗伪装、是否预先安排旅行及衣物由谁清洗，报告没有确证。"
+  ],
+  "unknowns": [
+    "Christine在德国已有在世丈夫，但其姓名和身份未被报告确认。",
+    "Emily遇害的精确法医时间区间未被字幕资料充分认证。",
+    "影片是否存在不同剪辑、加速或广告断点版本尚未确定。"
+  ],
+  "gaps": [
+    {
+      "research_unit_id": "report-relationships",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-multiple_timelines",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-tricks",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-murder_methods",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    }
+  ],
+  "evidence_ids": [
+    "report_ev_240ead6097315f4d",
+    "report_ev_3761d05ce03261c3",
+    "report_ev_f55234b3b238aad7"
+  ],
+  "visualization_profile": {
+    "timeline_tracks": [
+      "truth",
+      "investigation",
+      "reader"
+    ],
+    "timeline_scale": "ordinal",
+    "knowledge_curator": {
+      "version": "2-pass-v1",
+      "status": "passed",
+      "counts": {
+        "character": 9,
+        "relationship": 9,
+        "timeline_alignment": 38,
+        "trick": 7,
+        "murder_method": 2
+      },
+      "timeline_rationale": "真实案件、持续的调查与审判发现顺序，以及影片对观众的延迟披露和多重误导都独立且显著不同；精确日期和时间并不稳定，因此采用序数尺度。"
+    }
+  },
+  "frozen_at": "2026-08-30T15:17:56.407062Z"
+}

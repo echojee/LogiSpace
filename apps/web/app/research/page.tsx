@@ -2,15 +2,20 @@
 
 import {
   AlertTriangle, ArrowRight, BookOpen, Check, CheckCircle2, ChevronDown,
-  Database, Gauge, LoaderCircle, Network, Play,
+  Database, Download, FileText, Gauge, History, LoaderCircle, Network, Play,
   RefreshCw, Search, Send, ShieldCheck, Sparkles, X,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeSanitize from "rehype-sanitize";
+import remarkGfm from "remark-gfm";
 import "./v04.css";
+import "./v04-auto.css";
 import PlanMemoEditor from "./PlanMemoEditor";
 
 import "./v04-new-work.css";
 import "./v04-memo.css";
+import "./v04-plan-selection.css";
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
 type WorkItem = { work: { work_id: string; canonical_title: string; creators: string[]; media_type: string }; dossier_version: string };
@@ -32,28 +37,41 @@ type UnitCheckpoint = {
 };
 type Block = { block_id: string; layer: "one_minute" | "core" | "appendix"; block_type: string; title: string; text: string; claim_ids: string[]; evidence_ids: string[] };
 type Proposal = { proposal_id: string; operation: string; target_section: string; payload: Record<string, unknown>; claim_ids: string[]; evidence_ids: string[]; review_status: "pending" | "approved" | "rejected" };
+type Perspective = { perspective_id: string; title: string; description: string; starting_question: string; focus_questions: string[]; source_inspiration: string[]; is_basic: boolean };
+type OutlineNode = { section_id: string; title: string; purpose: string; research_questions: string[]; search_directions: string[]; open_questions: string[] };
 type Job = {
   job_id: string; work: { work_id: string; canonical_title: string }; status: string;
   brief: { user_goal: string; media_version: string; audience: string };
-  plan?: { revision: number; rationale: string; approved: boolean; coverage: Coverage[]; units: ResearchUnit[]; budget: { verification_reserve_ratio: number }; strategy: "build_and_verify" | "review_strengthen_and_correct" };
+  plan?: { revision: number; rationale: string; approved: boolean; selected_unit_ids: string[]; coverage: Coverage[]; units: ResearchUnit[]; budget: { verification_reserve_ratio: number }; strategy: "build_and_verify" | "review_strengthen_and_correct" };
   units: Record<string, UnitCheckpoint>; errors: string[]; published_version?: string;
   reconnaissance?: { summary: string; edition_scope: string; candidate_features: string[]; contamination_risks: string[]; sources: { title: string; url: string }[] };
-  plan_memo?: { title: string; objective: string; scope: string; reconnaissance_summary: string; signature_units: ResearchUnit[]; risks: string[]; revision: number; strategy: "build_and_verify" | "review_strengthen_and_correct" };
+  perspective_set?: { perspectives: Perspective[]; status: "generated" };
+  plan_memo?: { title: string; objective: string; scope: string; reconnaissance_summary: string; mandatory_units: ResearchUnit[]; signature_units: ResearchUnit[]; risks: string[]; perspectives: Perspective[]; research_turns: unknown[]; direct_outline?: { nodes: OutlineNode[] }; research_outline?: { nodes: OutlineNode[] }; revision: number; strategy: "build_and_verify" | "review_strengthen_and_correct" };
   planning_failure?: { stage: string; code: string; message: string; retryable: boolean; attempt: number };
   search_session?: { queries: string[]; snapshots: Record<string, string>; cache_hits: number; duplicate_queries_avoided: number };
 
   verified_knowledge?: { snapshot_id: string; claims: unknown[]; domain_objects: unknown[]; conflicts: string[]; unknowns: string[]; gaps: { research_unit_id: string; status: string; reasons: string[] }[]; evidence_ids: string[] };
   case_file?: { title: string; research_mainline: string; reliability_note: string; blocks: Block[] };
+  research_report?: { title: string; markdown: string; model: string; generated_at: string; incomplete_reason?: string; citations: { title: string; url: string }[] };
+  report_memory_status: "not_ready" | "pending_approval" | "deposited" | "rejected";
   proposals: Proposal[]; projection_audit?: { passed: boolean; issues: string[] };
 };
 type Metric = { name: string; value: number; target?: number; passed?: boolean; detail: string };
+type HistoricalReport = {
+  source_job_id: string; work_id: string; work_title: string; title: string;
+  media_version: string; model: string; generated_at: string; deposited_at: string;
+  knowledge_version?: string;
+};
+type HistoricalReportDetail = HistoricalReport & { markdown: string; citations: { title: string; url: string }[] };
+type DepositedKnowledge = { knowledge_version: string; source_job_id?: string };
 
 const domainNames: Record<string, string> = {
   relationships: "人物关系", multiple_timelines: "多重时间线", tricks: "诡计结构",
   murder_methods: "杀人手法", timeline_narrative: "叙事时间线", work_signature: "作品特色",
 };
 const statusNames: Record<string, string> = {
-  created: "任务已创建", reconnaissance_running: "初步侦察中", supervisor_planning: "计划生成中", planning_failed: "计划生成失败",
+  researching: "深度研究中", completed: "研究报告已完成",
+  created: "任务已创建", reconnaissance_running: "初步侦察中", perspective_generating: "多视角生成中", supervisor_planning: "汇总研究计划中", planning_failed: "计划生成失败",
   awaiting_plan_approval: "等待计划审批", searching: "检索中", curating: "知识整理",
   verifying: "证据验证", reflecting: "等待补查", knowledge_frozen: "知识已冻结",
   writing: "档案写作", auditing: "一致性审计", mapping: "知识映射",
@@ -92,7 +110,14 @@ export default function ResearchPage() {
   const [error, setError] = useState("");
   const [metrics, setMetrics] = useState<Metric[]>([]);
   const [decisions, setDecisions] = useState<Record<string, "approved" | "rejected">>({});
+  const [selectedUnitIds, setSelectedUnitIds] = useState<string[]>([]);
   const [caseLayer, setCaseLayer] = useState<"one_minute" | "core" | "appendix">("one_minute");
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [historyLoading, setHistoryLoading] = useState(false);
+  const [historicalReports, setHistoricalReports] = useState<HistoricalReport[]>([]);
+  const [selectedReport, setSelectedReport] = useState<HistoricalReportDetail | null>(null);
+  const [historyDepositBusy, setHistoryDepositBusy] = useState(false);
+  const [historyDepositMessage, setHistoryDepositMessage] = useState("");
 
   async function loadWorks() {
     setWorksLoading(true); setWorksError("");
@@ -110,7 +135,7 @@ export default function ResearchPage() {
   useEffect(() => { void loadWorks(); }, []);
 
   useEffect(() => {
-    if (!job || !["created", "reconnaissance_running", "supervisor_planning"].includes(job.status)) return;
+    if (!job || !["created", "reconnaissance_running", "perspective_generating", "supervisor_planning", "researching"].includes(job.status)) return;
     const timer = window.setInterval(async () => {
       try {
         const next = await request<Job>(`/research/v4/jobs/${job.job_id}`);
@@ -123,7 +148,14 @@ export default function ResearchPage() {
     return () => window.clearInterval(timer);
   }, [job?.job_id, job?.status]);
 
-  const units = job?.plan?.units ?? [];
+  useEffect(() => {
+    if (job?.status !== "awaiting_plan_approval" || !job.plan) return;
+    setSelectedUnitIds(job.plan.selected_unit_ids.length ? job.plan.selected_unit_ids : job.plan.units.map((unit) => unit.unit_id));
+  }, [job?.job_id, job?.status]);
+
+  const units = job?.plan?.approved && job.plan.selected_unit_ids.length
+    ? job.plan.units.filter((unit) => job.plan?.selected_unit_ids.includes(unit.unit_id))
+    : job?.plan?.units ?? [];
   const checkpoints = job?.units ?? {};
   const verifiedCount = units.filter((unit) => checkpoints[unit.unit_id]?.status === "verified").length;
   const progress = units.length ? Math.round((verifiedCount / units.length) * 100) : 0;
@@ -203,7 +235,7 @@ export default function ResearchPage() {
 
   async function saveMemo() {
     if (!job?.plan_memo) return;
-    const { revision: _revision, strategy: _strategy, ...memo } = job.plan_memo;
+    const { revision: _revision, strategy: _strategy, mandatory_units: _mandatoryUnits, perspectives: _perspectives, research_turns: _researchTurns, direct_outline: _directOutline, research_outline: _researchOutline, ...memo } = job.plan_memo;
     await perform("save-memo", () => request<Job>(`/research/v4/jobs/${job.job_id}/plan/memo`, {
       method: "PATCH", body: JSON.stringify(memo),
     }));
@@ -221,7 +253,57 @@ export default function ResearchPage() {
   }
   async function approvePlan() {
     if (!job) return;
-    await perform("approve-plan", () => request<Job>(`/research/v4/jobs/${job.job_id}/plan/approve`, { method: "POST", body: "{}" }));
+    await perform("approve-plan", () => request<Job>(`/research/v4/jobs/${job.job_id}/plan/approve`, {
+      method: "POST", body: JSON.stringify({ selected_unit_ids: selectedUnitIds }),
+    }));
+  }
+
+  async function reviewReportMemory(decision: "approve" | "reject") {
+    if (!job) return;
+    await perform(`memory-${decision}`, () => request<Job>(`/research/v4/jobs/${job.job_id}/report/memory/${decision}`, {
+      method: "POST", body: "{}",
+    }));
+  }
+
+  async function openHistory() {
+    setHistoryOpen(true); setHistoryLoading(true); setSelectedReport(null); setHistoryDepositMessage(""); setError("");
+    try {
+      const result = await request<{ reports: HistoricalReport[] }>("/knowledge/reports");
+      setHistoricalReports(result.reports);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "读取历史研究失败");
+    } finally { setHistoryLoading(false); }
+  }
+
+  async function openHistoricalReport(item: HistoricalReport) {
+    setHistoryLoading(true); setHistoryDepositMessage(""); setError("");
+    try {
+      const detail = await request<HistoricalReportDetail>(`/knowledge/works/${item.work_id}/reports/${item.source_job_id}`);
+      setSelectedReport({ ...item, ...detail });
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "读取历史档案失败");
+    } finally { setHistoryLoading(false); }
+  }
+
+  async function depositHistoricalReport() {
+    if (!selectedReport) return;
+    setHistoryDepositBusy(true); setHistoryDepositMessage(""); setError("");
+    try {
+      const memory = await request<DepositedKnowledge>(`/knowledge/works/${selectedReport.work_id}/reports/${selectedReport.source_job_id}/deposit`, {
+        method: "POST", body: "{}",
+      });
+      const version = memory.knowledge_version;
+      setSelectedReport((current) => current ? { ...current, knowledge_version: version } : current);
+      setHistoricalReports((current) => current.map((item) => item.source_job_id === selectedReport.source_job_id ? { ...item, knowledge_version: version } : item));
+      setHistoryDepositMessage(`Knowledge Memory ${version} 已发布，无需重新执行计划或研究。`);
+      void loadWorks();
+    } catch (reason) {
+      setHistoryDepositMessage(reason instanceof Error ? `沉淀失败：${reason.message}` : "沉淀失败，请稍后重试。历史报告仍已保留。");
+    } finally { setHistoryDepositBusy(false); }
+  }
+
+  function togglePlanUnit(unitId: string) {
+    setSelectedUnitIds((current) => current.includes(unitId) ? current.filter((id) => id !== unitId) : [...current, unitId]);
   }
 
   async function runUnit(unit: ResearchUnit) {
@@ -283,7 +365,7 @@ export default function ResearchPage() {
 
     {!job ? <section className="v04Intake">
       <div className="intakeIndex">01</div><div className="intakeBody">
-        <div className="sectionTitle"><span>研究任务</span><h2>从一个明确的问题开始</h2></div>
+        <div className="sectionTitle historyTitle"><div><span>研究任务</span><h2>从一个明确的问题开始</h2></div><button type="button" className="historyButton" onClick={() => void openHistory()}><History/>历史研究</button></div>
         <div className="workModeTabs"><button className={workMode === "new" ? "active" : ""} onClick={() => { setWorkMode("new"); setCandidates([]); }}>{"\u65b0\u4f5c\u54c1"}</button><button className={workMode === "existing" ? "active" : ""} onClick={() => { setWorkMode("existing"); setCandidates([]); }}>{"\u5df2\u6709\u4f5c\u54c1"}</button></div>
         {workMode === "new" && <div className="newWorkFields"><label><span>{"\u4f5c\u54c1\u540d\u79f0"}</span><input value={newTitle} onChange={(event) => setNewTitle(event.target.value)} placeholder={"\u4f8b\u5982\uff1a\u65e0\u4eba\u751f\u8fd8"} /></label><label><span>{"\u5a92\u4f53\u7c7b\u578b"}</span><select value={mediaType} onChange={(event) => setMediaType(event.target.value)}><option value="novel">{"\u5c0f\u8bf4"}</option><option value="film">{"\u7535\u5f71"}</option><option value="series">{"\u5267\u96c6"}</option><option value="game">{"\u6e38\u620f"}</option><option value="manga">{"\u6f2b\u753b"}</option></select></label></div>}
         <div className="intakeGrid">
@@ -297,21 +379,34 @@ export default function ResearchPage() {
       </div>
     </section> : <>
       <section className="jobRail">
-        <div><button className="textButton" onClick={reset}>← 新研究</button><small>{job.job_id}</small><h2>《{job.work.canonical_title}》</h2></div>
+        <div><div className="jobRailActions"><button className="textButton" onClick={reset}>← 新研究</button><button className="textButton" onClick={() => void openHistory()}><History/>历史研究</button></div><small>{job.job_id}</small><h2>《{job.work.canonical_title}》</h2></div>
         <div className="jobProgress"><span>{statusNames[job.status] ?? job.status}</span><div><i style={{ width: `${progress}%` }}/></div><b>{verifiedCount}/{units.length} Units verified</b></div>
       </section>
 
-      {["created", "reconnaissance_running", "supervisor_planning"].includes(job.status) && <section className="planStage"><header><div><p className="v04Eyebrow">SUPERVISOR PLANNING</p><h2>正在生成可审核的研究计划</h2><p>任务已经保存。页面会自动读取初步侦察与 Supervisor 的最新进度。</p></div><LoaderCircle className="spin"/></header></section>}
+      {["created", "reconnaissance_running", "perspective_generating", "supervisor_planning"].includes(job.status) && <section className="planStage"><header><div><p className="v04Eyebrow">MULTI-PERSPECTIVE PLANNING</p><h2>{job.status === "reconnaissance_running" ? "正在进行初步侦察" : job.status === "perspective_generating" ? "正在生成多个研究视角" : job.status === "supervisor_planning" ? "正在汇总多视角研究计划" : "正在启动规划"}</h2><p>侦察、视角发现与 Plan 汇总分别持久化；中断后会从最近阶段恢复。</p></div><LoaderCircle className="spin"/></header>{job.perspective_set?.perspectives.length ? <div className="perspectiveProgress">{job.perspective_set.perspectives.map((item) => <span key={item.perspective_id}><Sparkles/>{item.title}</span>)}</div> : null}</section>}
+      {job.status === "researching" && <section className="planStage"><header><div><p className="v04Eyebrow">OPENAI DEEP RESEARCH</p><h2>正在检索资料并撰写深度研究报告</h2><p>已批准的大纲正在作为一次完整的 Plan Prompt 执行；完成后 Markdown 报告会自动显示。</p></div><LoaderCircle className="spin"/></header></section>}
+      {job.research_report && <section className="resultStage">
+        <article className="caseFile reportDocument">
+          <header><p className="v04Eyebrow">DEEP RESEARCH REPORT</p><h2>{job.research_report.title}</h2><small><ShieldCheck/> {job.research_report.model} · {new Date(job.research_report.generated_at).toLocaleString()}</small><a className="reportDownload" href={`${API}/research/v4/jobs/${job.job_id}/report.md`}><Download/>下载 Markdown</a></header>
+          {job.research_report.incomplete_reason && <div className="reportWarning"><AlertTriangle/>报告已保存，但输出可能因模型限制而不完整。</div>}
+          <div className="reportMarkdown"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={{ a: ({ node, ...props }) => { void node; return <a {...props} target="_blank" rel="noopener noreferrer"/>; } }}>{job.research_report.markdown}</ReactMarkdown></div>
+          {!!job.research_report.citations.length && <details className="reportSources"><summary><BookOpen/>参考来源 <ChevronDown/></summary><div>{job.research_report.citations.map((citation) => <a key={citation.url} href={citation.url} target="_blank" rel="noopener noreferrer">{citation.title || citation.url}</a>)}</div></details>}
+          {job.report_memory_status === "pending_approval" && <div className="memoryApproval"><Database/><div><b>是否沉淀并生成可复用知识？</b><p>批准后将保存 Markdown，并从报告引用中提取保守标注的 Claims、人物关系和时间线，发布为可视化可用的 Knowledge Memory。</p></div><button className="secondaryV04" onClick={() => reviewReportMemory("reject")} disabled={busy.startsWith("memory-")}>{busy === "memory-reject" ? <LoaderCircle className="spin"/> : <X/>}暂不沉淀</button><button onClick={() => reviewReportMemory("approve")} disabled={busy.startsWith("memory-")}>{busy === "memory-approve" ? <LoaderCircle className="spin"/> : <Check/>}批准并发布</button></div>}
+          {job.report_memory_status === "deposited" && job.published_version && <div className="memoryDecision deposited"><CheckCircle2/>报告与结构化 Knowledge Memory {job.published_version} 已发布，可在知识库生成人物图和时间线。</div>}
+          {job.report_memory_status === "deposited" && !job.published_version && <div className="memoryApproval"><AlertTriangle/><div><b>历史报告已沉淀，但尚未生成结构化知识</b><p>这是旧流程留下的报告。可以从现有 Markdown 与引用补建 Knowledge Memory，无需重新进行深度研究。</p></div><button onClick={() => reviewReportMemory("approve")} disabled={busy === "memory-approve"}>{busy === "memory-approve" ? <LoaderCircle className="spin"/> : <Database/>}补建可复用知识</button></div>}
+          {job.report_memory_status === "rejected" && <div className="memoryDecision rejected"><X/>该报告仅保留在本次研究记录中，未进入 Knowledge Memory。</div>}
+        </article>
+      </section>}
       {job.status === "planning_failed" && <section className="planStage"><header><div><p className="v04Eyebrow">PLANNING FAILED</p><h2>研究计划尚未生成</h2><p>{job.planning_failure?.message ?? "规划阶段失败，可以安全重试。"}</p></div><button className="primaryV04" onClick={retryPlanning} disabled={busy === "retry-plan"}>{busy === "retry-plan" ? <LoaderCircle className="spin"/> : <RefreshCw/>}重试规划</button></header></section>}
-      {job.status === "awaiting_plan_approval" && job.plan_memo && <PlanMemoEditor memo={job.plan_memo} busy={busy} onEdit={editMemo} onEditUnit={editSignature} onSave={saveMemo} onApprove={approvePlan}/>}
-      {job.plan?.approved && !job.case_file && <section className="executionStage">
+      {job.status === "awaiting_plan_approval" && job.plan_memo && <PlanMemoEditor memo={job.plan_memo} busy={busy} selectedUnitIds={selectedUnitIds} error={job.errors.at(-1)} onToggleUnit={togglePlanUnit} onEdit={editMemo} onEditUnit={editSignature} onSave={saveMemo} onApprove={approvePlan}/>}
+      {job.plan?.approved && !job.case_file && job.status !== "researching" && !job.research_report && <section className="executionStage">
         <header><div><p className="v04Eyebrow">RESEARCH ORCHESTRATOR</p><h2>逐个 Unit 建立证据链</h2></div>{allVerified && <button className="primaryV04" onClick={freeze} disabled={busy === "freeze"}>{busy === "freeze" ? <LoaderCircle className="spin"/> : <ShieldCheck/>}冻结验证知识</button>}{job.status === "knowledge_frozen" && <button className="primaryV04" onClick={project} disabled={busy === "project"}>{busy === "project" ? <LoaderCircle className="spin"/> : <BookOpen/>}生成档案与知识建议</button>}</header>
         {units.some((unit) => { const checkpoint = checkpoints[unit.unit_id]; return checkpoint?.status === "approved" || checkpoint?.status === "failed" || (checkpoint?.status === "searched" && !checkpoint.finding_bundle?.evidence_candidates.length); }) && <div className="unifiedSearchBar"><div><Search/><span><b>Unified Web Search Agent</b><small>{job.search_session?.queries.length ?? 0} queries / {Object.keys(job.search_session?.snapshots ?? {}).length} shared snapshots</small></span></div><button onClick={runUnifiedSearch} disabled={busy === "unified-search"}>{busy === "unified-search" ? <LoaderCircle className="spin"/> : <Play/>}运行统一搜索</button></div>}
         <div className="unitBoard">{units.map((unit, index) => <UnitCard key={unit.unit_id} unit={unit} checkpoint={checkpoints[unit.unit_id]} index={index + 1} busy={busy === unit.unit_id} onRun={() => runUnit(unit)}/>)}</div>
         {job.verified_knowledge && <KnowledgeFreeze job={job}/>}
       </section>}
 
-      {job.case_file && <section className="resultStage">
+      {job.case_file && !job.research_report && <section className="resultStage">
         <div className="caseFile">
           <header><p className="v04Eyebrow">VERIFIED CASE FILE</p><h2>{job.case_file.title}</h2><p>{job.case_file.research_mainline}</p><small><ShieldCheck/> {job.case_file.reliability_note}</small></header>
           <div className="layerTabs">{(["one_minute", "core", "appendix"] as const).map((layer) => <button key={layer} className={caseLayer === layer ? "active" : ""} onClick={() => setCaseLayer(layer)}>{layer === "one_minute" ? "一分钟读懂" : layer === "core" ? "核心档案" : "证据附录"}</button>)}</div>
@@ -325,6 +420,7 @@ export default function ResearchPage() {
 
       <section className="evaluationStage"><header><div><p className="v04Eyebrow">DETERMINISTIC EVALUATION</p><h2>不是“看起来不错”，而是可测量</h2></div><button onClick={loadEvaluation} disabled={busy === "evaluation"}>{busy === "evaluation" ? <LoaderCircle className="spin"/> : <RefreshCw/>}刷新评测</button></header>{metrics.length > 0 && <div className="metricBoard">{metrics.map((metric) => <article key={metric.name} className={metric.passed ? "pass" : "fail"}><div>{metric.passed ? <CheckCircle2/> : <AlertTriangle/>}<span>{metricNames[metric.name] ?? metric.name}</span></div><strong>{metric.name.includes("contamination") || metric.name.includes("rate") || metric.name.includes("ratio") ? `${(metric.value * 100).toFixed(1)}%` : `${Math.round(metric.value * 100)}%`}</strong><small>目标 {metric.target === undefined ? "—" : `${Math.round(metric.target * 100)}%`}</small></article>)}</div>}</section>
     </>}
+    {historyOpen && <div className="historyOverlay" role="dialog" aria-modal="true" aria-label="历史研究档案"><section className="historyDrawer"><header><div><p className="v04Eyebrow">RESEARCH ARCHIVE</p><h2>历史研究档案</h2></div><button aria-label="关闭历史研究" onClick={() => setHistoryOpen(false)}><X/></button></header><div className="historyLayout"><aside>{historyLoading && !historicalReports.length ? <p><LoaderCircle className="spin"/>正在读取…</p> : historicalReports.length ? historicalReports.map((item) => <button key={item.source_job_id} className={selectedReport?.source_job_id === item.source_job_id ? "active" : ""} onClick={() => void openHistoricalReport(item)}><FileText/><span><b>{item.work_title}</b><small>{new Date(item.generated_at).toLocaleString()} · {item.knowledge_version ? `知识 ${item.knowledge_version}` : "待沉淀"}</small></span></button>) : <p>尚无已沉淀的历史报告。</p>}</aside><article>{selectedReport ? <><header><div><h3>{selectedReport.title}</h3><small>{selectedReport.model} · {new Date(selectedReport.generated_at).toLocaleString()}</small></div><div className="historyReportActions"><button onClick={() => void depositHistoricalReport()} disabled={historyDepositBusy}>{historyDepositBusy ? <LoaderCircle className="spin"/> : selectedReport.knowledge_version ? <RefreshCw/> : <Database/>}{selectedReport.knowledge_version ? "重新确认沉淀" : "直接沉淀知识"}</button><a href={`${API}/knowledge/works/${selectedReport.work_id}/reports/${selectedReport.source_job_id}/download`}><Download/>下载 MD</a></div></header>{historyDepositMessage && <p className={`historyDepositMessage ${historyDepositMessage.startsWith("沉淀失败") ? "failed" : "success"}`}>{historyDepositMessage}</p>}<div className="reportMarkdown"><ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]} components={{ a: ({ node, ...props }) => { void node; return <a {...props} target="_blank" rel="noopener noreferrer"/>; } }}>{selectedReport.markdown}</ReactMarkdown></div></> : <div className="historyEmpty"><BookOpen/><p>选择一份档案查看渲染后的 Markdown。</p></div>}</article></div></section></div>}
     {job?.status === "published" && <div className="publishedToast"><CheckCircle2/><div><b>WorkDossier {job.published_version} 已发布</b><span>验证知识、档案与 ResearchDelta 已完成版本化沉淀。</span></div></div>}
     {error && <div className="v04Error"><AlertTriangle/><span>{error}</span><button onClick={() => setError("")}><X/></button></div>}
   </main>;

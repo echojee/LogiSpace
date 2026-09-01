@@ -29,13 +29,21 @@ def runtime_root(tmp_path, monkeypatch):
 def test_orchestrator_persists_agent_plan_and_unit_checkpoints(runtime_root, stub_reconnaissance):
     job = orchestrator_v4.create(ResearchJobCreateV4(work_id="murder-of-roger-ackroyd"))
     assert job.status == "awaiting_plan_approval"
+    assert job.perspective_set is not None
+    assert len(job.perspective_set.perspectives) >= 2
+    assert job.perspective_set.perspectives[0].is_basic is True
+    assert job.plan_memo.perspectives == job.perspective_set.perspectives
+    stages = [item.stage for item in research_repository_v4.list_checkpoints(job.job_id)]
+    assert "reconnaissance" in stages
+    assert "perspectives" in stages
+    assert "plan_synthesis" in stages
     assert len(job.units) == 5
     restored = research_repository_v4.load(job.job_id)
     assert restored.plan.rationale.startswith("Recorded agent plan")
     approved = orchestrator_v4.approve(job.job_id, PlanApprovalV4())
-    assert approved.status == "searching"
+    assert approved.status == "researching"
     assert all(item.status == "approved" for item in approved.units.values())
-    assert research_repository_v4.load(job.job_id).status == "searching"
+    assert research_repository_v4.load(job.job_id).status == "researching"
 
 
 def test_orchestrator_prevents_freeze_before_all_units_are_verified(runtime_root, stub_reconnaissance):

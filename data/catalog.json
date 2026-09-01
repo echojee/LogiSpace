@@ -1,17 +1,13 @@
 {
-  "catalog_version": "0.1.0",
+  "catalog_version": "0.2.0",
   "works": [
     {
-      "work_id": "devotion-of-suspect-x",
-      "manifest": "works/devotion-of-suspect-x/manifest.json"
+      "work_id": "work-novel-962a77c6",
+      "manifest": "works/work-novel-962a77c6/manifest.json"
     },
     {
-      "work_id": "murder-of-roger-ackroyd",
-      "manifest": "works/murder-of-roger-ackroyd/manifest.json"
-    },
-    {
-      "work_id": "murder-on-orient-express",
-      "manifest": "works/murder-on-orient-express/manifest.json"
+      "work_id": "work-series-93c9174b",
+      "manifest": "works/work-series-93c9174b/manifest.json"
     }
   ]
 }

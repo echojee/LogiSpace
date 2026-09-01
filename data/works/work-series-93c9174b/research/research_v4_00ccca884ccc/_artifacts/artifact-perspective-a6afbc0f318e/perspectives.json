@@ -1,0 +1,32 @@
+[
+  {
+    "perspective_id": "perspective-01-e22652cb",
+    "title": "基础事实与版本边界",
+    "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+    "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+    "focus_questions": [
+      "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+    ],
+    "source_inspiration": [
+      "作品身份与指定媒介版本"
+    ],
+    "is_basic": true,
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "perspective_id": "perspective-02-53fedf92",
+    "title": "叙事结构与信息控制",
+    "description": "补充单一事实模块无法表达的叙事组织方式。",
+    "starting_question": "作品如何安排视角、伏笔与信息披露来控制读者判断？",
+    "focus_questions": [
+      "作品如何安排视角、伏笔与信息披露来控制读者判断？"
+    ],
+    "source_inspiration": [
+      "叙述顺序与读者已知信息"
+    ],
+    "is_basic": false,
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

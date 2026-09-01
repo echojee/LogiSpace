@@ -1,0 +1,86 @@
+[
+  {
+    "turn_id": "turn-001-7d58910c",
+    "perspective_id": "perspective-01-e22652cb",
+    "question": "如何界定《无人生还》的研究版本，避免书名变迁、文本修订及戏剧影视改编污染原著证据链？",
+    "research_intent": "建立统一的作品身份、媒介范围和文本校勘规则，为后续时间线、叙述权限及诡计分析划定证据边界。",
+    "suggested_queries": [
+      "site:agathachristie.com And Then There Were None official novel 1939",
+      "WorldCat And Then There Were None Agatha Christie 1939 novel",
+      "《无人生还》中译本 译者 出版社 版本 童谣 岛名"
+    ],
+    "provisional_answer": "待验证假设：仅供研究规划：将研究对象固定为阿加莎·克里斯蒂1939年英国初版小说的情节结构，并以现代通行书名《And Then There Were None／无人生还》指称。1943年舞台剧及后续影视、游戏版本因结局和人物行动可能改变，应全部排除。分析童谣措辞、岛名和逐句叙事时，必须记录所用英文版或中译本；分析死亡顺序、凶手方案和文书结局等稳定结构时，则以小说版本为准。官方作品页与书目记录可确认作者、年份及小说—戏剧边界，但无法替代用户所持全文的版本核验。",
+    "unresolved_questions": [
+      "用户所持中译本尚不明确，无法精确核对童谣、岛名及章内措辞。",
+      "尚未确认是否需要并列核对1939年英国文本与1940年美国文本。",
+      "部分现代版本可能存在措辞修订，其是否影响叙述分析仍需逐版检查。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "complete",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-002-f1d006cc",
+    "perspective_id": "perspective-02-e0fa5afd",
+    "question": "应如何把沃格雷夫假死拆成“阿姆斯特朗背书—群体确认—叙事焦点撤离—警方按尸体排序重建”四个信息环节，并检验正文是否曾越过人物认知、客观确认其死亡？",
+    "research_intent": "建立假死前后逐场的信息权限表：记录在场者、观察对象、死亡判断来源、焦点人物、叙述层级及手稿重释内容，从而判断诡计依赖的是医学欺骗、语言模态、焦点空缺还是三者叠加。",
+    "suggested_queries": [
+      "\"And Then There Were None\" Wargrave false death Armstrong focalization",
+      "\"And Then There Were None\" unattributed thoughts Wargrave narrative perspective",
+      "\"And Then There Were None\" epilogue manuscript police reconstruction"
+    ],
+    "provisional_answer": "待验证假设：仅供后续研究规划：现有侦察材料提示，核心不是叙述者直接撒谎，而是把死亡结论依次托付给阿姆斯特朗的专业权威、其他幸存者的视觉判断及事后记录。假死后沃格雷夫的意识被撤出焦点，凶手遂同时从行动现场和嫌疑集合中消失；结尾第一人称手稿再将“尸体”“验尸”和若干无署名思想重新定性。下一步必须逐章核对原文措辞，区分事实陈述、所见、推断与省略，暂不能据二手摘要裁定其叙事公平性。",
+    "unresolved_questions": [
+      "尚未取得固定版本的完整原文，无法确定每处叙述动词和模态词。",
+      "二手资料对“叙述者不可靠”与“限知焦点造成误判”的区分不够严格。",
+      "需要确认用户所用中译本，以免“看见尸体”“确认死亡”等措辞产生翻译偏差。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-003-35debb7f",
+    "perspective_id": "perspective-02-e0fa5afd",
+    "question": "第十三章五名幸存者的无署名内心独白能否按语言习惯、既有信息和行动计划逐一归属，并由此判断文本是在公平暗示沃格雷夫，还是利用焦点歧义制造无法验证的伪线索？",
+    "research_intent": "建立“无署名思想归属矩阵”，检验每段思想对五名幸存者的可归属度，并确认假死前正文是否向读者保留了可识别沃格雷夫的语言线索。",
+    "suggested_queries": [
+      "\"And Then There Were None\" chapter 13 unattributed thoughts \"very careful\"",
+      "\"And Then There Were None\" Wargrave Armstrong internal monologue attribution",
+      "\"And Then There Were None\" focalization narrative vacuum Wargrave"
+    ],
+    "provisional_answer": "待验证假设：仅供后续研究规划：侦察结果显示，“必须非常小心”的反复措辞可能把某段无署名思想与沃格雷夫此前的公开发言连接起来；但读者讨论对该段究竟属于沃格雷夫还是阿姆斯特朗存在分歧。现阶段只能将其视为待核对的文本指纹，不能据摘要断言归属或叙事公平性。下一步应抄录第十三章全部无署名思想，分别测试人物知识边界、措辞复现、计划对象及其与手稿的对应关系。",
+    "unresolved_questions": [
+      "尚未依据固定英文版本核对第十三章各段的完整次序和标点分隔。",
+      "不同读者对关键思想归属存在冲突，二手叙事学论文也未完成逐段排他验证。",
+      "中译本可能补出主语、调整段落或弱化关键词复现，需与1939年英文文本对照。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  },
+  {
+    "turn_id": "turn-004-7eb0274c",
+    "perspective_id": "perspective-02-e0fa5afd",
+    "question": "沃格雷夫如何让假死现场、最终自杀现场与警方记录中的“同一次死亡”相互重合，并利用尸体位置、死亡时间误差和手枪回收位置消除自己死后行动的痕迹？",
+    "research_intent": "建立“同一尸体的三次定性”对照表：分别记录假死发现、幸存者后续确认和警方验尸中的位置、姿势、伤口、检验者、时间判断及推论，再与手稿披露的移动和自杀装置逐项对应。",
+    "suggested_queries": [
+      "\"And Then There Were None\" Wargrave body bedroom revolver police epilogue",
+      "\"And Then There Were None\" time of death diaries Armstrong body high water line",
+      "\"And Then There Were None\" elastic cord revolver forensic reconstruction"
+    ],
+    "provisional_answer": "待验证假设：仅供后续研究规划：侦察材料表明，诡计的第二层并非单纯假死，而是让最终尸体复现先前记录的额头枪伤，并利用验尸时间误差维持虚假的死亡顺序；弹性绳装置则拟把手枪移离尸体，使现场看似由他人完成。警方发现阿姆斯特朗尸体被移出潮线、手枪出现在沃格雷夫房间等矛盾，却仍受幸存者日记所定顺序约束。下一步需以原文核查尸体最初被搬往何处、后续搜查是否真正复验、警方如何描述尸位与枪械痕迹，暂不能断言装置在法医学上完全可行或证据链绝对无缺。",
+    "unresolved_questions": [
+      "尚未用固定英文版本核对警方对沃格雷夫尸体、伤口和手枪位置的逐字描述。",
+      "现有摘要对尸体搬运、覆盖和复验细节存在省略，不能排除版本或概述误差。",
+      "尚未评估额头枪伤的弹道、火药残留及尸体现象是否会暴露两次现场的不一致。"
+    ],
+    "reconnaissance_source_urls": [],
+    "status": "continue",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "signature-storm-plan-v0.7.0"
+  }
+]

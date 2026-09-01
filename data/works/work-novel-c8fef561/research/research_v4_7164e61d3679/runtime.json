@@ -1,0 +1,1670 @@
+{
+  "job_id": "research_v4_7164e61d3679",
+  "work": {
+    "work_id": "work-novel-c8fef561",
+    "canonical_title": "白夜行",
+    "aliases": [
+      "白夜行"
+    ],
+    "media_type": "novel",
+    "release_year": null,
+    "creators": []
+  },
+  "brief": {
+    "work_id": "work-novel-c8fef561",
+    "media_version": "original_novel",
+    "user_goal": "全面研究作品的诡计结构、多重时间线与不可靠叙述",
+    "audience": "已读完原著的推理爱好者",
+    "spoiler_level": "full",
+    "output_mode": "case_file_and_knowledge",
+    "budget_profile": "standard",
+    "allowed_source_scope": "bilingual_mystery_default"
+  },
+  "status": "awaiting_plan_approval",
+  "plan": {
+    "revision": 1,
+    "coverage": [
+      {
+        "domain": "relationships",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "multiple_timelines",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "tricks",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      },
+      {
+        "domain": "murder_methods",
+        "status": "missing",
+        "reason": "No existing structured objects.",
+        "existing_object_ids": []
+      }
+    ],
+    "units": [
+      {
+        "unit_id": "mandatory-relationships-01",
+        "track": "mandatory",
+        "domain": "relationships",
+        "question": "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？",
+        "why_it_matters": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "character_index",
+          "relationship_records",
+          "relationship_changes",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 2,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "主要人物均已纳入关系梳理",
+          "关键关系有可靠证据",
+          "关系变化和不确定项已明确记录"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-multiple_timelines-01",
+        "track": "mandatory",
+        "domain": "multiple_timelines",
+        "question": "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？",
+        "why_it_matters": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "event_timeline",
+          "testimony_timeline",
+          "investigation_timeline",
+          "reveal_timeline",
+          "conflicts"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键事件具有时间或顺序定位",
+          "不同时间线已对齐",
+          "冲突与未知项已明确记录"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-tricks-01",
+        "track": "mandatory",
+        "domain": "tricks",
+        "question": "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？",
+        "why_it_matters": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "trick_mechanism",
+          "required_conditions",
+          "clues",
+          "misdirection",
+          "reveal_path"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "核心诡计的执行链条完整",
+          "线索与误导均有证据",
+          "替代解释或争议已检查"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-murder_methods-01",
+        "track": "mandatory",
+        "domain": "murder_methods",
+        "question": "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？",
+        "why_it_matters": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "case_index",
+          "method",
+          "time_window",
+          "tools_and_preparation",
+          "concealment",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "每起关键案件均有独立记录",
+          "手法与时间窗口有可靠证据",
+          "推定内容和争议已明确标注"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "signature-01-2063f0c8",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+        "why_it_matters": "以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+        "required_outputs": [
+          "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+          "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+          "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+          "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+          "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+          "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+          "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+          "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+          "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+          "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+          "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+          "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+          "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+          "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+          "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+          "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+          "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      }
+    ],
+    "budget": {
+      "mandatory_reserve": {
+        "relationships": 2,
+        "multiple_timelines": 3,
+        "tricks": 3,
+        "murder_methods": 2
+      },
+      "signature_flexible_queries": 8,
+      "verification_reserve_ratio": 0.2
+    },
+    "rationale": "先由 dossier 动态发现视角，经有限连续追问与检索后，从研究笔记事后归并特色大纲。 [model=gpt-5.6-sol; prompt=signature-storm-plan-v0.7.0]",
+    "approved": false,
+    "selected_unit_ids": [],
+    "strategy": "build_and_verify",
+    "created_at": "2026-08-10T15:40:45.445633Z"
+  },
+  "units": {
+    "mandatory-relationships-01": {
+      "research_unit_id": "mandatory-relationships-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-multiple_timelines-01": {
+      "research_unit_id": "mandatory-multiple_timelines-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-tricks-01": {
+      "research_unit_id": "mandatory-tricks-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "mandatory-murder_methods-01": {
+      "research_unit_id": "mandatory-murder_methods-01",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    },
+    "signature-01-2063f0c8": {
+      "research_unit_id": "signature-01-2063f0c8",
+      "status": "planned",
+      "attempt": 0,
+      "finding_bundle": null,
+      "snapshots": {},
+      "curated": null,
+      "verification_results": [],
+      "error": null
+    }
+  },
+  "strategy": "build_and_verify",
+  "planning_budget": {
+    "mandatory_reserve": {
+      "relationships": 2,
+      "multiple_timelines": 3,
+      "tricks": 3,
+      "murder_methods": 2
+    },
+    "signature_flexible_queries": 8,
+    "verification_reserve_ratio": 0.2
+  },
+  "planning_attempt": 1,
+  "planning_failure": null,
+  "verified_knowledge": null,
+  "case_file": null,
+  "research_report": null,
+  "provider_response_id": null,
+  "reconnaissance": {
+    "summary": "研究应把《白夜行》视为“缺席中心型”长篇谜案：核心二人的内心、私下交流与关系定义被系统性删除，真相只能由十九年间的案件回声、旁观者证词和笹垣的持续追查拼合。重点不是传统意义上的说谎叙述者，而是叙事权限受限造成的结构性不可靠。",
+    "edition_scope": "仅限《白夜行》原著小说；允许完整剧透，不涉及影视改编、版本史或衍生作品。",
+    "structure_signals": [
+      "宏观时间基本沿1973—1992年推进，以大幅跳时串联多个阶段性事件。",
+      "核心人物被置于叙事盲区，主要通过受害者、同学、同事、亲属和调查者的局部视角显影。",
+      "开篇命案并未封闭，而是作为因果母题反复生成新案件、身份变化与灭口压力。",
+      "笹垣的调查线承担跨年代索引功能，把表面独立的社会切片重新编织成同一谜案。"
+    ],
+    "candidate_features": [
+      "建立“双层时间表”：明面事件年表与推定共谋行动表并列，标记两者错位和叙事空白。",
+      "检验“无直接对话、无内心描写”是否构成核心诡计：作者隐藏的不是事件本身，而是行动者之间的因果接口。",
+      "追踪雪穗的社会上升线与亮司的地下生存线，分析二者如何形成互补但不公开交汇的双轨结构。",
+      "区分证词错误、角色误读、警方假设与叙述者省略，避免把所有信息缺口笼统归为不可靠叙述。"
+    ],
+    "primary_text_options": [
+      "按章节记录明确年份、季节、年龄、学校或职业阶段。",
+      "制作“事件—获益者—执行能力—目击信息—后续回声”五栏证据表。限于所选小说文本内部定位。"
+    ],
+    "location_strategy": "采用“章节序号＋章节内明确年代或标志性事件”定位；不同版本分页不稳定，因此不使用页码。",
+    "contamination_risks": [
+      "影视改编补写了核心人物的心理、对话和明确共谋过程，会消解原著最关键的留白机制。",
+      "网络梗概常把推定因果直接写成确定事实，容易混淆文本明示、笹垣推论与读者重构。"
+    ],
+    "open_questions": [
+      "正式研究是否需要逐章建立完整的1973—1992年双轨年表？",
+      "“不可靠叙述”是否应改用更精确的工作术语，如“外聚焦限制＋信息省略＋不可靠见证网络”？",
+      "输入未提供作者与首发年份；这不影响作品识别，但最终档案是否需要补录东野圭吾及原作发表信息？"
+    ],
+    "sources": [
+      {
+        "title": "论东野圭吾小说的空间结构与叙事逻辑——以《白夜行》为例",
+        "url": "https://cnki.istiz.org.cn/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFD2025&filename=XJSG202532008",
+        "role": "用于规划物理、社会与心理空间的联动分析。"
+      },
+      {
+        "title": "白夜行",
+        "url": "https://zh.wikipedia.org/wiki/%E7%99%BD%E5%A4%9C%E8%A1%8C",
+        "role": "用于初步核对小说时间跨度、核心叙事留白及改编差异警示。"
+      },
+      {
+        "title": "浅论叙述学中的叙述视角和叙述体",
+        "url": "https://jss.usst.edu.cn/shlgdxxbsk/article/html/20150111",
+        "role": "提供聚焦、隐匿信息和叙述权限分析框架。"
+      },
+      {
+        "title": "张闳：论叙事视角",
+        "url": "https://www.chinawriter.com.cn/n1/2023/0907/c419351-40072588.html",
+        "role": "辅助界定叙述者隐退、人物视角与信息控制。"
+      },
+      {
+        "title": "“罗生门”的语言迷宫和“聊斋志异”的鬼魅世界——谈小说的视角与人称",
+        "url": "https://www.chinawriter.com.cn/n1/2025/0311/c404030-40436345.html",
+        "role": "用于区分零聚焦、内聚焦与外聚焦。"
+      }
+    ],
+    "model": "gpt-5.6-sol",
+    "prompt_version": "reconnaissance-v0.5.0",
+    "created_at": "2026-08-05T14:50:44.038666Z"
+  },
+  "plan_memo": {
+    "title": "《白夜行》特色研究备忘录",
+    "objective": "全面研究作品的诡计结构、多重时间线与不可靠叙述",
+    "scope": "original_novel · bilingual_mystery_default",
+    "reconnaissance_summary": "研究应把《白夜行》视为“缺席中心型”长篇谜案：核心二人的内心、私下交流与关系定义被系统性删除，真相只能由十九年间的案件回声、旁观者证词和笹垣的持续追查拼合。重点不是传统意义上的说谎叙述者，而是叙事权限受限造成的结构性不可靠。",
+    "mandatory_units": [
+      {
+        "unit_id": "mandatory-relationships-01",
+        "track": "mandatory",
+        "domain": "relationships",
+        "question": "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？",
+        "why_it_matters": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "character_index",
+          "relationship_records",
+          "relationship_changes",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 2,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "主要人物均已纳入关系梳理",
+          "关键关系有可靠证据",
+          "关系变化和不确定项已明确记录"
+        ],
+        "priority": 4,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-multiple_timelines-01",
+        "track": "mandatory",
+        "domain": "multiple_timelines",
+        "question": "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？",
+        "why_it_matters": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "event_timeline",
+          "testimony_timeline",
+          "investigation_timeline",
+          "reveal_timeline",
+          "conflicts"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键事件具有时间或顺序定位",
+          "不同时间线已对齐",
+          "冲突与未知项已明确记录"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-tricks-01",
+        "track": "mandatory",
+        "domain": "tricks",
+        "question": "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？",
+        "why_it_matters": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "trick_mechanism",
+          "required_conditions",
+          "clues",
+          "misdirection",
+          "reveal_path"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "核心诡计的执行链条完整",
+          "线索与误导均有证据",
+          "替代解释或争议已检查"
+        ],
+        "priority": 5,
+        "status": "planned"
+      },
+      {
+        "unit_id": "mandatory-murder_methods-01",
+        "track": "mandatory",
+        "domain": "murder_methods",
+        "question": "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？",
+        "why_it_matters": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+        "required_outputs": [
+          "case_index",
+          "method",
+          "time_window",
+          "tools_and_preparation",
+          "concealment",
+          "uncertainties"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": true
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 2,
+          "max_pages": 4
+        },
+        "done_when": [
+          "每起关键案件均有独立记录",
+          "手法与时间窗口有可靠证据",
+          "推定内容和争议已明确标注"
+        ],
+        "priority": 5,
+        "status": "planned"
+      }
+    ],
+    "signature_units": [
+      {
+        "unit_id": "signature-01-2063f0c8",
+        "track": "signature",
+        "domain": "work_signature",
+        "question": "哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+        "why_it_matters": "以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+        "required_outputs": [
+          "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+          "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+          "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+          "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+          "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+          "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+          "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+          "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+          "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+          "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+          "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+          "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+          "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+          "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+          "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+          "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+          "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。"
+        ],
+        "evidence_requirements": {
+          "requires_primary_source": true,
+          "minimum_independent_sources": 1,
+          "requires_counterevidence_search": false
+        },
+        "budget": {
+          "max_steps": 10,
+          "max_queries": 3,
+          "max_pages": 6
+        },
+        "done_when": [
+          "关键联系有检索或 dossier 支撑",
+          "仅保留通用模块不能充分回答的增量",
+          "未决点明确保留"
+        ],
+        "priority": 4,
+        "status": "planned"
+      }
+    ],
+    "perspectives": [
+      {
+        "perspective_id": "perspective-01-e22652cb",
+        "title": "基础事实与版本边界",
+        "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+        "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+        "focus_questions": [
+          "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+        ],
+        "source_inspiration": [
+          "作品身份与指定媒介版本"
+        ],
+        "is_basic": true,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "perspective_id": "perspective-02-72c2a67c",
+        "title": "被删除的共谋接口：核心二人如何在从不被正面呈现的情况下协同行动？",
+        "description": "《白夜行》的核心谜面不只是案件如何实施，而是小说如何删除共谋关系本身的可见证据；重建这些“缺席接口”可同时解释十九年案件链、双轨人生与结构性不可靠叙述。",
+        "starting_question": "逐章追踪亮司与雪穗之间被叙事隐藏的联络、委托与利益交换：哪些共谋可由案件回声和能力互补证实，哪些只是笹垣或读者的推定？",
+        "focus_questions": [
+          "逐章追踪亮司与雪穗之间被叙事隐藏的联络、委托与利益交换：哪些共谋可由案件回声和能力互补证实，哪些只是笹垣或读者的推定？"
+        ],
+        "source_inspiration": [
+          "建立1973—1992年“可见事件—潜在联络窗口—受益者—执行者—后续回声”证据链。",
+          "标注二人无直接对话、无内心描写且行动因果接口缺席的段落。",
+          "对照雪穗的社会上升与亮司的地下活动，检验两条轨迹在关键案件前后的互补关系。",
+          "分级区分文本明示、旁观者证词、笹垣推论与读者重构，防止把推定共谋写成事实。"
+        ],
+        "is_basic": false,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "research_turns": [
+      {
+        "turn_id": "turn-001-7d58910c",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "应以哪一版本作为《白夜行》的研究底本，连载本、单行本、文库本与影视改编应如何划界？",
+        "research_intent": "锁定可复核的原著文本边界，并判断连载到单行本的改写是否会影响后续对章节结构、时间线和叙事留白的分析。",
+        "suggested_queries": [
+          "『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更",
+          "白夜行 1999 単行本 2002 文庫版 相違 章立て",
+          "白夜行 中文版 章节 日文原版 对照"
+        ],
+        "provisional_answer": "待验证假设：可暂将研究对象界定为东野圭吾著、集英社1999年8月刊行的日文单行本所形成的长篇小说文本；作者、出版社及刊行时间可由集英社与日本国立国会图书馆记录交叉确认。2002年集英社文库本可作为通行校核本，但尚不能假定它与1999年单行本完全无差异。作品此前于《小説すばる》1997年1月号至1999年1月号连载；现有线索称单行本化时经过重构或修订，因此连载文本不宜直接等同于定本。电视剧、日韩电影及其补写的心理、对话、共谋过程均排除；中文译本可用于阅读定位，但涉及措辞、章节边界和叙事权限时应回核日文小说。",
+        "unresolved_questions": [
+          "尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。",
+          "尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。",
+          "用户未指定中文译本，暂不能建立可靠的中日章节对应表。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-002-2d23d875",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "在缺乏亮司与雪穗直接会面、对话和内心描写的情况下，应采用什么证据门槛判定一次事件属于“可证共谋”，而非单纯的平行获益或笹垣推测？",
+        "research_intent": "先建立可复核的共谋证据分级法，再逐章重建隐藏接口，避免将改编补写、网络梗概及情感解释污染原著事实层。",
+        "suggested_queries": [
+          "《白夜行》原著逐章 年份 事件 笹垣 推理",
+          "白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠",
+          "《白夜行》叙事视角 核心人物 心理描写 研究"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：网络侦察只能确认原著系统性删除二人的直接互动与心理，并通过旁观者视角暗示其共生关系；现有二手材料普遍把这种暗示直接概括为共谋，却不足以逐案证明委托链。正式研究宜采用四级标注：A级为文本明示的物证、身份关联或不可替代的能力匹配；B级为事件前后形成“雪穗获益—亮司具备执行条件—后续细节回声”的闭环；C级为笹垣有根据但未被独立印证的推论；D级为仅依赖动机、爱情观或结局反推的读者解释。只有A级或多个相互独立的B级证据才能暂列“可证共谋”，其余保留为推定。",
+        "unresolved_questions": [
+          "尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。",
+          "二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。",
+          "现阶段无法确定哪些案件达到A级或B级证据门槛。",
+          "二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-003-6a955ab9",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "现有书目证据能否确认1999年单行本与2002年文库本的文本关系，并据此确定后续研究底本？",
+        "research_intent": "结束基础书目核定，并把无法由在线目录解决的版本异文问题转化为后续文本校勘任务，避免继续用低收益搜索推断版本一致性。",
+        "suggested_queries": [
+          "『白夜行』 1999 2002 初版 文庫 異同 奥付",
+          "『小説すばる』 白夜行 各回 目次 1997 1999"
+        ],
+        "provisional_answer": "待验证假设：官方与图书馆书目可确认：1999年8月集英社单行本是初刊书籍，2002年5月集英社文库本明确属于该书的文库化版本。现有在线记录没有提供修订说明或逐字异文，因而只能确认出版谱系，不能证明两版文本完全一致。后续结构研究宜以任一可稳定取得的日文书籍版为主底本，并记录ISBN与章节边界；涉及时间标记、视角切换或关键措辞时再抽查另一版。连载本与书籍版的结构差异仍须依靠实物目录、连载文本或出版社资料核验。",
+        "unresolved_questions": [
+          "1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。",
+          "《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。",
+          "用户实际使用的中文译本及其章节划分。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-004-526530e6",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "应优先选择哪一组案件作为“隐藏共谋接口”的校准样本，以检验事件前布置、能力分工、获益关系和事后回声能否构成闭环？",
+        "research_intent": "以一宗线索相对密集的案件建立隐藏接口分析模板，再用疑难案件测试该模板是否会把动机吻合误判为共谋。",
+        "suggested_queries": [
+          "《白夜行》原著 藤村都子 电影优待券 笹垣 推理",
+          "白夜行 小説 藤村都子 亮司 雪穂 映画 優待券",
+          "《白夜行》原著 唐泽礼子 死亡 亮司 证据"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：侦察结果表明，“藤村都子受害事件”最适合作为首个校准样本。现有梗概提到雪穗提供电影优待券、亮司事前约束相关人物，笹垣据此推断二人共同设计事件；它同时包含诱导受害者进入时间窗口、亮司实施暴力或摄影、雪穗利用后果排除竞争者等潜在接口。应在原著中逐项核对这些环节是否确有文本依据，尤其区分笹垣的整体推断与各项独立旁证。随后可用唐泽礼子死亡等证据较弱、替代解释较多的案件进行反向压力测试。现有网络材料不足以把任一委托或联络方式判为事实。",
+        "unresolved_questions": [
+          "尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。",
+          "网络材料可能混入电视剧明确化的共谋情节。",
+          "藤村都子事件能否达到A级证据门槛仍未确定。",
+          "唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-005-17dc7dc5",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "藤村都子事件中，“雪穗把《洛奇》电影票交给菊池之母—菊池获得不在场证明—亮司嫁祸菊池并取回照片”的链条，能否证明二人预先协调，还是只能证明事后形成互补结果？",
+        "research_intent": "以电影票这一可验证物件测试小说如何用第三方传递、时间安排和双重获益替代核心二人的直接联络场景。",
+        "suggested_queries": [
+          "《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子",
+          "白夜行 小説 ロッキー 優待券 菊池 藤村都子",
+          "《白夜行》藤村都子案 照片 底片 不在场证明 笹垣"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：侦察材料提示，原著版电影票并非电视剧改写的《泰坦尼克号》，而是《洛奇》；另有论文将“雪穗向菊池母亲提供电影票”与“亮司实施袭击、嫁祸菊池”并列为共同犯罪分工。这使电影票成为潜在的隐藏联络接口，但二手材料尚未证明雪穗何时得知亮司的具体计划，也未排除笹垣依据结果反推共谋。正式研究应核对原著叙述顺序：赠票发生在袭击计划形成之前还是之后、票的场次是否精确覆盖案发窗口、亮司是否能独立获知菊池行程，以及照片和底片的回收是否与嫁祸方案构成同一预设目标。",
+        "unresolved_questions": [
+          "尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。",
+          "论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。",
+          "现有材料没有证明亮司通过何种渠道得知菊池会去看电影。",
+          "尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "direct_outline": {
+      "outline_id": "direct-outline-d6f4d91abae4",
+      "kind": "direct",
+      "title": "《白夜行》初始研究大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《白夜行》初始研究大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "research_outline": {
+      "outline_id": "research-outline-6f22443ece1d",
+      "kind": "research",
+      "title": "《白夜行》研究增强大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-01-2063f0c8",
+          "title": "作品专属研究方向",
+          "purpose": "以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+          "research_questions": [
+            "哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？"
+          ],
+          "search_directions": [
+            "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+            "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+            "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+            "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+            "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+            "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+            "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+            "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+            "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+            "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+            "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+            "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+            "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+            "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+            "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+            "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+            "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。",
+            "『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更",
+            "白夜行 1999 単行本 2002 文庫版 相違 章立て",
+            "白夜行 中文版 章节 日文原版 对照",
+            "《白夜行》原著逐章 年份 事件 笹垣 推理",
+            "白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠",
+            "《白夜行》叙事视角 核心人物 心理描写 研究",
+            "『白夜行』 1999 2002 初版 文庫 異同 奥付",
+            "『小説すばる』 白夜行 各回 目次 1997 1999",
+            "《白夜行》原著 藤村都子 电影优待券 笹垣 推理",
+            "白夜行 小説 藤村都子 亮司 雪穂 映画 優待券",
+            "《白夜行》原著 唐泽礼子 死亡 亮司 证据",
+            "《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子",
+            "白夜行 小説 ロッキー 優待券 菊池 藤村都子",
+            "《白夜行》藤村都子案 照片 底片 不在场证明 笹垣"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+            "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+            "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+            "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+            "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+            "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+            "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+            "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+            "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+            "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+            "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+            "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+            "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+            "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+            "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+            "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+            "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。",
+            "尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。",
+            "用户未指定中文译本，暂不能建立可靠的中日章节对应表。",
+            "尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。",
+            "二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。",
+            "现阶段无法确定哪些案件达到A级或B级证据门槛。",
+            "二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。",
+            "1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。",
+            "《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。",
+            "用户实际使用的中文译本及其章节划分。",
+            "尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。",
+            "网络材料可能混入电视剧明确化的共谋情节。",
+            "藤村都子事件能否达到A级证据门槛仍未确定。",
+            "唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。",
+            "尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。",
+            "论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。",
+            "现有材料没有证明亮司通过何种渠道得知菊池会去看电影。",
+            "尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。"
+          ],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《白夜行》研究增强大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties\n\n## 5. 作品专属研究方向\n- 目的：以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。\n- [ ] 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？\n  - 搜索方向：title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述\n  - 搜索方向：scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。\n  - 搜索方向：why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。\n  - 搜索方向：research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？\n  - 搜索方向：research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？\n  - 搜索方向：research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？\n  - 搜索方向：research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？\n  - 搜索方向：known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。\n  - 搜索方向：known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。\n  - 搜索方向：known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。\n  - 搜索方向：known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。\n  - 搜索方向：known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。\n  - 搜索方向：unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。\n  - 搜索方向：unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。\n  - 搜索方向：unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。\n  - 搜索方向：unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。\n  - 搜索方向：unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。\n  - 搜索方向：『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更\n  - 搜索方向：白夜行 1999 単行本 2002 文庫版 相違 章立て\n  - 搜索方向：白夜行 中文版 章节 日文原版 对照\n  - 搜索方向：《白夜行》原著逐章 年份 事件 笹垣 推理\n  - 搜索方向：白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠\n  - 搜索方向：《白夜行》叙事视角 核心人物 心理描写 研究\n  - 搜索方向：『白夜行』 1999 2002 初版 文庫 異同 奥付\n  - 搜索方向：『小説すばる』 白夜行 各回 目次 1997 1999\n  - 搜索方向：《白夜行》原著 藤村都子 电影优待券 笹垣 推理\n  - 搜索方向：白夜行 小説 藤村都子 亮司 雪穂 映画 優待券\n  - 搜索方向：《白夜行》原著 唐泽礼子 死亡 亮司 证据\n  - 搜索方向：《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子\n  - 搜索方向：白夜行 小説 ロッキー 優待券 菊池 藤村都子\n  - 搜索方向：《白夜行》藤村都子案 照片 底片 不在场证明 笹垣\n  - 未决：尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。\n  - 未决：尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。\n  - 未决：用户未指定中文译本，暂不能建立可靠的中日章节对应表。\n  - 未决：尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。\n  - 未决：二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。\n  - 未决：现阶段无法确定哪些案件达到A级或B级证据门槛。\n  - 未决：二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。\n  - 未决：1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。\n  - 未决：《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。\n  - 未决：用户实际使用的中文译本及其章节划分。\n  - 未决：尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。\n  - 未决：网络材料可能混入电视剧明确化的共谋情节。\n  - 未决：藤村都子事件能否达到A级证据门槛仍未确定。\n  - 未决：唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。\n  - 未决：尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。\n  - 未决：论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。\n  - 未决：现有材料没有证明亮司通过何种渠道得知菊池会去看电影。\n  - 未决：尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "risks": [
+      "影视改编补写了核心人物的心理、对话和明确共谋过程，会消解原著最关键的留白机制。",
+      "网络梗概常把推定因果直接写成确定事实，容易混淆文本明示、笹垣推论与读者重构。"
+    ],
+    "strategy": "build_and_verify",
+    "revision": 1
+  },
+  "storm_planning": {
+    "perspectives": [
+      {
+        "perspective_id": "perspective-01-e22652cb",
+        "title": "基础事实与版本边界",
+        "description": "为所有后续视角建立一致的作品身份、人物与情节边界。",
+        "starting_question": "这部作品的基础事实、版本边界与核心研究对象分别是什么？",
+        "focus_questions": [
+          "这部作品的基础事实、版本边界与核心研究对象分别是什么？"
+        ],
+        "source_inspiration": [
+          "作品身份与指定媒介版本"
+        ],
+        "is_basic": true,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "perspective_id": "perspective-02-72c2a67c",
+        "title": "被删除的共谋接口：核心二人如何在从不被正面呈现的情况下协同行动？",
+        "description": "《白夜行》的核心谜面不只是案件如何实施，而是小说如何删除共谋关系本身的可见证据；重建这些“缺席接口”可同时解释十九年案件链、双轨人生与结构性不可靠叙述。",
+        "starting_question": "逐章追踪亮司与雪穗之间被叙事隐藏的联络、委托与利益交换：哪些共谋可由案件回声和能力互补证实，哪些只是笹垣或读者的推定？",
+        "focus_questions": [
+          "逐章追踪亮司与雪穗之间被叙事隐藏的联络、委托与利益交换：哪些共谋可由案件回声和能力互补证实，哪些只是笹垣或读者的推定？"
+        ],
+        "source_inspiration": [
+          "建立1973—1992年“可见事件—潜在联络窗口—受益者—执行者—后续回声”证据链。",
+          "标注二人无直接对话、无内心描写且行动因果接口缺席的段落。",
+          "对照雪穗的社会上升与亮司的地下活动，检验两条轨迹在关键案件前后的互补关系。",
+          "分级区分文本明示、旁观者证词、笹垣推论与读者重构，防止把推定共谋写成事实。"
+        ],
+        "is_basic": false,
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "research_turns": [
+      {
+        "turn_id": "turn-001-7d58910c",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "应以哪一版本作为《白夜行》的研究底本，连载本、单行本、文库本与影视改编应如何划界？",
+        "research_intent": "锁定可复核的原著文本边界，并判断连载到单行本的改写是否会影响后续对章节结构、时间线和叙事留白的分析。",
+        "suggested_queries": [
+          "『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更",
+          "白夜行 1999 単行本 2002 文庫版 相違 章立て",
+          "白夜行 中文版 章节 日文原版 对照"
+        ],
+        "provisional_answer": "待验证假设：可暂将研究对象界定为东野圭吾著、集英社1999年8月刊行的日文单行本所形成的长篇小说文本；作者、出版社及刊行时间可由集英社与日本国立国会图书馆记录交叉确认。2002年集英社文库本可作为通行校核本，但尚不能假定它与1999年单行本完全无差异。作品此前于《小説すばる》1997年1月号至1999年1月号连载；现有线索称单行本化时经过重构或修订，因此连载文本不宜直接等同于定本。电视剧、日韩电影及其补写的心理、对话、共谋过程均排除；中文译本可用于阅读定位，但涉及措辞、章节边界和叙事权限时应回核日文小说。",
+        "unresolved_questions": [
+          "尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。",
+          "尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。",
+          "用户未指定中文译本，暂不能建立可靠的中日章节对应表。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-002-2d23d875",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "在缺乏亮司与雪穗直接会面、对话和内心描写的情况下，应采用什么证据门槛判定一次事件属于“可证共谋”，而非单纯的平行获益或笹垣推测？",
+        "research_intent": "先建立可复核的共谋证据分级法，再逐章重建隐藏接口，避免将改编补写、网络梗概及情感解释污染原著事实层。",
+        "suggested_queries": [
+          "《白夜行》原著逐章 年份 事件 笹垣 推理",
+          "白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠",
+          "《白夜行》叙事视角 核心人物 心理描写 研究"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：网络侦察只能确认原著系统性删除二人的直接互动与心理，并通过旁观者视角暗示其共生关系；现有二手材料普遍把这种暗示直接概括为共谋，却不足以逐案证明委托链。正式研究宜采用四级标注：A级为文本明示的物证、身份关联或不可替代的能力匹配；B级为事件前后形成“雪穗获益—亮司具备执行条件—后续细节回声”的闭环；C级为笹垣有根据但未被独立印证的推论；D级为仅依赖动机、爱情观或结局反推的读者解释。只有A级或多个相互独立的B级证据才能暂列“可证共谋”，其余保留为推定。",
+        "unresolved_questions": [
+          "尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。",
+          "二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。",
+          "现阶段无法确定哪些案件达到A级或B级证据门槛。",
+          "二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-003-6a955ab9",
+        "perspective_id": "perspective-01-e22652cb",
+        "question": "现有书目证据能否确认1999年单行本与2002年文库本的文本关系，并据此确定后续研究底本？",
+        "research_intent": "结束基础书目核定，并把无法由在线目录解决的版本异文问题转化为后续文本校勘任务，避免继续用低收益搜索推断版本一致性。",
+        "suggested_queries": [
+          "『白夜行』 1999 2002 初版 文庫 異同 奥付",
+          "『小説すばる』 白夜行 各回 目次 1997 1999"
+        ],
+        "provisional_answer": "待验证假设：官方与图书馆书目可确认：1999年8月集英社单行本是初刊书籍，2002年5月集英社文库本明确属于该书的文库化版本。现有在线记录没有提供修订说明或逐字异文，因而只能确认出版谱系，不能证明两版文本完全一致。后续结构研究宜以任一可稳定取得的日文书籍版为主底本，并记录ISBN与章节边界；涉及时间标记、视角切换或关键措辞时再抽查另一版。连载本与书籍版的结构差异仍须依靠实物目录、连载文本或出版社资料核验。",
+        "unresolved_questions": [
+          "1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。",
+          "《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。",
+          "用户实际使用的中文译本及其章节划分。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "complete",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-004-526530e6",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "应优先选择哪一组案件作为“隐藏共谋接口”的校准样本，以检验事件前布置、能力分工、获益关系和事后回声能否构成闭环？",
+        "research_intent": "以一宗线索相对密集的案件建立隐藏接口分析模板，再用疑难案件测试该模板是否会把动机吻合误判为共谋。",
+        "suggested_queries": [
+          "《白夜行》原著 藤村都子 电影优待券 笹垣 推理",
+          "白夜行 小説 藤村都子 亮司 雪穂 映画 優待券",
+          "《白夜行》原著 唐泽礼子 死亡 亮司 证据"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：侦察结果表明，“藤村都子受害事件”最适合作为首个校准样本。现有梗概提到雪穗提供电影优待券、亮司事前约束相关人物，笹垣据此推断二人共同设计事件；它同时包含诱导受害者进入时间窗口、亮司实施暴力或摄影、雪穗利用后果排除竞争者等潜在接口。应在原著中逐项核对这些环节是否确有文本依据，尤其区分笹垣的整体推断与各项独立旁证。随后可用唐泽礼子死亡等证据较弱、替代解释较多的案件进行反向压力测试。现有网络材料不足以把任一委托或联络方式判为事实。",
+        "unresolved_questions": [
+          "尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。",
+          "网络材料可能混入电视剧明确化的共谋情节。",
+          "藤村都子事件能否达到A级证据门槛仍未确定。",
+          "唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      },
+      {
+        "turn_id": "turn-005-17dc7dc5",
+        "perspective_id": "perspective-02-72c2a67c",
+        "question": "藤村都子事件中，“雪穗把《洛奇》电影票交给菊池之母—菊池获得不在场证明—亮司嫁祸菊池并取回照片”的链条，能否证明二人预先协调，还是只能证明事后形成互补结果？",
+        "research_intent": "以电影票这一可验证物件测试小说如何用第三方传递、时间安排和双重获益替代核心二人的直接联络场景。",
+        "suggested_queries": [
+          "《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子",
+          "白夜行 小説 ロッキー 優待券 菊池 藤村都子",
+          "《白夜行》藤村都子案 照片 底片 不在场证明 笹垣"
+        ],
+        "provisional_answer": "待验证假设：仅作研究规划：侦察材料提示，原著版电影票并非电视剧改写的《泰坦尼克号》，而是《洛奇》；另有论文将“雪穗向菊池母亲提供电影票”与“亮司实施袭击、嫁祸菊池”并列为共同犯罪分工。这使电影票成为潜在的隐藏联络接口，但二手材料尚未证明雪穗何时得知亮司的具体计划，也未排除笹垣依据结果反推共谋。正式研究应核对原著叙述顺序：赠票发生在袭击计划形成之前还是之后、票的场次是否精确覆盖案发窗口、亮司是否能独立获知菊池行程，以及照片和底片的回收是否与嫁祸方案构成同一预设目标。",
+        "unresolved_questions": [
+          "尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。",
+          "论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。",
+          "现有材料没有证明亮司通过何种渠道得知菊池会去看电影。",
+          "尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。"
+        ],
+        "reconnaissance_source_urls": [],
+        "status": "continue",
+        "model": "gpt-5.6-sol",
+        "prompt_version": "signature-storm-plan-v0.7.0"
+      }
+    ],
+    "direct_outline": {
+      "outline_id": "direct-outline-d6f4d91abae4",
+      "kind": "direct",
+      "title": "《白夜行》初始研究大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《白夜行》初始研究大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    },
+    "research_outline": {
+      "outline_id": "research-outline-6f22443ece1d",
+      "kind": "research",
+      "title": "《白夜行》研究增强大纲",
+      "nodes": [
+        {
+          "section_id": "mandatory-relationships-01",
+          "title": "人物关系、动机与心理",
+          "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+          ],
+          "search_directions": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "character_index",
+            "relationship_records",
+            "relationship_changes",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-multiple_timelines-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-multiple_timelines-01",
+          "title": "真实事件与叙事披露时间线",
+          "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+          ],
+          "search_directions": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "event_timeline",
+            "testimony_timeline",
+            "investigation_timeline",
+            "reveal_timeline",
+            "conflicts"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-tricks-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-tricks-01",
+          "title": "线索、误导、公平推理与诡计机制",
+          "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+          ],
+          "search_directions": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "trick_mechanism",
+            "required_conditions",
+            "clues",
+            "misdirection",
+            "reveal_path"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "mandatory-murder_methods-01",
+          "title": "杀人手法、执行条件与证据",
+          "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+          "research_questions": [
+            "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+          ],
+          "search_directions": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "case_index",
+            "method",
+            "time_window",
+            "tools_and_preparation",
+            "concealment",
+            "uncertainties"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [],
+          "spoiler_level": "full"
+        },
+        {
+          "section_id": "signature-01-2063f0c8",
+          "title": "作品专属研究方向",
+          "purpose": "以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+          "research_questions": [
+            "哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？"
+          ],
+          "search_directions": [
+            "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+            "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+            "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+            "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+            "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+            "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+            "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+            "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+            "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+            "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+            "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+            "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+            "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+            "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+            "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+            "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+            "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。",
+            "『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更",
+            "白夜行 1999 単行本 2002 文庫版 相違 章立て",
+            "白夜行 中文版 章节 日文原版 对照",
+            "《白夜行》原著逐章 年份 事件 笹垣 推理",
+            "白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠",
+            "《白夜行》叙事视角 核心人物 心理描写 研究",
+            "『白夜行』 1999 2002 初版 文庫 異同 奥付",
+            "『小説すばる』 白夜行 各回 目次 1997 1999",
+            "《白夜行》原著 藤村都子 电影优待券 笹垣 推理",
+            "白夜行 小説 藤村都子 亮司 雪穂 映画 優待券",
+            "《白夜行》原著 唐泽礼子 死亡 亮司 证据",
+            "《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子",
+            "白夜行 小説 ロッキー 優待券 菊池 藤村都子",
+            "《白夜行》藤村都子案 照片 底片 不在场证明 笹垣"
+          ],
+          "required_source_types": [
+            "primary_text",
+            "independent_cross_check"
+          ],
+          "expected_claims": [
+            "title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述",
+            "scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。",
+            "why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。",
+            "research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？",
+            "research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？",
+            "research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？",
+            "research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？",
+            "known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。",
+            "known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。",
+            "known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。",
+            "known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。",
+            "known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。",
+            "unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。",
+            "unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。",
+            "unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。",
+            "unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。",
+            "unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。"
+          ],
+          "subsections": [],
+          "cross_section_dependencies": [
+            "mandatory-relationships-01",
+            "mandatory-multiple_timelines-01"
+          ],
+          "open_questions": [
+            "尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。",
+            "尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。",
+            "用户未指定中文译本，暂不能建立可靠的中日章节对应表。",
+            "尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。",
+            "二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。",
+            "现阶段无法确定哪些案件达到A级或B级证据门槛。",
+            "二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。",
+            "1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。",
+            "《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。",
+            "用户实际使用的中文译本及其章节划分。",
+            "尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。",
+            "网络材料可能混入电视剧明确化的共谋情节。",
+            "藤村都子事件能否达到A级证据门槛仍未确定。",
+            "唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。",
+            "尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。",
+            "论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。",
+            "现有材料没有证明亮司通过何种渠道得知菊池会去看电影。",
+            "尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。"
+          ],
+          "spoiler_level": "full"
+        }
+      ],
+      "markdown": "# 《白夜行》研究增强大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties\n\n## 5. 作品专属研究方向\n- 目的：以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。\n- [ ] 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？\n  - 搜索方向：title: 被删除的共谋接口：十九年双轨人生与结构性不可靠叙述\n  - 搜索方向：scope: 以原著小说为唯一对象，逐章并列1973—1992年的可见事件与推定共谋行动，重建桐原亮司和唐泽雪穗之间未被正面呈现的联络、分工及因果接口；区分文本事实、旁观者证词、笹垣推论和读者补全，并排除影视改编补写。\n  - 搜索方向：why_generic_modules_are_insufficient: 通用时间线、关系与诡计分析能够整理案件，却不能单独解释本作如何通过删除核心二人的对话、内心和会面，把共谋关系本身变成总谜面。该方向需同时连接双轨人生、案件回声、能力互补、调查重构与叙事权限限制。\n  - 搜索方向：research_question: 哪些案件存在足以证明预先协调的证据，哪些只能说明平行获益或事后互补？\n  - 搜索方向：research_question: 如何建立“可见事件—联络窗口—受益者—执行能力—后续回声”的双层年表？\n  - 搜索方向：research_question: 藤村都子事件中的电影票、案发窗口、嫁祸、照片回收和流言压制是否构成同一预设计划？\n  - 搜索方向：research_question: 笹垣的最终重构中，哪些命题有独立旁证，哪些仍是结果倒推？回答这些问题时，“外聚焦限制＋信息省略＋不可靠见证网络”是否比“不可靠叙述者”更准确？\n  - 搜索方向：known_lead: 采用四级证据门槛：A级为物证、身份关联或不可替代的能力匹配；B级为获益、能力与后续回声形成闭环；C级为笹垣未获独立印证的推论；D级为读者解释。\n  - 搜索方向：known_lead: 藤村都子事件适合作为高密度校准样本，可拆为目标选择、电影票诱导、时间隔离、袭击能力、影像控制和雪穗获益。\n  - 搜索方向：known_lead: 唐泽礼子死亡可作为低可见度压力测试，检验分析是否因结局或动机吻合而过度归因。\n  - 搜索方向：known_lead: 雪穗的社会上升线与亮司的地下生存线在关键案件前后呈现能力和利益互补，但现有二手资料不足以证明具体委托链。\n  - 搜索方向：known_lead: 以1999年集英社单行本或2002年文库本为日文底本并记录ISBN、章节和年代标志；中文译本仅用于定位，关键措辞回核日文文本。\n  - 搜索方向：unresolved_point: 尚未依据原著逐章核实二人是否绝不同场，以及各案件能够达到的证据等级。\n  - 搜索方向：unresolved_point: 电影票的赠予主体、时间、场次及亮司获知菊池行程的渠道仍待核验；它可能只是制造不在场证明，而非行动指令。\n  - 搜索方向：unresolved_point: 藤村都子事件是否为统一预谋，唐泽礼子死亡的执行者及联络窗口，均不能由现有二手材料确定。\n  - 搜索方向：unresolved_point: 1999年单行本与2002年文库本是否存在影响视角、时间标记或诡计分析的异文尚不明确；连载版重排范围亦未核实。\n  - 搜索方向：unresolved_point: 用户使用的中文译本与章节划分未知，尚无法建立稳定的中日章节对应表。\n  - 搜索方向：『白夜行』 小説すばる 連載 単行本 加筆 修正 構成変更\n  - 搜索方向：白夜行 1999 単行本 2002 文庫版 相違 章立て\n  - 搜索方向：白夜行 中文版 章节 日文原版 对照\n  - 搜索方向：《白夜行》原著逐章 年份 事件 笹垣 推理\n  - 搜索方向：白夜行 小説 亮司 雪穂 接点 伏線 共犯 証拠\n  - 搜索方向：《白夜行》叙事视角 核心人物 心理描写 研究\n  - 搜索方向：『白夜行』 1999 2002 初版 文庫 異同 奥付\n  - 搜索方向：『小説すばる』 白夜行 各回 目次 1997 1999\n  - 搜索方向：《白夜行》原著 藤村都子 电影优待券 笹垣 推理\n  - 搜索方向：白夜行 小説 藤村都子 亮司 雪穂 映画 優待券\n  - 搜索方向：《白夜行》原著 唐泽礼子 死亡 亮司 证据\n  - 搜索方向：《白夜行》原著 洛奇 电影票 菊池母亲 藤村都子\n  - 搜索方向：白夜行 小説 ロッキー 優待券 菊池 藤村都子\n  - 搜索方向：《白夜行》藤村都子案 照片 底片 不在场证明 笹垣\n  - 未决：尚未取得连载各期目录或文本，无法确认所谓“大幅加笔修正”的具体范围。\n  - 未决：尚未核实1999年单行本与2002年文库本是否存在影响诡计分析的文字或结构差异。\n  - 未决：用户未指定中文译本，暂不能建立可靠的中日章节对应表。\n  - 未决：尚未取得可稳定检索的原著全文，无法确认逐章事件、措辞与证据位置。\n  - 未决：二人是否在原著中绝对没有同场出现，需要依据所选版本逐章核验。\n  - 未决：现阶段无法确定哪些案件达到A级或B级证据门槛。\n  - 未决：二手资料对二人情感性质存在分歧，不能据此证明具体委托关系。\n  - 未决：1999年单行本与2002年文库本是否存在影响诡计分析的文字异同。\n  - 未决：《小説すばる》连载各期的分段方式及单行本化时的具体重排范围。\n  - 未决：用户实际使用的中文译本及其章节划分。\n  - 未决：尚未核对原著章节中的优待券来源、亮司言行及笹垣推理原文。\n  - 未决：网络材料可能混入电视剧明确化的共谋情节。\n  - 未决：藤村都子事件能否达到A级证据门槛仍未确定。\n  - 未决：唐泽礼子死亡的执行者与联络窗口在二手材料中多被直接断言，但依据不明。\n  - 未决：尚未取得原著相关段落，无法确认赠票主体、时间、票券性质及电影场次。\n  - 未决：论文表格将案件直接归为共同正犯，但其结论仍需回到小说逐项验证。\n  - 未决：现有材料没有证明亮司通过何种渠道得知菊池会去看电影。\n  - 未决：尚不能排除电影票只是制造不在场证明，而非向亮司传递行动指令。",
+      "prompt_version": "signature-storm-plan-v0.7.0"
+    }
+  },
+  "stage_artifacts": [
+    {
+      "artifact_id": "artifact-perspective-abef7d1db1b0",
+      "stage": "perspective",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [],
+      "input_hash": "8bdd28bf103fe201d68df1fc9042ba87d994ae7bc3d544434888fee6bfd42b79",
+      "output_hash": "abef7d1db1b0f8cc98587efbefd01080af91d4f3b1bf3c2c65cce24bdc2e4a60",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-10T15:40:45.446700Z",
+      "completed_at": "2026-08-10T15:40:45.445633Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "perspectives": "perspectives/perspectives.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-dialogue-5c20d8e1f046",
+      "stage": "research_dialogue",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-abef7d1db1b0"
+      ],
+      "input_hash": "abef7d1db1b0f8cc98587efbefd01080af91d4f3b1bf3c2c65cce24bdc2e4a60",
+      "output_hash": "5c20d8e1f046671ac15c318e1fd737870d41232909f3d9db7da078dfb56d0e34",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-10T15:40:45.446700Z",
+      "completed_at": "2026-08-10T15:40:45.445633Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "turns": "dialogues/research_turns.json"
+      }
+    },
+    {
+      "artifact_id": "artifact-outline-1cbfeeb17fcd",
+      "stage": "outline",
+      "schema_version": "v4-storm-1",
+      "status": "valid",
+      "input_artifact_ids": [
+        "artifact-perspective-abef7d1db1b0",
+        "artifact-dialogue-5c20d8e1f046"
+      ],
+      "input_hash": "10b2a986f651048da504a9604b2d671fc7112010cc5784982fd20a7d5c3bbba1",
+      "output_hash": "1cbfeeb17fcd2c857c6a2b4e33d848b3f5562baef3f4fbe7fc437978843391f2",
+      "model": "gpt-5.6-sol",
+      "model_parameters": {},
+      "prompt_version": "signature-storm-plan-v0.7.0",
+      "created_at": "2026-08-10T15:40:45.446700Z",
+      "completed_at": "2026-08-10T15:40:45.445633Z",
+      "token_usage": {},
+      "cost": null,
+      "error": null,
+      "files": {
+        "direct_json": "outline/direct_outline.json",
+        "direct_markdown": "outline/direct_outline.md",
+        "research_json": "outline/research_outline.json",
+        "research_markdown": "outline/research_outline.md"
+      }
+    }
+  ],
+  "search_session": {
+    "queries": [],
+    "query_units": {},
+    "sources": {},
+    "snapshots": {},
+    "snapshot_urls": {},
+    "cache_hits": 0,
+    "duplicate_queries_avoided": 0,
+    "funnel_states": {}
+  },
+  "attempt_history": [],
+  "proposals": [],
+  "projection_audit": null,
+  "errors": [],
+  "published_version": null,
+  "created_at": "2026-08-10T15:38:09.020916Z",
+  "updated_at": "2026-08-10T15:40:45.445633Z"
+}

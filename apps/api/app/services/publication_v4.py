@@ -8,9 +8,11 @@ from fastapi import HTTPException
 
 from app.services import research_repository_v4 as repository
 from app.services.orchestrator_v4 import get
+from app.services.working_memory_v4 import record as record_checkpoint
 from logispace_domain import dossiers
 from logispace_domain.models import DossierEntity, DossierRelation, WorkDossier
 from logispace_domain.models_v4_publish import ProposalReviewV4, ResearchDeltaV4
+from logispace_domain.models_v4_verified import VerifiedKnowledgeSnapshotV4
 
 DATA = Path(__file__).resolve().parents[4] / "data"
 
@@ -74,7 +76,23 @@ def _apply(draft, proposal, delta: ResearchDeltaV4):
 
 def publish(job_id: str) -> tuple[object, ResearchDeltaV4]:
     job = get(job_id)
-    if job.status != "needs_review" or not job.verified_knowledge or not job.case_file:
+    if job.status == "published" and job.published_version:
+        delta_path = DATA / "works" / job.work.work_id / "versions" / job.published_version / "research-delta.json"
+        if delta_path.exists():
+            return job, ResearchDeltaV4.model_validate_json(delta_path.read_text(encoding="utf-8"))
+    if job.status == "depositing":
+        manifest_path = DATA / "works" / job.work.work_id / "manifest.json"
+        if manifest_path.exists():
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            recovered_version = next((version for version, item in manifest.get("knowledge_versions", {}).items() if item.get("source_job_id") == job.job_id), None)
+            if recovered_version:
+                delta_path = DATA / "works" / job.work.work_id / "versions" / recovered_version / "research-delta.json"
+                if delta_path.exists():
+                    job.status = "published"
+                    job.published_version = recovered_version
+                    repository.save(job)
+                    return job, ResearchDeltaV4.model_validate_json(delta_path.read_text(encoding="utf-8"))
+    if job.status not in {"needs_review", "depositing"} or not job.verified_knowledge or not job.case_file:
         raise HTTPException(409, "Job is not publishable")
     approved = [item for item in job.proposals if item.review_status == "approved"]
     pending = [item for item in job.proposals if item.review_status == "pending"]
@@ -107,10 +125,18 @@ def publish(job_id: str) -> tuple[object, ResearchDeltaV4]:
     work_root = DATA / "works" / job.work.work_id
     target = work_root / "versions" / target_version
     if target.exists():
+        delta_path = target / "research-delta.json"
+        verified_path = target / "verified-knowledge.json"
+        if delta_path.exists() and verified_path.exists() and VerifiedKnowledgeSnapshotV4.model_validate_json(verified_path.read_text(encoding="utf-8")).snapshot_id == job.verified_knowledge.snapshot_id:
+            job.status = "published"
+            job.published_version = target_version
+            repository.save(job)
+            return job, ResearchDeltaV4.model_validate_json(delta_path.read_text(encoding="utf-8"))
         raise HTTPException(409, "Target dossier version already exists")
     temporary = work_root / "versions" / f".deposit-{uuid4().hex}"
     job.status = "depositing"
     repository.save(job)
+    record_checkpoint(job, stage="deposit", status="started")
     try:
         temporary.mkdir(parents=True)
         (temporary / "dossier.json").write_text(draft.model_dump_json(indent=2), encoding="utf-8")
@@ -126,6 +152,12 @@ def publish(job_id: str) -> tuple[object, ResearchDeltaV4]:
             "dossier_versions": [],
         }
         manifest["current_dossier_version"] = target_version
+        manifest["current_knowledge_version"] = target_version
+        manifest.setdefault("knowledge_versions", {})[target_version] = {
+            "media_version": job.verified_knowledge.media_version,
+            "source_job_id": job.job_id,
+            "snapshot_id": job.verified_knowledge.snapshot_id,
+        }
         versions = manifest.setdefault("dossier_versions", [])
         if target_version not in versions:
             versions.append(target_version)
@@ -139,9 +171,10 @@ def publish(job_id: str) -> tuple[object, ResearchDeltaV4]:
                 })
                 catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8")
     except Exception as error:
-        job.status = "failed"
+        job.status = "needs_review"
         job.errors.append(f"Deposit failed: {error}")
         repository.save(job)
+        record_checkpoint(job, stage="deposit", status="failed", error=str(error))
         raise
     dossiers._catalog.cache_clear()
     cache_clear = getattr(dossiers.get_dossier, "cache_clear", None)
@@ -150,4 +183,5 @@ def publish(job_id: str) -> tuple[object, ResearchDeltaV4]:
     job.status = "published"
     job.published_version = target_version
     repository.save(job)
+    record_checkpoint(job, stage="deposit", status="completed")
     return job, delta

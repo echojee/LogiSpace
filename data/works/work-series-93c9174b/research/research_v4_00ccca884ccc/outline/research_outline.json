@@ -1,0 +1,293 @@
+{
+  "outline_id": "research-outline-c62b35647e48",
+  "kind": "research",
+  "title": "《有罪之身》研究增强大纲",
+  "nodes": [
+    {
+      "section_id": "mandatory-relationships-01",
+      "title": "人物关系、动机与心理",
+      "purpose": "人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？"
+      ],
+      "search_directions": [
+        "character_index",
+        "relationship_records",
+        "relationship_changes",
+        "uncertainties"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "character_index",
+        "relationship_records",
+        "relationship_changes",
+        "uncertainties"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-multiple_timelines-01",
+        "mandatory-tricks-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-multiple_timelines-01",
+      "title": "真实事件与叙事披露时间线",
+      "purpose": "分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？"
+      ],
+      "search_directions": [
+        "event_timeline",
+        "testimony_timeline",
+        "investigation_timeline",
+        "reveal_timeline",
+        "conflicts"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "event_timeline",
+        "testimony_timeline",
+        "investigation_timeline",
+        "reveal_timeline",
+        "conflicts"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-tricks-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-tricks-01",
+      "title": "线索、误导、公平推理与诡计机制",
+      "purpose": "诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？"
+      ],
+      "search_directions": [
+        "trick_mechanism",
+        "required_conditions",
+        "clues",
+        "misdirection",
+        "reveal_path"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "trick_mechanism",
+        "required_conditions",
+        "clues",
+        "misdirection",
+        "reveal_path"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "mandatory-murder_methods-01",
+      "title": "杀人手法、执行条件与证据",
+      "purpose": "杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。",
+      "research_questions": [
+        "每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？"
+      ],
+      "search_directions": [
+        "case_index",
+        "method",
+        "time_window",
+        "tools_and_preparation",
+        "concealment",
+        "uncertainties"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "case_index",
+        "method",
+        "time_window",
+        "tools_and_preparation",
+        "concealment",
+        "uncertainties"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "signature-01-392ac943",
+      "title": "作品专属研究方向",
+      "purpose": "以14集原版网络剧为准，逐步重建马科死亡案与船厂爆炸案的调查推进，区分夏雪作为旧案直接责任人、侯军作为爆炸案幕后主使，并标明两案相互遮蔽和最终交汇之处。",
+      "research_questions": [
+        "李东供出情人峰后，警方如何推翻马科死于船厂爆炸的统一叙事？"
+      ],
+      "search_directions": [
+        "title: 双案“真凶”如何被分别锁定：从统一口供到两条闭合证据链",
+        "scope: 以14集原版网络剧为准，逐步重建马科死亡案与船厂爆炸案的调查推进，区分夏雪作为旧案直接责任人、侯军作为爆炸案幕后主使，并标明两案相互遮蔽和最终交汇之处。",
+        "why_generic_modules_are_insufficient: 四个通用模块能分别说明时间线、关系、诡计和作案手法，却难以整体呈现调查者如何在双案之间转移假设、检验证词，并形成两个不同层级的“真凶”结论。",
+        "research_question: 李东供出情人峰后，警方如何推翻马科死于船厂爆炸的统一叙事？",
+        "research_question: 林华认罪、陆鸣假自首与夏雪供述分别保留或篡改了哪些事实？",
+        "research_question: 尸骨、伤情、DV、纽扣等物证各自证明了什么，又否定了哪份口供？",
+        "research_question: 警方如何从马德荣、刘志军等显性嫌疑人转向侯军，并证明其策划爆炸与后续灭口？",
+        "known_lead: 马科案可按“统一口供—李东指出真实地点—林华顶罪—陆鸣交出埋尸点—夏雪供述—尸检验证”追踪。",
+        "known_lead: 林华过度完整的认罪因动机与尸体缺失而呈现保护性口供特征。",
+        "known_lead: 刘志军的认罪书与其携贵重物品准备逃亡的行为矛盾，形成船厂案的假结案点。",
+        "known_lead: 侯军的受益关系、缺失的行车记录、绑架灭口链和终局自我暴露共同推动嫌疑升级。",
+        "unresolved_point: 尸检究竟确认了致命伤和死亡方式，还是主要用于否定林华口供。",
+        "unresolved_point: 侯军在终局明确承认的罪行范围及相关言语能否独立构成证据。",
+        "unresolved_point: 各关键线索首次出现、被警方串联和被观众理解的准确正片集数。",
+        "site:iqiyi.com/a_joowt9qeup 有罪之身 第1集 第14集",
+        "site:iq.com/play 有罪之身 14集 导演 主演",
+        "site:iqiyi.com 有罪之身 马科 船厂爆炸案",
+        "有罪之身 正片 马科死亡 口供变化 李东 林华 陆鸣 夏雪",
+        "有罪之身 尸骨鉴定 林华认罪 陆鸣假自首 叙事顺序",
+        "有罪之身 DV 情人峰 埋尸地点 伏笔",
+        "有罪之身 第14集 陆鸣侯军对峙 夏雪自首 尸骨鉴定 顺序",
+        "有罪之身 终局 马科案 船厂爆炸案 交叉剪辑",
+        "有罪之身 正片 第14集 尸检 侯军认罪 秦文",
+        "有罪之身 侯军 伏笔 刘志军 自杀 行车记录仪 船厂爆炸案",
+        "有罪之身 第12集 第13集 侯军 嫌疑 资产 绑架 灭口",
+        "有罪之身 马德荣 刘志军 侯军 嫌疑转移"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "title: 双案“真凶”如何被分别锁定：从统一口供到两条闭合证据链",
+        "scope: 以14集原版网络剧为准，逐步重建马科死亡案与船厂爆炸案的调查推进，区分夏雪作为旧案直接责任人、侯军作为爆炸案幕后主使，并标明两案相互遮蔽和最终交汇之处。",
+        "why_generic_modules_are_insufficient: 四个通用模块能分别说明时间线、关系、诡计和作案手法，却难以整体呈现调查者如何在双案之间转移假设、检验证词，并形成两个不同层级的“真凶”结论。",
+        "research_question: 李东供出情人峰后，警方如何推翻马科死于船厂爆炸的统一叙事？",
+        "research_question: 林华认罪、陆鸣假自首与夏雪供述分别保留或篡改了哪些事实？",
+        "research_question: 尸骨、伤情、DV、纽扣等物证各自证明了什么，又否定了哪份口供？",
+        "research_question: 警方如何从马德荣、刘志军等显性嫌疑人转向侯军，并证明其策划爆炸与后续灭口？",
+        "known_lead: 马科案可按“统一口供—李东指出真实地点—林华顶罪—陆鸣交出埋尸点—夏雪供述—尸检验证”追踪。",
+        "known_lead: 林华过度完整的认罪因动机与尸体缺失而呈现保护性口供特征。",
+        "known_lead: 刘志军的认罪书与其携贵重物品准备逃亡的行为矛盾，形成船厂案的假结案点。",
+        "known_lead: 侯军的受益关系、缺失的行车记录、绑架灭口链和终局自我暴露共同推动嫌疑升级。",
+        "unresolved_point: 尸检究竟确认了致命伤和死亡方式，还是主要用于否定林华口供。",
+        "unresolved_point: 侯军在终局明确承认的罪行范围及相关言语能否独立构成证据。",
+        "unresolved_point: 各关键线索首次出现、被警方串联和被观众理解的准确正片集数。"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [
+        "官方页面未充分显示首播日期及编剧信息，若成品需要完整书目信息仍须核验片头片尾。",
+        "“原著”可能只是用户对原版剧集的泛称；当前检索未确认该剧存在可单独研究的小说原著。",
+        "正片是否在终局前展示过足以推断刀伤的视觉伏笔。",
+        "林华口供被怀疑时，秦文的判断依据在镜头中呈现到何种程度。",
+        "DV内容首次完整展示的集数及其对观众判断的实际影响。",
+        "第14集交叉剪辑的逐镜头顺序尚未由正片确认。",
+        "尸检报告具体确认了致命伤、死亡方式还是仅否定林华口供，现有摘要不一致。",
+        "侯军在对峙中明确承认的罪行范围，以及这些话如何转化为可采证据，仍需核实。",
+        "侯军的经济受益关系最早在哪一集被明确提示。",
+        "警方发现行车记录缺失后是否进行了技术恢复或仅将其作为方向性线索。",
+        "刘志军究竟属于被迫自杀还是侯军直接灭口，各剧情摘要表述略有差异。",
+        "观众是否早于秦文获知侯军与刘志军的旧日合作，需按正片视角核对。"
+      ],
+      "spoiler_level": "full"
+    },
+    {
+      "section_id": "signature-02-3d15cb17",
+      "title": "作品专属研究方向",
+      "purpose": "分列秦文的正式调查与陆鸣的私人取证、诱导和假自首，分析阻碍调查的谎言何时反而转化为突破口，以及陆鸣之死如何促使两案同时收束。",
+      "research_questions": [
+        "秦文与陆鸣分别发现了哪些关键事实，警方如何验证私人调查所得？"
+      ],
+      "search_directions": [
+        "title: 谁推动了破案：警方调查、陆鸣私查与保护性谎言的因果接力",
+        "scope: 分列秦文的正式调查与陆鸣的私人取证、诱导和假自首，分析阻碍调查的谎言何时反而转化为突破口，以及陆鸣之死如何促使两案同时收束。",
+        "why_generic_modules_are_insufficient: 人物关系模块只能解释保护动机，时间线模块只能排列行动；二者均无法完整表达非法或误导性行动如何被警方吸收、验证并转化为有效调查方向的接力机制。",
+        "research_question: 秦文与陆鸣分别发现了哪些关键事实，警方如何验证私人调查所得？",
+        "research_question: 陆鸣假自首是在拖延调查、保护夏雪，还是有意交出埋尸地点以推动真相公开？",
+        "research_question: 同步审讯三人如何利用口供差异击穿十年前的共同叙事？",
+        "research_question: 陆鸣诱使侯军暴露与其死亡消息，是否直接促成夏雪停止沉默并自首？",
+        "known_lead: 秦文承担审讯、物证鉴定与正式收网，陆鸣承担埋尸地点披露及接近侯军等高风险突破。",
+        "known_lead: 李东的供述先改变调查地点，尸骨发现再把口供争执转化为可检验的法医学问题。",
+        "known_lead: 保护性认罪既制造误导，也暴露叙述中的动机过度和事实错位。",
+        "known_lead: 终局并行呈现侯军暴露与夏雪供述，可能以陆鸣之死作为两条调查线的因果转轴。",
+        "unresolved_point: 同步审讯中秦文怀疑林华的具体判断依据。",
+        "unresolved_point: 陆鸣交出埋尸地点时是否已预期尸检会揭穿自己的假口供。",
+        "unresolved_point: 第14集两线交叉剪辑的准确顺序，以及夏雪自首与陆鸣死亡消息之间的直接因果关系。",
+        "site:iqiyi.com/a_joowt9qeup 有罪之身 第1集 第14集",
+        "site:iq.com/play 有罪之身 14集 导演 主演",
+        "site:iqiyi.com 有罪之身 马科 船厂爆炸案",
+        "有罪之身 正片 马科死亡 口供变化 李东 林华 陆鸣 夏雪",
+        "有罪之身 尸骨鉴定 林华认罪 陆鸣假自首 叙事顺序",
+        "有罪之身 DV 情人峰 埋尸地点 伏笔",
+        "有罪之身 第14集 陆鸣侯军对峙 夏雪自首 尸骨鉴定 顺序",
+        "有罪之身 终局 马科案 船厂爆炸案 交叉剪辑",
+        "有罪之身 正片 第14集 尸检 侯军认罪 秦文",
+        "有罪之身 侯军 伏笔 刘志军 自杀 行车记录仪 船厂爆炸案",
+        "有罪之身 第12集 第13集 侯军 嫌疑 资产 绑架 灭口",
+        "有罪之身 马德荣 刘志军 侯军 嫌疑转移"
+      ],
+      "required_source_types": [
+        "primary_text",
+        "independent_cross_check"
+      ],
+      "expected_claims": [
+        "title: 谁推动了破案：警方调查、陆鸣私查与保护性谎言的因果接力",
+        "scope: 分列秦文的正式调查与陆鸣的私人取证、诱导和假自首，分析阻碍调查的谎言何时反而转化为突破口，以及陆鸣之死如何促使两案同时收束。",
+        "why_generic_modules_are_insufficient: 人物关系模块只能解释保护动机，时间线模块只能排列行动；二者均无法完整表达非法或误导性行动如何被警方吸收、验证并转化为有效调查方向的接力机制。",
+        "research_question: 秦文与陆鸣分别发现了哪些关键事实，警方如何验证私人调查所得？",
+        "research_question: 陆鸣假自首是在拖延调查、保护夏雪，还是有意交出埋尸地点以推动真相公开？",
+        "research_question: 同步审讯三人如何利用口供差异击穿十年前的共同叙事？",
+        "research_question: 陆鸣诱使侯军暴露与其死亡消息，是否直接促成夏雪停止沉默并自首？",
+        "known_lead: 秦文承担审讯、物证鉴定与正式收网，陆鸣承担埋尸地点披露及接近侯军等高风险突破。",
+        "known_lead: 李东的供述先改变调查地点，尸骨发现再把口供争执转化为可检验的法医学问题。",
+        "known_lead: 保护性认罪既制造误导，也暴露叙述中的动机过度和事实错位。",
+        "known_lead: 终局并行呈现侯军暴露与夏雪供述，可能以陆鸣之死作为两条调查线的因果转轴。",
+        "unresolved_point: 同步审讯中秦文怀疑林华的具体判断依据。",
+        "unresolved_point: 陆鸣交出埋尸地点时是否已预期尸检会揭穿自己的假口供。",
+        "unresolved_point: 第14集两线交叉剪辑的准确顺序，以及夏雪自首与陆鸣死亡消息之间的直接因果关系。"
+      ],
+      "subsections": [],
+      "cross_section_dependencies": [
+        "mandatory-relationships-01",
+        "mandatory-multiple_timelines-01"
+      ],
+      "open_questions": [
+        "官方页面未充分显示首播日期及编剧信息，若成品需要完整书目信息仍须核验片头片尾。",
+        "“原著”可能只是用户对原版剧集的泛称；当前检索未确认该剧存在可单独研究的小说原著。",
+        "正片是否在终局前展示过足以推断刀伤的视觉伏笔。",
+        "林华口供被怀疑时，秦文的判断依据在镜头中呈现到何种程度。",
+        "DV内容首次完整展示的集数及其对观众判断的实际影响。",
+        "第14集交叉剪辑的逐镜头顺序尚未由正片确认。",
+        "尸检报告具体确认了致命伤、死亡方式还是仅否定林华口供，现有摘要不一致。",
+        "侯军在对峙中明确承认的罪行范围，以及这些话如何转化为可采证据，仍需核实。",
+        "侯军的经济受益关系最早在哪一集被明确提示。",
+        "警方发现行车记录缺失后是否进行了技术恢复或仅将其作为方向性线索。",
+        "刘志军究竟属于被迫自杀还是侯军直接灭口，各剧情摘要表述略有差异。",
+        "观众是否早于秦文获知侯军与刘志军的旧日合作，需按正片视角核对。"
+      ],
+      "spoiler_level": "full"
+    }
+  ],
+  "markdown": "# 《有罪之身》研究增强大纲\n\n## 1. 人物关系、动机与心理\n- 目的：人物关系是理解动机、共谋、冲突与信息流动的基础。本轮建立可核验的基础档案。\n- [ ] 人物之间有哪些关键关系，这些关系如何影响动机、证词和行动？\n  - 搜索方向：character_index\n  - 搜索方向：relationship_records\n  - 搜索方向：relationship_changes\n  - 搜索方向：uncertainties\n\n## 2. 真实事件与叙事披露时间线\n- 目的：分开梳理不同时间线，才能发现矛盾、延迟揭示和误导。本轮建立可核验的基础档案。\n- [ ] 案件实际发生、人物陈述、调查发现和作品揭示的先后顺序分别是什么？\n  - 搜索方向：event_timeline\n  - 搜索方向：testimony_timeline\n  - 搜索方向：investigation_timeline\n  - 搜索方向：reveal_timeline\n  - 搜索方向：conflicts\n\n## 3. 线索、误导、公平推理与诡计机制\n- 目的：诡计需要同时说明机制、线索、误导和揭示，不能只记录答案。本轮建立可核验的基础档案。\n- [ ] 核心诡计依赖哪些条件，它如何实施、误导读者并最终被揭示？\n  - 搜索方向：trick_mechanism\n  - 搜索方向：required_conditions\n  - 搜索方向：clues\n  - 搜索方向：misdirection\n  - 搜索方向：reveal_path\n\n## 4. 杀人手法、执行条件与证据\n- 目的：杀人手法需要与时间线和诡计分开核实，避免把推测当作事实。本轮建立可核验的基础档案。\n- [ ] 每起关键案件的实施手法、时间窗口、工具、准备和掩盖方式是什么？\n  - 搜索方向：case_index\n  - 搜索方向：method\n  - 搜索方向：time_window\n  - 搜索方向：tools_and_preparation\n  - 搜索方向：concealment\n  - 搜索方向：uncertainties\n\n## 5. 作品专属研究方向\n- 目的：以14集原版网络剧为准，逐步重建马科死亡案与船厂爆炸案的调查推进，区分夏雪作为旧案直接责任人、侯军作为爆炸案幕后主使，并标明两案相互遮蔽和最终交汇之处。\n- [ ] 李东供出情人峰后，警方如何推翻马科死于船厂爆炸的统一叙事？\n  - 搜索方向：title: 双案“真凶”如何被分别锁定：从统一口供到两条闭合证据链\n  - 搜索方向：scope: 以14集原版网络剧为准，逐步重建马科死亡案与船厂爆炸案的调查推进，区分夏雪作为旧案直接责任人、侯军作为爆炸案幕后主使，并标明两案相互遮蔽和最终交汇之处。\n  - 搜索方向：why_generic_modules_are_insufficient: 四个通用模块能分别说明时间线、关系、诡计和作案手法，却难以整体呈现调查者如何在双案之间转移假设、检验证词，并形成两个不同层级的“真凶”结论。\n  - 搜索方向：research_question: 李东供出情人峰后，警方如何推翻马科死于船厂爆炸的统一叙事？\n  - 搜索方向：research_question: 林华认罪、陆鸣假自首与夏雪供述分别保留或篡改了哪些事实？\n  - 搜索方向：research_question: 尸骨、伤情、DV、纽扣等物证各自证明了什么，又否定了哪份口供？\n  - 搜索方向：research_question: 警方如何从马德荣、刘志军等显性嫌疑人转向侯军，并证明其策划爆炸与后续灭口？\n  - 搜索方向：known_lead: 马科案可按“统一口供—李东指出真实地点—林华顶罪—陆鸣交出埋尸点—夏雪供述—尸检验证”追踪。\n  - 搜索方向：known_lead: 林华过度完整的认罪因动机与尸体缺失而呈现保护性口供特征。\n  - 搜索方向：known_lead: 刘志军的认罪书与其携贵重物品准备逃亡的行为矛盾，形成船厂案的假结案点。\n  - 搜索方向：known_lead: 侯军的受益关系、缺失的行车记录、绑架灭口链和终局自我暴露共同推动嫌疑升级。\n  - 搜索方向：unresolved_point: 尸检究竟确认了致命伤和死亡方式，还是主要用于否定林华口供。\n  - 搜索方向：unresolved_point: 侯军在终局明确承认的罪行范围及相关言语能否独立构成证据。\n  - 搜索方向：unresolved_point: 各关键线索首次出现、被警方串联和被观众理解的准确正片集数。\n  - 搜索方向：site:iqiyi.com/a_joowt9qeup 有罪之身 第1集 第14集\n  - 搜索方向：site:iq.com/play 有罪之身 14集 导演 主演\n  - 搜索方向：site:iqiyi.com 有罪之身 马科 船厂爆炸案\n  - 搜索方向：有罪之身 正片 马科死亡 口供变化 李东 林华 陆鸣 夏雪\n  - 搜索方向：有罪之身 尸骨鉴定 林华认罪 陆鸣假自首 叙事顺序\n  - 搜索方向：有罪之身 DV 情人峰 埋尸地点 伏笔\n  - 搜索方向：有罪之身 第14集 陆鸣侯军对峙 夏雪自首 尸骨鉴定 顺序\n  - 搜索方向：有罪之身 终局 马科案 船厂爆炸案 交叉剪辑\n  - 搜索方向：有罪之身 正片 第14集 尸检 侯军认罪 秦文\n  - 搜索方向：有罪之身 侯军 伏笔 刘志军 自杀 行车记录仪 船厂爆炸案\n  - 搜索方向：有罪之身 第12集 第13集 侯军 嫌疑 资产 绑架 灭口\n  - 搜索方向：有罪之身 马德荣 刘志军 侯军 嫌疑转移\n  - 未决：官方页面未充分显示首播日期及编剧信息，若成品需要完整书目信息仍须核验片头片尾。\n  - 未决：“原著”可能只是用户对原版剧集的泛称；当前检索未确认该剧存在可单独研究的小说原著。\n  - 未决：正片是否在终局前展示过足以推断刀伤的视觉伏笔。\n  - 未决：林华口供被怀疑时，秦文的判断依据在镜头中呈现到何种程度。\n  - 未决：DV内容首次完整展示的集数及其对观众判断的实际影响。\n  - 未决：第14集交叉剪辑的逐镜头顺序尚未由正片确认。\n  - 未决：尸检报告具体确认了致命伤、死亡方式还是仅否定林华口供，现有摘要不一致。\n  - 未决：侯军在对峙中明确承认的罪行范围，以及这些话如何转化为可采证据，仍需核实。\n  - 未决：侯军的经济受益关系最早在哪一集被明确提示。\n  - 未决：警方发现行车记录缺失后是否进行了技术恢复或仅将其作为方向性线索。\n  - 未决：刘志军究竟属于被迫自杀还是侯军直接灭口，各剧情摘要表述略有差异。\n  - 未决：观众是否早于秦文获知侯军与刘志军的旧日合作，需按正片视角核对。\n\n## 6. 作品专属研究方向\n- 目的：分列秦文的正式调查与陆鸣的私人取证、诱导和假自首，分析阻碍调查的谎言何时反而转化为突破口，以及陆鸣之死如何促使两案同时收束。\n- [ ] 秦文与陆鸣分别发现了哪些关键事实，警方如何验证私人调查所得？\n  - 搜索方向：title: 谁推动了破案：警方调查、陆鸣私查与保护性谎言的因果接力\n  - 搜索方向：scope: 分列秦文的正式调查与陆鸣的私人取证、诱导和假自首，分析阻碍调查的谎言何时反而转化为突破口，以及陆鸣之死如何促使两案同时收束。\n  - 搜索方向：why_generic_modules_are_insufficient: 人物关系模块只能解释保护动机，时间线模块只能排列行动；二者均无法完整表达非法或误导性行动如何被警方吸收、验证并转化为有效调查方向的接力机制。\n  - 搜索方向：research_question: 秦文与陆鸣分别发现了哪些关键事实，警方如何验证私人调查所得？\n  - 搜索方向：research_question: 陆鸣假自首是在拖延调查、保护夏雪，还是有意交出埋尸地点以推动真相公开？\n  - 搜索方向：research_question: 同步审讯三人如何利用口供差异击穿十年前的共同叙事？\n  - 搜索方向：research_question: 陆鸣诱使侯军暴露与其死亡消息，是否直接促成夏雪停止沉默并自首？\n  - 搜索方向：known_lead: 秦文承担审讯、物证鉴定与正式收网，陆鸣承担埋尸地点披露及接近侯军等高风险突破。\n  - 搜索方向：known_lead: 李东的供述先改变调查地点，尸骨发现再把口供争执转化为可检验的法医学问题。\n  - 搜索方向：known_lead: 保护性认罪既制造误导，也暴露叙述中的动机过度和事实错位。\n  - 搜索方向：known_lead: 终局并行呈现侯军暴露与夏雪供述，可能以陆鸣之死作为两条调查线的因果转轴。\n  - 搜索方向：unresolved_point: 同步审讯中秦文怀疑林华的具体判断依据。\n  - 搜索方向：unresolved_point: 陆鸣交出埋尸地点时是否已预期尸检会揭穿自己的假口供。\n  - 搜索方向：unresolved_point: 第14集两线交叉剪辑的准确顺序，以及夏雪自首与陆鸣死亡消息之间的直接因果关系。\n  - 搜索方向：site:iqiyi.com/a_joowt9qeup 有罪之身 第1集 第14集\n  - 搜索方向：site:iq.com/play 有罪之身 14集 导演 主演\n  - 搜索方向：site:iqiyi.com 有罪之身 马科 船厂爆炸案\n  - 搜索方向：有罪之身 正片 马科死亡 口供变化 李东 林华 陆鸣 夏雪\n  - 搜索方向：有罪之身 尸骨鉴定 林华认罪 陆鸣假自首 叙事顺序\n  - 搜索方向：有罪之身 DV 情人峰 埋尸地点 伏笔\n  - 搜索方向：有罪之身 第14集 陆鸣侯军对峙 夏雪自首 尸骨鉴定 顺序\n  - 搜索方向：有罪之身 终局 马科案 船厂爆炸案 交叉剪辑\n  - 搜索方向：有罪之身 正片 第14集 尸检 侯军认罪 秦文\n  - 搜索方向：有罪之身 侯军 伏笔 刘志军 自杀 行车记录仪 船厂爆炸案\n  - 搜索方向：有罪之身 第12集 第13集 侯军 嫌疑 资产 绑架 灭口\n  - 搜索方向：有罪之身 马德荣 刘志军 侯军 嫌疑转移\n  - 未决：官方页面未充分显示首播日期及编剧信息，若成品需要完整书目信息仍须核验片头片尾。\n  - 未决：“原著”可能只是用户对原版剧集的泛称；当前检索未确认该剧存在可单独研究的小说原著。\n  - 未决：正片是否在终局前展示过足以推断刀伤的视觉伏笔。\n  - 未决：林华口供被怀疑时，秦文的判断依据在镜头中呈现到何种程度。\n  - 未决：DV内容首次完整展示的集数及其对观众判断的实际影响。\n  - 未决：第14集交叉剪辑的逐镜头顺序尚未由正片确认。\n  - 未决：尸检报告具体确认了致命伤、死亡方式还是仅否定林华口供，现有摘要不一致。\n  - 未决：侯军在对峙中明确承认的罪行范围，以及这些话如何转化为可采证据，仍需核实。\n  - 未决：侯军的经济受益关系最早在哪一集被明确提示。\n  - 未决：警方发现行车记录缺失后是否进行了技术恢复或仅将其作为方向性线索。\n  - 未决：刘志军究竟属于被迫自杀还是侯军直接灭口，各剧情摘要表述略有差异。\n  - 未决：观众是否早于秦文获知侯军与刘志军的旧日合作，需按正片视角核对。",
+  "prompt_version": "signature-storm-plan-v0.7.0"
+}

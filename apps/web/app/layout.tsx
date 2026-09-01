@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import "./globals.css";
 import "./v02.css";
+import "./knowledge.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();

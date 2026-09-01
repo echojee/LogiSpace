@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest-*/
 .ruff_cache/
 .venv/
 venv/
@@ -24,9 +25,12 @@ npm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
+.vs/
 
 # Generated and temporary artifacts
 output/
 tmp/
 logs/
 data/runtime/
+*.tsbuildinfo
+.codex-reopen.patch

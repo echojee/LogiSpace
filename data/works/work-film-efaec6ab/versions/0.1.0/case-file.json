@@ -1,0 +1,153 @@
+{
+  "case_file_id": "case_fcb426ee7fdc",
+  "work_id": "work-film-efaec6ab",
+  "media_version": "original_film",
+  "title": "《控方证人》深度研究报告",
+  "research_mainline": "1982年电视电影《控方证人》围绕Christine以真实犯罪事实制造虚假证词动机、操纵辩护律师并帮助真正凶手Leonard脱罪展开；Leonard最终被Christine刺杀。",
+  "reliability_note": "主要依据审计库存及所列字幕、Hallmark、AFI等来源。字幕为用户上传文本；案件日期、片长、具体凶器及部分准备细节存在不确定性。",
+  "blocks": [
+    {
+      "block_id": "block_43277fc9f4e8",
+      "layer": "one_minute",
+      "block_type": "summary",
+      "title": "研究摘要",
+      "text": "1982年电视电影《控方证人》围绕Christine以真实犯罪事实制造虚假证词动机、操纵辩护律师并帮助真正凶手Leonard脱罪展开；Leonard最终被Christine刺杀。",
+      "claim_ids": [
+        "report_claim_3c6c0c85f95d",
+        "report_claim_f9a906f1f979",
+        "report_claim_ed76730c5205",
+        "report_claim_451992a6eb6d",
+        "report_claim_6721a31d9fc6",
+        "report_claim_3944f5aae05a"
+      ],
+      "evidence_ids": [
+        "report_ev_240ead6097315f4d",
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "block_id": "block_5ac8a7ee60ed",
+      "layer": "core",
+      "block_type": "relationships",
+      "title": "人物关系",
+      "text": "- Emily French信任Leonard并将大部分遗产留给他，后来成为其谋杀受害者。\n- Sir Wilfred成功摧毁Christine的表面可信度，却误将真正凶手辩护至无罪。\n- Janet Mackenzie是Emily的管家并敌视Leonard。\n- Diana是Leonard的情妇，并在其脱罪后与他计划离开。\n- Mr. Myers以遗嘱、血迹、动机和Christine证词组织对Leonard的指控。\n- Miss Plimsoll是Sir Wilfred的护士，并以健康安排约束他。\n- Leonard与Christine举行过婚礼，但婚姻因Christine已有在世丈夫而无效；Christine爱他而Leonard利用她。\n- Emily信任并照顾Leonard，并把遗产留给他；Leonard为遗产杀害她。\n- Sir Wilfred为Leonard制造合理怀疑并赢得无罪判决，却误判其真实身份。\n- Diana是Leonard在旅行社线索中的伴侣，Leonard脱罪后选择与她离开。\n- Janet作为Emily的管家保护她，并提供不利于Leonard的联系信息。\n- Janet强烈敌视Leonard，并把他视为Emily遇害的相关人员。\n- Miss Plimsoll为保护Sir Wilfred健康而约束其工作和生活。\n- Leonard承认受益于Christine的安排，以“两清”为由抛弃她并选择Diana。\n- Janet把Leonard与Emily及案发住宅联系起来，并表达敌意。\n- 旅行社证据显示Leonard并非独自行动，提示其存在隐秘女性关系。\n- 旅行社金发女子线索暗示Leonard另有关系，但身份暂未揭示。\n- Diana现身确认旅行社线索；Leonard抛弃Christine后被她刺杀。",
+      "claim_ids": [
+        "report_claim_ed76730c5205",
+        "report_claim_451992a6eb6d",
+        "report_claim_6721a31d9fc6",
+        "report_claim_3944f5aae05a",
+        "report_claim_eacdc1ba8432",
+        "report_claim_7c8689efa9f1",
+        "report_claim_45a61428e057",
+        "report_claim_11d1e1173939",
+        "report_claim_d09104ec54b5",
+        "report_claim_72e984891f40",
+        "report_claim_63a8924a7657",
+        "report_claim_9d7a5d595915",
+        "report_claim_da66084d93de",
+        "report_claim_2203eda79469",
+        "report_claim_59b3922ee906",
+        "report_claim_29fe461a30c4",
+        "report_claim_00096ba95728",
+        "report_claim_572f21e99fe6"
+      ],
+      "evidence_ids": [
+        "report_ev_240ead6097315f4d",
+        "report_ev_3761d05ce03261c3",
+        "report_ev_f55234b3b238aad7"
+      ]
+    },
+    {
+      "block_id": "block_64d027f12cb0",
+      "layer": "core",
+      "block_type": "timeline",
+      "title": "时间线",
+      "text": "- Leonard在德国认识Christine，两人举行婚礼；该婚姻因Christine已有在世丈夫而无效。\n- Leonard结识并频繁拜访Emily，获得她的信任和照顾。\n- Emily将约八万英镑遗产留给Leonard，形成财产动机。\n- 9月8日，Leonard与Diana在Regent Street旅行社询问海外航程。\n- Leonard约在案发当晚10时10分染血回家，并向Christine承认杀害Emily。\n- Christine以Christine Helm身份作控方证人，陈述Leonard染血回家并承认杀人。\n- 陪审团接受Christine恶意构陷的解释并判Leonard无罪。\n- 调查和审判确认Emily将大额遗产留给Leonard，使财产动机成立。\n- Christine的证词补足Leonard回家时间、染血衣袖和杀人自白。\n- 观众在开场看到雷雨、破玻璃、脚步和尸体，却不知道凶手身份。\n- 八万英镑遗产进入叙事后，观众首次看到明确谋杀动机。\n- 影片约00:52:38—00:54才揭示Christine以Helm身份成为控方证人。\n- Leonard被判无罪，观众暂时以为案件完成逆转。",
+      "claim_ids": [
+        "report_claim_386be9c09471",
+        "report_claim_f07f2ee58fcf",
+        "report_claim_aae378403769",
+        "report_claim_f56213b51c67",
+        "report_claim_3740072de76c",
+        "report_claim_7a307f785dd9",
+        "report_claim_389883e83db3",
+        "report_claim_b83ac6443dea",
+        "report_claim_7dbd6729dfeb",
+        "report_claim_5a3180662709",
+        "report_claim_7583f0ba0fc4",
+        "report_claim_55be4b485d6f",
+        "report_claim_1564fd03cf74"
+      ],
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "block_id": "block_3c906e7326ba",
+      "layer": "core",
+      "block_type": "trick",
+      "title": "诡计结构",
+      "text": "- Christine明知Leonard有罪，却通过伪证、假情书和乔装帮助他脱罪，最终杀死Leonard。\n- Max是Christine伪造情书中的虚构情人。\n- Christine预判Sir Wilfred的职业反应，诱使他用情书摧毁她的可信度。\n- Max是Christine为制造构陷动机而虚构的情人。\n- Christine决定保护明知有罪的Leonard，并开始构造脱罪方案。\n- Christine准备假情书、虚构Max，并计划用真实犯罪事实配合虚假动机摧毁自身可信度。\n- Christine乔装成带疤痕的伦敦女人，将伪造的Max情书交给辩方。\n- Sir Wilfred利用信纸、笔迹和情书证明Christine似乎因Max构陷Leonard。\n- Christine承认Max、情书和匿名女人都是她创造的，并确认Leonard有罪。\n- 神秘疤痕女人向辩方提供看似由Christine写给Max的情书。\n- 辩方通过信纸、笔迹和内容把Christine塑造成因私情陷害丈夫的证人。\n- 无罪判决前，Sir Wilfred开始怀疑翻案证据出现得过于完美。\n- 前段叙事先把Leonard塑造成讨喜、恐惧和无助的无害青年。\n- Christine说出Leonard染血回家和自白，但观众被引导怀疑她在陷害丈夫。\n- 匿名伦敦女人提供情书，使观众转向Christine构陷丈夫的解释。\n- 情书宣读后，Christine的控方证词被视为私情驱动的伪证。\n- Christine说出“我们做到了”，随后承认自己就是疤痕女人。\n- Christine承认Max和情书是伪造的，并确认Leonard杀害Emily。\n- Christine把真实犯罪事实包装在虚假私情动机中，使真相被判定为谎言。\n- Christine利用无效婚姻取得控方作证资格。\n- Christine虚构Max并伪造蓝色情书，制造构陷动机。\n- Christine改变口音并化装成疤痕女人，把情书送入辩方手中。\n- Christine诱使Sir Wilfred攻击她的可信度，从而让陪审团否定其真实证词。\n- Leonard打破窗户制造外来盗贼入室假象。\n- Leonard以手腕割伤解释衣物血迹，并利用同为O型血制造合理怀疑。",
+      "claim_ids": [
+        "report_claim_f9a906f1f979",
+        "report_claim_e9ed81a15b6d",
+        "report_claim_6e97645fdfe9",
+        "report_claim_8b37dd5bbc10",
+        "report_claim_5ce360b4565e",
+        "report_claim_cdd0c34bfe36",
+        "report_claim_f045114de2b7",
+        "report_claim_1d527808c387",
+        "report_claim_9b09887c0126",
+        "report_claim_57aa0bfad43d",
+        "report_claim_d5fb708b17b9",
+        "report_claim_1920a01074f4",
+        "report_claim_f441fbc2bb55",
+        "report_claim_757ecb0adbd6",
+        "report_claim_39c47337b808",
+        "report_claim_e29375d8d577",
+        "report_claim_22bcdc6048a6",
+        "report_claim_7332d18f3ed8",
+        "report_claim_3471b6b0bbad",
+        "report_claim_dbeaadd98675",
+        "report_claim_f1d1dd2c4b5f",
+        "report_claim_772dee7c1635",
+        "report_claim_e872c2e867d7",
+        "report_claim_c98d1377bb7a",
+        "report_claim_f110706a2a3d"
+      ],
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "block_id": "block_81b11022a9e7",
+      "layer": "core",
+      "block_type": "murder_method",
+      "title": "作案手法",
+      "text": "- Leonard Vole实际杀害Emily French并在无罪后选择Diana。\n- Leonard以钝重物击打Emily后脑致死，并打破窗户伪装盗窃入室；日期记录存在冲突。\n- Christine在法庭建筑内近距离刺杀Leonard，并公开承担后果。\n- 调查发现窗户破裂，但玻璃散落方式不符合单纯从外部强行进入。\n- 珠宝等贵重物品没有被取走，使盗窃解释可疑。\n- Leonard衣物上发现曾被清洗的人血痕迹。\n- 血迹与Emily同为O型，但Leonard也为O型，辩方据此制造合理怀疑。\n- Emily死于钝而沉重器具击打后脑；具体凶器未确认。\n- Christine在无罪判决后于法庭建筑内近距离刺杀Leonard；具体刀具未确认。",
+      "claim_ids": [
+        "report_claim_3c6c0c85f95d",
+        "report_claim_04ac6402a375",
+        "report_claim_10f37b6d68a8",
+        "report_claim_8f7a02d2d136",
+        "report_claim_4c16f548f043",
+        "report_claim_f8f05cb7535e",
+        "report_claim_0abce14b14cd",
+        "report_claim_6d2254c96ad8",
+        "report_claim_626688e4658f"
+      ],
+      "evidence_ids": [
+        "report_ev_3761d05ce03261c3"
+      ]
+    },
+    {
+      "block_id": "block_88b691620fe5",
+      "layer": "appendix",
+      "block_type": "sources",
+      "title": "来源与可靠性说明",
+      "text": "主要依据审计库存及所列字幕、Hallmark、AFI等来源。字幕为用户上传文本；案件日期、片长、具体凶器及部分准备细节存在不确定性。",
+      "claim_ids": [],
+      "evidence_ids": []
+    }
+  ]
+}

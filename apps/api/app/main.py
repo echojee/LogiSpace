@@ -19,9 +19,9 @@ def _load_local_env() -> None:
 _load_local_env()
 
 from app.routes import (
-    chat, conversations, dossiers, health, library, reports, research_jobs,
+    chat, conversations, dossiers, health, knowledge_memory, library, reports, research_jobs,
     research_v2, research_v3, research_v4_evaluation, research_v4_full,
-    research_v4_publish, research_v4_routing, works,
+    research_v4_publish, research_v4_routing, user_memory, visualizations, works,
 )
 
 app = FastAPI(
@@ -53,3 +53,6 @@ app.include_router(research_v4_routing.router, prefix="/research/v4", tags=["res
 app.include_router(research_v4_publish.router, prefix="/research/v4/jobs", tags=["research-v4-publish"])
 app.include_router(research_v4_evaluation.router, prefix="/research/v4/jobs", tags=["research-v4-evaluation"])
 app.include_router(library.router, prefix="/library", tags=["library"])
+app.include_router(knowledge_memory.router, prefix="/knowledge", tags=["knowledge-memory"])
+app.include_router(user_memory.router, prefix="/memory/user", tags=["user-memory"])
+app.include_router(visualizations.router, prefix="/knowledge", tags=["visualization-skills"])

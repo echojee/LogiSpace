@@ -1,0 +1,12 @@
+{
+  "reports": [
+    {
+      "source_job_id": "research_v4_508ae86b7c11",
+      "media_version": "original_film",
+      "title": "《控方证人》深度研究报告",
+      "model": "gpt-5.6-sol",
+      "generated_at": "2026-08-30T14:49:34.302321+00:00",
+      "deposited_at": "2026-08-30T15:15:58.633862+00:00"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "snapshot_id": "vk_report_b324b21ff99f",
+  "work_id": "work-novel-962a77c6",
+  "media_version": "original_novel",
+  "claims": [
+    {
+      "claim_id": "report_claim_e380a0977cc0",
+      "text": "沃格雷夫是真凶，并在瓶中手稿中解释了岛上连环死亡、自己的伪死及最终自杀机关。",
+      "claim_type": "culprit_revelation",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_99c6a731f19b",
+      "text": "沃格雷夫借阿姆斯特朗的医生身份伪造自己的死亡，使其他人把他从活人嫌疑名单中排除。",
+      "claim_type": "fake_death",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_b3ba1ce21eb4",
+      "text": "伪死现场使用红帘、灰毛线和额头上的红泥制造法袍、假发与枪伤效果，现场并未真正开枪。",
+      "claim_type": "staged_scene",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_a7d0e0b92231",
+      "text": "第11章和第13章包含未署名的多人内心片段，其中部分内容可与沃格雷夫或阿姆斯特朗的计划对应，但并非所有片段都能唯一归属。",
+      "claim_type": "anonymous_focalization",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_db97c2261761",
+      "text": "警方尾声无法解释薇拉死后椅子被扶正、隆巴德死后手枪回到屋内以及阿姆斯特朗尸体被移动等矛盾。",
+      "claim_type": "investigation_reconstruction",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "claim_id": "report_claim_ec48f199634c",
+      "text": "马斯顿在录音播放后喝下被投入氰化钾的酒而死亡。",
+      "claim_type": "poisoning",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9be9fe53f465",
+      "text": "沃格雷夫在海边从背后击杀麦克阿瑟将军。",
+      "claim_type": "blunt_force",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_21638ead0e02",
+      "text": "沃格雷夫诱使阿姆斯特朗到悬崖边并将其推入海中。",
+      "claim_type": "pushing",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_caa472975b58",
+      "text": "布洛尔被沃格雷夫从楼上投下的大理石熊形钟砸死。",
+      "claim_type": "blunt_force",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8fe426e27542",
+      "text": "隆巴德被薇拉夺枪后射杀。",
+      "claim_type": "shooting",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_ed26b41603e0",
+      "text": "薇拉在沃格雷夫布置并强化童谣意象后上吊死亡。",
+      "claim_type": "induced_suicide",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6d6beac04937",
+      "text": "沃格雷夫利用绳索、眼镜弹性带、手枪和门把手制造延迟移枪装置，最后射杀自己。",
+      "claim_type": "suicide_mechanism",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    }
+  ],
+  "domain_objects": [
+    {
+      "object_id": "report_object_5a23b0085c19",
+      "object_type": "trick",
+      "payload": {
+        "title": "沃格雷夫伪死",
+        "summary": "沃格雷夫借阿姆斯特朗的医学认证伪造死亡，从而继续以“尸体”身份行动。"
+      },
+      "claim_ids": [
+        "report_claim_e380a0977cc0",
+        "report_claim_99c6a731f19b"
+      ]
+    },
+    {
+      "object_id": "report_object_2c15bdd0943a",
+      "object_type": "trick",
+      "payload": {
+        "title": "伪造枪击现场",
+        "summary": "红帘、灰毛线和红泥被组合成戏剧化枪杀假象。"
+      },
+      "claim_ids": [
+        "report_claim_b3ba1ce21eb4"
+      ]
+    },
+    {
+      "object_id": "report_object_0770cc187687",
+      "object_type": "trick",
+      "payload": {
+        "title": "匿名意识蒙太奇",
+        "summary": "叙事保留真实思想内容，却撤销思想者身份。"
+      },
+      "claim_ids": [
+        "report_claim_a7d0e0b92231"
+      ]
+    },
+    {
+      "object_id": "report_object_05a9f4198203",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "马斯顿死亡",
+        "summary": "录音播放后，马斯顿饮用含氰化钾的酒死亡。",
+        "order": 1,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_ec48f199634c"
+      ]
+    },
+    {
+      "object_id": "report_object_62b02e5a787a",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "麦克阿瑟死亡",
+        "summary": "沃格雷夫在海边从背后击杀麦克阿瑟。",
+        "order": 3,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_9be9fe53f465"
+      ]
+    },
+    {
+      "object_id": "report_object_b63d547fbfbc",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "阿姆斯特朗死亡",
+        "summary": "阿姆斯特朗被沃格雷夫诱至悬崖并推入海中。",
+        "order": 6,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_21638ead0e02"
+      ]
+    },
+    {
+      "object_id": "report_object_03a2ea7a3df1",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "布洛尔死亡",
+        "summary": "布洛尔被大理石钟砸死。",
+        "order": 7,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_caa472975b58"
+      ]
+    },
+    {
+      "object_id": "report_object_67a71df69d07",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "隆巴德死亡",
+        "summary": "隆巴德被薇拉用夺来的手枪射杀。",
+        "order": 8,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_8fe426e27542"
+      ]
+    },
+    {
+      "object_id": "report_object_039c01bc0b6f",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "薇拉死亡",
+        "summary": "薇拉在房内上吊死亡。",
+        "order": 9,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_ed26b41603e0"
+      ]
+    },
+    {
+      "object_id": "report_object_60d95232731c",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "沃格雷夫最终死亡",
+        "summary": "沃格雷夫利用延迟移枪装置射杀自己。",
+        "order": 10,
+        "track": "岛上真实事件顺序"
+      },
+      "claim_ids": [
+        "report_claim_6d6beac04937"
+      ]
+    },
+    {
+      "object_id": "report_object_627104466a69",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "氰化钾投毒",
+        "summary": "氰化钾被投入马斯顿将饮用的酒中。"
+      },
+      "claim_ids": [
+        "report_claim_ec48f199634c"
+      ]
+    },
+    {
+      "object_id": "report_object_e056c254ce85",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "悬崖推杀",
+        "summary": "沃格雷夫将阿姆斯特朗从悬崖边推入海中。"
+      },
+      "claim_ids": [
+        "report_claim_21638ead0e02"
+      ]
+    },
+    {
+      "object_id": "report_object_3349e31daa49",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "夺枪射杀",
+        "summary": "薇拉夺取隆巴德的手枪并开枪杀死他。"
+      },
+      "claim_ids": [
+        "report_claim_8fe426e27542"
+      ]
+    },
+    {
+      "object_id": "report_object_3ffada5d29b7",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "诱导上吊",
+        "summary": "沃格雷夫利用绳索、椅子和童谣意象诱导薇拉自缢。"
+      },
+      "claim_ids": [
+        "report_claim_ed26b41603e0"
+      ]
+    }
+  ],
+  "claim_graph": [],
+  "conflicts": [
+    "莫里斯与马斯顿在绝对时间上的先后顺序无法由正文精确确定。",
+    "第11章匿名思想的部分归属存在争议。",
+    "沃格雷夫最终移枪机关的现实物理可靠性未被工程学证明。"
+  ],
+  "unknowns": [
+    "报告未提供所有人物关系的稳定实体标识。",
+    "未能确认所有匿名意识片段的唯一人物归属。"
+  ],
+  "gaps": [
+    {
+      "research_unit_id": "report-relationships",
+      "status": "needs_research",
+      "reasons": [
+        "Reviewed report did not contain citation-bound claims in this domain"
+      ],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-multiple_timelines",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-tricks",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-murder_methods",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    }
+  ],
+  "evidence_ids": [
+    "report_ev_2d16e9d48aa3a2c3",
+    "report_ev_6b747e0f88ea05b8"
+  ],
+  "frozen_at": "2026-08-15T06:50:52.296188Z"
+}

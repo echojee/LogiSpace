@@ -1,0 +1,112 @@
+{
+  "case_file_id": "case_ccdea44b7226",
+  "work_id": "work-series-93c9174b",
+  "media_version": "original_series",
+  "title": "《有罪之身》深度研究报告",
+  "research_mainline": "报告将《有罪之身》的核心案件拆分为马科死亡案与船厂爆炸及后续灭口案，并分别追踪夏雪与侯军的责任链。",
+  "reliability_note": "结论主要依据官方剧情页、分集资料和完整剧情梗概；部分死亡手法、DV内容、纽扣物证及庭审证明力仍不确定。",
+  "blocks": [
+    {
+      "block_id": "block_318c01cf949f",
+      "layer": "one_minute",
+      "block_type": "summary",
+      "title": "研究摘要",
+      "text": "报告将《有罪之身》的核心案件拆分为马科死亡案与船厂爆炸及后续灭口案，并分别追踪夏雪与侯军的责任链。",
+      "claim_ids": [
+        "report_claim_570250795739",
+        "report_claim_177376569408",
+        "report_claim_86e282a7cde8",
+        "report_claim_249e53440dac",
+        "report_claim_f5bf97174fe5",
+        "report_claim_d64a39296447"
+      ],
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7",
+        "report_ev_4d0fe9926fb33573",
+        "report_ev_d7c64004b94daa91",
+        "report_ev_dffc70b6c8744883"
+      ]
+    },
+    {
+      "block_id": "block_a9f7221c3eb1",
+      "layer": "core",
+      "block_type": "relationships",
+      "title": "人物关系",
+      "text": "- 夏雪是马科死亡案中造成致命伤的人；林华和陆鸣参与了斗殴或尸体处理，但不是唯一致命伤实施者。\n- 侯军是夏雪的丈夫，并借继父身份接近和控制珊珊。\n- 侯军与刘志军存在共同参与船厂爆炸及掩盖行动的关系。\n- 珊珊是马科的女儿，也是马德荣的孙女。",
+      "claim_ids": [
+        "report_claim_570250795739",
+        "report_claim_177376569408",
+        "report_claim_86e282a7cde8",
+        "report_claim_249e53440dac"
+      ],
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7",
+        "report_ev_4d0fe9926fb33573",
+        "report_ev_d7c64004b94daa91",
+        "report_ev_dffc70b6c8744883"
+      ]
+    },
+    {
+      "block_id": "block_dd783593df74",
+      "layer": "core",
+      "block_type": "timeline",
+      "title": "时间线",
+      "text": "- 1999年，马科在情人峰遭遇夏雪、陆鸣和林华参与的冲突并死亡。\n- 2010年珊珊被绑架、王炳坤死亡，使马德荣、陆鸣和相关旧案重新进入警方视野。\n- 警方先通过李东得知马科并非死于船厂爆炸，而是在情人峰死亡。\n- 终局阶段，侯军刺死陆鸣后被警方控制；随后夏雪自首，尸检验证其供述。",
+      "claim_ids": [
+        "report_claim_f5bf97174fe5",
+        "report_claim_d64a39296447",
+        "report_claim_6d156ea43278",
+        "report_claim_3809d3fd972f"
+      ],
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7",
+        "report_ev_4d0fe9926fb33573"
+      ]
+    },
+    {
+      "block_id": "block_cd80a8feed61",
+      "layer": "core",
+      "block_type": "trick",
+      "title": "诡计结构",
+      "text": "- 剧集通过让马科在情人峰死亡、同时被列入船厂爆炸遇难名单，将两宗死亡伪装成同一场死亡。\n- 林华以自己用石头杀死马科并将尸体抛入海中的口供顶罪，但警方未在其所称海域找到尸体。\n- 刘志军的亲笔认罪书被用来制造其独自策划爆炸并自杀的假结案。\n- 夏雪关于侯军纽扣的说法主要发挥心理诱导作用，报告认为不能将其视为已鉴定的独立物证。",
+      "claim_ids": [
+        "report_claim_3c784412b6b5",
+        "report_claim_8d4abac21ec2",
+        "report_claim_826055e8dd00",
+        "report_claim_70e15b5dbe65"
+      ],
+      "evidence_ids": [
+        "report_ev_4d0fe9926fb33573",
+        "report_ev_9d6bc2a2c6584c4a"
+      ]
+    },
+    {
+      "block_id": "block_8e5ff55c2ca4",
+      "layer": "core",
+      "block_type": "murder_method",
+      "title": "作案手法",
+      "text": "- 夏雪用刀刺中马科，形成致命伤；斗殴过程加剧了失血。\n- 林华转移马科尸体，并以死狗替换原埋藏物，将尸体藏到灯塔附近。\n- 侯军以刘志军海外儿子的安全相威胁，逼其写下认罪书，再勒杀并吊起尸体伪造自缢。\n- 侯军在废弃飞机处持刀刺伤陆鸣，陆鸣经抢救无效死亡。\n- 船厂爆炸被调查为有组织实施的爆炸；公开资料未明确爆炸装置类型、引爆方式和准确安装位置。",
+      "claim_ids": [
+        "report_claim_fb1f3ff03149",
+        "report_claim_9f20de9663fa",
+        "report_claim_c9ac44756234",
+        "report_claim_2afbe619cc7f",
+        "report_claim_c8492cfe608f"
+      ],
+      "evidence_ids": [
+        "report_ev_27a40d62fb126ad7",
+        "report_ev_4d0fe9926fb33573",
+        "report_ev_b530e86c929130a6"
+      ]
+    },
+    {
+      "block_id": "block_c1469912e05d",
+      "layer": "appendix",
+      "block_type": "sources",
+      "title": "来源与可靠性说明",
+      "text": "结论主要依据官方剧情页、分集资料和完整剧情梗概；部分死亡手法、DV内容、纽扣物证及庭审证明力仍不确定。",
+      "claim_ids": [],
+      "evidence_ids": []
+    }
+  ]
+}

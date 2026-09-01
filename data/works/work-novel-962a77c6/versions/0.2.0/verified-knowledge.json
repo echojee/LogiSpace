@@ -1,0 +1,533 @@
+{
+  "snapshot_id": "vk_report_82f228f23f54",
+  "work_id": "work-novel-962a77c6",
+  "media_version": "original_novel",
+  "claims": [
+    {
+      "claim_id": "report_claim_ae99296e5197",
+      "text": "劳伦斯·沃格雷夫利用阿姆斯特朗对其司法声望的信任，使阿姆斯特朗协助伪造他的死亡并宣布其死亡。",
+      "claim_type": "共谋关系",
+      "domain": "relationships",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_eb39e2af0219",
+      "text": "沃格雷夫把阿姆斯特朗作为程序上的共谋者，随后又以秘密会面为名将阿姆斯特朗诱至悬崖并推入海中。",
+      "claim_type": "利用与背叛",
+      "domain": "relationships",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9f362210f15a",
+      "text": "薇拉与隆巴德在阿姆斯特朗尸体出现后形成临时联盟，但薇拉最终夺枪射杀隆巴德。",
+      "claim_type": "联盟转为对决",
+      "domain": "relationships",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8393488b5e99",
+      "text": "沃格雷夫通过主持会议、整理证词和定义嫌疑范围，同时扮演法官、侦探与凶手。",
+      "claim_type": "操控关系",
+      "domain": "relationships",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_53b356c16b6a",
+      "text": "沃格雷夫在登岛前利用莫里斯购岛、安排物资和邀请，并让莫里斯建议隆巴德携带手枪。",
+      "claim_type": "代理关系",
+      "domain": "relationships",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6b7da2bafcac",
+      "text": "沃格雷夫在登岛前搜集九名受邀者的旧案，并在得知自己患绝症后决定实施连环杀人和自杀计划。",
+      "claim_type": "真实事件顺序",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6405ba997afd",
+      "text": "1939年8月8日，录音播放后马斯顿死亡；同日晚莫里斯在伦敦服药过量死亡，罗杰斯太太随后在睡眠中死亡。",
+      "claim_type": "岛外与第一夜",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "conflicted",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_fa8ff96472e7",
+      "text": "8月10日，沃格雷夫杀死罗杰斯、毒杀布伦特，并利用红帘、灰毛线和红泥伪造自己被枪杀。",
+      "claim_type": "伪死阶段",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_d1311b5d673d",
+      "text": "伪死后，沃格雷夫诱使阿姆斯特朗前往悬崖，将其推入海中，再返回屋内继续扮演尸体。",
+      "claim_type": "伪死后的行动",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_829e603d760e",
+      "text": "警方先依据日记、笔记和记录接受沃格雷夫为第六名死者，直到捞到瓶中手稿后才获得完整解释。",
+      "claim_type": "调查与揭示顺序",
+      "domain": "multiple_timelines",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_6b747e0f88ea05b8"
+      ]
+    },
+    {
+      "claim_id": "report_claim_2740b65c099c",
+      "text": "沃格雷夫的伪死依靠红帘、灰毛线、红泥和阿姆斯特朗的医学认证制造枪杀假象，现场实际上没有开枪。",
+      "claim_type": "伪死诡计",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_6f9b8f0b8430",
+      "text": "童谣和瓷偶把死亡组织成公开倒计时，并使已对应童谣死亡的人在心理上退出嫌疑范围。",
+      "claim_type": "童谣与瓷偶",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_2ae85c1515ec",
+      "text": "第11章的匿名思想“那个傻瓜把我的话全信了”可高度归给沃格雷夫，并指向他已骗取阿姆斯特朗信任。",
+      "claim_type": "匿名意识蒙太奇",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_993cc79a3be0",
+      "text": "小说通过匿名化思想内容而撤销思想者身份，使读者获得真实线索却无法稳定地将其绑定到沃格雷夫。",
+      "claim_type": "叙事身份隐藏",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_55bbb74b53a9",
+      "text": "警方尾声通过尸体位置、潮汐、手枪和椅子状态证明常规凶手解释无法成立，瓶中手稿随后重新指定行动者。",
+      "claim_type": "双重终局",
+      "domain": "tricks",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_6b747e0f88ea05b8",
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_73275bd97348",
+      "text": "沃格雷夫在马斯顿的酒中投入氰化钾，使马斯顿在录音指控后死亡。",
+      "claim_type": "氰化物投毒",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_f137ad961589",
+      "text": "沃格雷夫把水合氯醛加入罗杰斯送给妻子的白兰地，使罗杰斯太太在睡眠中死亡。",
+      "claim_type": "镇静剂投毒",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_9918e67685a8",
+      "text": "沃格雷夫在海边从背后以钝器击打麦克阿瑟将军的后脑。",
+      "claim_type": "钝器袭击",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_1db6044f0381",
+      "text": "沃格雷夫先在布伦特的咖啡中加入水合氯醛，再用注射器注入浓氰化物，并以蜜蜂意象掩饰死亡。",
+      "claim_type": "复合投毒",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_84c21049176d",
+      "text": "沃格雷夫把阿姆斯特朗诱至悬崖后从背后将其推入海中。",
+      "claim_type": "推落致死",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    },
+    {
+      "claim_id": "report_claim_8ee91217201e",
+      "text": "沃格雷夫利用手帕、弹性绳、眼镜和门把手制造延迟移枪装置，以手枪射击自己额头并伪装成无法自杀的现场。",
+      "claim_type": "延迟移枪自杀机关",
+      "domain": "murder_methods",
+      "media_version": "original_novel",
+      "support_status": "partially_supported",
+      "evidence_ids": [
+        "report_ev_2d16e9d48aa3a2c3"
+      ]
+    }
+  ],
+  "domain_objects": [
+    {
+      "object_id": "report_object_97c873a00ef4",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "character-lawrence-wargrave",
+        "source_name": "劳伦斯·沃格雷夫",
+        "target_character_id": "character-edward-armstrong",
+        "target_name": "爱德华·阿姆斯特朗",
+        "relation_type": "利用其信任协助伪造死亡并宣布死亡",
+        "summary": ""
+      },
+      "claim_ids": [
+        "report_claim_ae99296e5197"
+      ]
+    },
+    {
+      "object_id": "report_object_31591f75ee87",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "character-lawrence-wargrave",
+        "source_name": "劳伦斯·沃格雷夫",
+        "target_character_id": "character-edward-armstrong",
+        "target_name": "爱德华·阿姆斯特朗",
+        "relation_type": "诱骗后推入海中杀死",
+        "summary": ""
+      },
+      "claim_ids": [
+        "report_claim_eb39e2af0219"
+      ]
+    },
+    {
+      "object_id": "report_object_a90ef2365385",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "character-vera-claythorne",
+        "source_name": "薇拉·克莱索恩",
+        "target_character_id": "character-philip-lombard",
+        "target_name": "菲利普·隆巴德",
+        "relation_type": "临时联盟后射杀",
+        "summary": ""
+      },
+      "claim_ids": [
+        "report_claim_9f362210f15a"
+      ]
+    },
+    {
+      "object_id": "report_object_2ffbf452081d",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "character-lawrence-wargrave",
+        "source_name": "劳伦斯·沃格雷夫",
+        "target_character_id": "group-island-guests",
+        "target_name": "岛上全体人员",
+        "relation_type": "以法官、侦探和凶手三重角色操控嫌疑结构",
+        "summary": ""
+      },
+      "claim_ids": [
+        "report_claim_8393488b5e99"
+      ]
+    },
+    {
+      "object_id": "report_object_a28d600a1956",
+      "object_type": "relationship",
+      "payload": {
+        "source_character_id": "character-lawrence-wargrave",
+        "source_name": "劳伦斯·沃格雷夫",
+        "target_character_id": "character-isaac-morris",
+        "target_name": "艾萨克·莫里斯",
+        "relation_type": "代理购岛并安排邀请与物资",
+        "summary": ""
+      },
+      "claim_ids": [
+        "report_claim_53b356c16b6a"
+      ]
+    },
+    {
+      "object_id": "report_object_2c904b5206fd",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "登岛前的谋划",
+        "summary": "沃格雷夫搜集对象并在绝症后确定计划。",
+        "order": 1,
+        "track": "真实事件"
+      },
+      "claim_ids": [
+        "report_claim_6b7da2bafcac"
+      ]
+    },
+    {
+      "object_id": "report_object_e1540683c8ef",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "8月8日：第一夜死亡",
+        "summary": "马斯顿、莫里斯和罗杰斯太太相继死亡。",
+        "order": 2,
+        "track": "真实事件"
+      },
+      "claim_ids": [
+        "report_claim_6405ba997afd"
+      ]
+    },
+    {
+      "object_id": "report_object_5ae61411f603",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "8月10日：伪死完成",
+        "summary": "沃格雷夫杀死罗杰斯、布伦特并伪造自身枪杀。",
+        "order": 3,
+        "track": "真实事件"
+      },
+      "claim_ids": [
+        "report_claim_fa8ff96472e7"
+      ]
+    },
+    {
+      "object_id": "report_object_3894e8008ffe",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "伪死后的行动",
+        "summary": "沃格雷夫杀死阿姆斯特朗并返回尸体位置。",
+        "order": 4,
+        "track": "真实事件"
+      },
+      "claim_ids": [
+        "report_claim_d1311b5d673d"
+      ]
+    },
+    {
+      "object_id": "report_object_5f49adfa87c9",
+      "object_type": "timeline_alignment",
+      "payload": {
+        "title": "警方调查与瓶中手稿",
+        "summary": "警方先接受错误死亡顺序，手稿最终重建案件。",
+        "order": 5,
+        "track": "调查时间线"
+      },
+      "claim_ids": [
+        "report_claim_829e603d760e"
+      ]
+    },
+    {
+      "object_id": "report_object_ac22f334ff6e",
+      "object_type": "trick",
+      "payload": {
+        "title": "沃格雷夫伪死",
+        "summary": "利用道具和医生认证制造枪杀假象。"
+      },
+      "claim_ids": [
+        "report_claim_2740b65c099c"
+      ]
+    },
+    {
+      "object_id": "report_object_575bdf1736dc",
+      "object_type": "trick",
+      "payload": {
+        "title": "童谣与瓷偶的嫌疑管理",
+        "summary": "把死亡变成倒计时并注销死者嫌疑。"
+      },
+      "claim_ids": [
+        "report_claim_6f9b8f0b8430"
+      ]
+    },
+    {
+      "object_id": "report_object_770e61d574e6",
+      "object_type": "trick",
+      "payload": {
+        "title": "匿名意识隐藏身份",
+        "summary": "保留真实思想内容但删除人物标签。"
+      },
+      "claim_ids": [
+        "report_claim_2ae85c1515ec",
+        "report_claim_993cc79a3be0"
+      ]
+    },
+    {
+      "object_id": "report_object_ae1ce5ca3a16",
+      "object_type": "trick",
+      "payload": {
+        "title": "警方尾声与瓶中手稿",
+        "summary": "先制造不可能性，再由手稿重写证据链。"
+      },
+      "claim_ids": [
+        "report_claim_55bbb74b53a9"
+      ]
+    },
+    {
+      "object_id": "report_object_af7296fe9c43",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "马斯顿：氰化钾投毒",
+        "summary": "将氰化钾投入其酒中。"
+      },
+      "claim_ids": [
+        "report_claim_73275bd97348"
+      ]
+    },
+    {
+      "object_id": "report_object_6387338a2611",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "罗杰斯太太：水合氯醛投毒",
+        "summary": "把水合氯醛加入白兰地。"
+      },
+      "claim_ids": [
+        "report_claim_f137ad961589"
+      ]
+    },
+    {
+      "object_id": "report_object_165bedd3e88a",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "麦克阿瑟：海边钝器袭击",
+        "summary": "从背后击打后脑。"
+      },
+      "claim_ids": [
+        "report_claim_9918e67685a8"
+      ]
+    },
+    {
+      "object_id": "report_object_e47f369d1502",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "布伦特：镇静剂与氰化物",
+        "summary": "先镇静，再注射浓氰化物。"
+      },
+      "claim_ids": [
+        "report_claim_1db6044f0381"
+      ]
+    },
+    {
+      "object_id": "report_object_908f5fc39c9f",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "阿姆斯特朗：推落悬崖",
+        "summary": "被诱至悬崖后推入海中。"
+      },
+      "claim_ids": [
+        "report_claim_84c21049176d"
+      ]
+    },
+    {
+      "object_id": "report_object_578786abc756",
+      "object_type": "murder_method",
+      "payload": {
+        "title": "沃格雷夫：延迟移枪自杀机关",
+        "summary": "以弹性绳和门把手移动射击后的手枪。"
+      },
+      "claim_ids": [
+        "report_claim_8ee91217201e"
+      ]
+    }
+  ],
+  "claim_graph": [],
+  "conflicts": [
+    "莫里斯与马斯顿在绝对时间上谁先死亡，报告认为正文不足以确定。",
+    "第11章和第13章部分匿名思想无法唯一分配给人物。",
+    "沃格雷夫手稿的机械解释得到警方物证支持，但其关于受害者罪责和自身正义性的描述带有自我美化。"
+  ],
+  "unknowns": [
+    "不同中文译本可能改变匿名思想的语气和归属感。",
+    "最终弹性绳移枪机关的现实工程可靠性无法由报告中的尺寸资料验证。"
+  ],
+  "gaps": [
+    {
+      "research_unit_id": "report-relationships",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-multiple_timelines",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-tricks",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    },
+    {
+      "research_unit_id": "report-murder_methods",
+      "status": "resolved",
+      "reasons": [],
+      "suggested_followups": []
+    }
+  ],
+  "evidence_ids": [
+    "report_ev_2d16e9d48aa3a2c3",
+    "report_ev_6b747e0f88ea05b8"
+  ],
+  "frozen_at": "2026-08-15T06:52:51.174337Z"
+}

@@ -83,6 +83,7 @@ class ResearchPlanRevisionV4(BaseModel):
     budget: ResearchBudgetV4 = Field(default_factory=ResearchBudgetV4)
     rationale: str
     approved: bool = False
+    selected_unit_ids: list[str] = Field(default_factory=list)
     strategy: ResearchStrategyV4 = "build_and_verify"
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
@@ -106,6 +107,7 @@ class ResearchJobCreateV4(BaseModel):
 
 class PlanApprovalV4(BaseModel):
     units: list[ResearchUnitV4] | None = None
+    selected_unit_ids: list[str] | None = None
 
 
 class ResearchJobV4(BaseModel):

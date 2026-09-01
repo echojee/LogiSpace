@@ -24,11 +24,33 @@ class JSONResponseError(RuntimeError):
         self.result = result
 
 
+def _strict_response_schema(schema: dict[str, Any]) -> dict[str, Any]:
+    """Normalize Pydantic JSON Schema for Responses API strict outputs."""
+    normalized = json.loads(json.dumps(schema))
+
+    def visit(node: Any) -> None:
+        if isinstance(node, dict):
+            node.pop("default", None)
+            if node.get("type") == "object" or "properties" in node:
+                properties = node.get("properties", {})
+                node["additionalProperties"] = False
+                node["required"] = list(properties)
+            for value in node.values():
+                visit(value)
+        elif isinstance(node, list):
+            for value in node:
+                visit(value)
+
+    visit(normalized)
+    return normalized
+
+
 class LLMGateway:
     def __init__(self) -> None:
         self.api_key = os.getenv("OPENAI_API_KEY", "")
         self.base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
         self.chat_model = os.getenv("LOGISPACE_CHAT_MODEL", "gpt-5.6-luna")
+        self.plan_model = os.getenv("LOGISPACE_PLAN_MODEL", self.chat_model)
         self.research_model = os.getenv("LOGISPACE_RESEARCH_MODEL", "gpt-5.6-sol")
 
     @property
@@ -37,14 +59,16 @@ class LLMGateway:
 
     def respond(
         self, *, instructions: str, input_text: str, research: bool = False,
+        model: str | None = None,
         web_search: bool = False, max_output_tokens: int | None = None,
         max_tool_calls: int | None = None, reasoning_effort: str | None = None,
         verbosity: str | None = None, response_schema: dict[str, Any] | None = None,
+        timeout_seconds: int | None = None,
     ) -> LLMResult:
         if not self.available:
             raise RuntimeError("OPENAI_API_KEY is not configured")
         payload: dict[str, Any] = {
-            "model": self.research_model if research else self.chat_model,
+            "model": model or (self.research_model if research else self.chat_model),
             "instructions": instructions,
             "input": input_text,
             "reasoning": {"effort": reasoning_effort or ("medium" if research else "low")},
@@ -54,7 +78,7 @@ class LLMGateway:
             payload["text"]["format"] = {
                 "type": "json_schema",
                 "name": "logispace_response",
-                "schema": response_schema,
+                "schema": _strict_response_schema(response_schema),
                 "strict": True,
             }
         if web_search:
@@ -70,7 +94,7 @@ class LLMGateway:
             method="POST",
         )
         try:
-            with urlopen(request, timeout=180 if research else 45) as response:
+            with urlopen(request, timeout=timeout_seconds or (180 if research else 45)) as response:
                 data = json.loads(response.read().decode("utf-8"))
         except HTTPError as error:
             detail = error.read().decode("utf-8", errors="replace")
@@ -97,15 +121,18 @@ class LLMGateway:
 
     def respond_json(
         self, *, instructions: str, input_text: str, research: bool = True,
+        model: str | None = None,
         web_search: bool = False, max_tool_calls: int | None = None,
         max_output_tokens: int | None = None, reasoning_effort: str | None = None,
         verbosity: str | None = None, response_schema: dict[str, Any] | None = None,
+        timeout_seconds: int | None = None,
     ) -> tuple[Any, LLMResult]:
         result = self.respond(
-            instructions=instructions, input_text=input_text, research=research,
+            instructions=instructions, input_text=input_text, research=research, model=model,
             web_search=web_search, max_tool_calls=max_tool_calls,
             max_output_tokens=max_output_tokens, reasoning_effort=reasoning_effort,
             verbosity=verbosity, response_schema=response_schema,
+            timeout_seconds=timeout_seconds,
         )
         value = result.text.strip()
         if value.startswith("```"):
